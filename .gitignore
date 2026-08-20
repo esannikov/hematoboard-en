@@ -1,0 +1,8 @@
+.DS_Store
+.gstack/
+**/__pycache__/
+scripts/translation-cache.json
+qa/*.png
+qa/*.json
+qa/*.log
+.gstack/

@@ -1,0 +1,21 @@
+{
+  "schema_version": "hematoboard.en.case-index/1.0",
+  "locale": "en",
+  "cases": [
+    {
+      "key": "case001",
+      "case_id": "CASE001",
+      "data_path": "data/case001/public-dashboard.en.v1.json"
+    },
+    {
+      "key": "case002",
+      "case_id": "CASE002",
+      "data_path": "data/case002/public-dashboard.en.v1.json"
+    },
+    {
+      "key": "case003",
+      "case_id": "CASE003",
+      "data_path": "data/case003/public-dashboard.en.v1.json"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "hematoboard.en.translation-manifest/1.0",
+  "locale": "en",
+  "source_locale": "uk",
+  "generated_at": "2026-08-20T20:22:06.563952Z",
+  "translation_route": "public-safe presentation translation with protected medical terminology",
+  "clinical_claims_added": false,
+  "cases": [
+    {
+      "key": "case001",
+      "display_case_id": "CASE001",
+      "candidate_sha256": "90bcb7b9b54ef40bff8c123c14e0d0b384ee870cdfb0527764496ead08ed20fb",
+      "source_package_sha256": "2a372eb81b651881ca2c4caa137c32dd0b365da061fcb72c5e868c2fdfe4916f",
+      "english_package_sha256": "db25ec5a81af42a078ac0ddbf11856fa415a1629a759ecaf95d1d2926b48fa7a",
+      "translated_unique_strings": 378,
+      "dropped_non_exact_emphasis_terms": 25,
+      "clinician_accepted": false
+    },
+    {
+      "key": "case002",
+      "display_case_id": "CASE002",
+      "candidate_sha256": "c6af184aef34e29aa09f835ab1424c1555d837632f009233f6a8b7d4d6b2e2bd",
+      "source_package_sha256": "23a5523461e6807ff9fc4ea9f6905f8da5d94d2b5960a8a5c148153cc0072017",
+      "english_package_sha256": "d8fd5b81288b21c97c1afedc478c0e33af35c0361f17b26cb89138d21f132e95",
+      "translated_unique_strings": 272,
+      "dropped_non_exact_emphasis_terms": 20,
+      "clinician_accepted": false
+    },
+    {
+      "key": "case003",
+      "display_case_id": "CASE003",
+      "candidate_sha256": "ed752c243690387427ef934cacfe5e011692a3b5e95bab82c34bbc8eeae0985c",
+      "source_package_sha256": "d6e4bb746abf6280ce9c48e4fe502e43efe0de6418942e4d4fec3217a7b99391",
+      "english_package_sha256": "8bc4f55d2e243b782e780554b89be2992de957b362b317c429bd6a1f38b14342",
+      "translated_unique_strings": 315,
+      "dropped_non_exact_emphasis_terms": 21,
+      "clinician_accepted": false
+    }
+  ]
+}
