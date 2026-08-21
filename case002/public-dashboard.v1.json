@@ -1,0 +1,3401 @@
+{
+  "projection": {
+    "candidate": {
+      "case_id": "CASE012",
+      "clinical_input_sha256": "214ac62c9d63a8fe1dc7c6e667ccbd9c5307f2b1d4540a01d6c1675c1913fbd6",
+      "comparison_to_previous": {
+        "reason": "Reassessment of the clinical roles confirmed that all five elements were able to independently explain the main pattern of a large anterior mediastinal mass; they are retained as diagnostic hypotheses with unchanged ranks 1–5. The clinical content, relationships, diagnostic tests, gaps, sources, and differential width projection are unchanged.",
+        "status": "role_revision"
+      },
+      "coverage_projection": [
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B1"
+          ],
+          "disposition": "projected",
+          "rationale": "B1 is projected in H1 as a leading candidate diagnosis with direct reliance on PMBCL sources and mandatory tissue verification.",
+          "sector": "unifying",
+          "target_refs": [
+            "H1",
+            "W1",
+            "W2",
+            "W3",
+            "G1",
+            "G2",
+            "G3"
+          ]
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B2",
+            "B3"
+          ],
+          "disposition": "projected",
+          "rationale": "B2 is projected in H2, B3 in H3; both branches have relevant classification support and remain tissue dependent.",
+          "sector": "close_alternative",
+          "target_refs": [
+            "H2",
+            "H3",
+            "W1",
+            "W4",
+            "G2"
+          ]
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B4",
+            "B5"
+          ],
+          "disposition": "projected",
+          "rationale": "B4 is projected in H5 and W1 as a critical germ cell alternative without a specific external source; B5 is not denied, but it remains deactivated due to the lack of a specific support and a distinct structural signal.",
+          "sector": "different_mechanism",
+          "target_refs": [
+            "H5",
+            "W1"
+          ]
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B6"
+          ],
+          "disposition": "deactivated",
+          "rationale": "B6 did not receive a specific source of TB or fungal mediastinal infection; decorative links from lymphoma documents were not added. Branch can be restored for granuloma/microbiological suspicion.",
+          "sector": "reversible_treatable",
+          "target_refs": []
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B3",
+            "B4"
+          ],
+          "disposition": "projected",
+          "rationale": "B3 is designed as H3 with targeted survey; B4 is projected as H5 with a W1 tissue route and a clear gap in serum alpha-fetoprotein, β-human chorionic gonadotropin, gonadal primary cell assessment, and germ cell markers. Regardless of the etiology, the compressive risk is projected in W3/G3.",
+          "sector": "must_not_miss",
+          "target_refs": [
+            "H3",
+            "H5",
+            "W1",
+            "W3",
+            "W4",
+            "G3"
+          ]
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B7"
+          ],
+          "disposition": "deactivated",
+          "rationale": "B7 has no specific source support for small lung foci in a fresh package; their nature is left undefined and not included in histological grading.",
+          "sector": "second_process",
+          "target_refs": []
+        },
+        {
+          "breadth_status": "represented",
+          "candidate_ids": [
+            "B8"
+          ],
+          "disposition": "projected",
+          "rationale": "B8 is designed to check biopsy adequacy, expert review, and retake for necrotic or nondiagnostic material.",
+          "sector": "data_artifact",
+          "target_refs": [
+            "W2",
+            "W5",
+            "G1"
+          ]
+        }
+      ],
+      "critical_gaps": [
+        {
+          "evidence_refs": [
+            "E-CAND-2",
+            "E-CAND-3",
+            "E-CAND-5"
+          ],
+          "hypothesis_ids": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "id": "G1",
+          "question": "Is the current biopsy viable and adequate for architectural evaluation, IHC and, if necessary, flow cytometry?",
+          "rationale": "Necrosis and the lack of a ready conclusion leave the risk of nonrepresentative tissue and misclassification."
+        },
+        {
+          "evidence_refs": [
+            "E-CAND-1",
+            "E-CAND-2",
+            "E-CAND-3",
+            "E-CAND-4",
+            "E-CAND-5"
+          ],
+          "hypothesis_ids": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "id": "G2",
+          "question": "What integrated morphologic and IHC profile distinguishes PMBCL, classical Hodgkin lymphoma, mediastinal gray zone, and T-lymphoblastic lymphoma?",
+          "rationale": "It is the tissue phenotype, not FDG intensity or mass size, that determines the classification route."
+        },
+        {
+          "evidence_refs": [
+            "E-CAND-7"
+          ],
+          "hypothesis_ids": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "id": "G3",
+          "question": "Are there any signs of decompensation due to superior vena cava or airway compression now?",
+          "rationale": "Anatomical compression has already been documented, but actual clinical severity and need for immediate action have not been documented."
+        }
+      ],
+      "decision_readiness": {
+        "blocked_actions": [
+          "Do not establish a definitive diagnosis or histological subtype.",
+          "Do not choose a specific antitumor treatment based on the clinical and radiological phenotype.",
+          "Do not attribute small lung foci to the main disease without additional comparison.",
+          "Do not interpret undated laboratory values ​​as dynamics or as compliance with reference intervals."
+        ],
+        "rationale": "H1, a primary mediastinal large B-cell lymphoma, is the first candidate diagnosis by clinicoradiologic phenotype. Representative morphology and IHC are required for definitive classification and delineation with classical Hodgkin lymphoma, mediastinal gray zone, T-lymphoblastic lymphoma, and mediastinal germ cell tumor; their absence blocks treatment selection and staging, but not work prioritization.",
+        "required_next_information": [
+          "Representative morphology and IHC of viable tissue with assessment of biopsy adequacy.",
+          "Clinical assessment of actual severity of compression superior vena cava and central airways.",
+          "For lymphoblastic phenotype — flow cytometry and evaluation of the bone marrow involvement.",
+          "A separate targeted evidence package should the morphology rediscover a germ cell, thymic, or infectious branch."
+        ],
+        "status": "candidate_available"
+      },
+      "external_evidence": [
+        {
+          "applicability": "Supports the structure of tissue classification H1/H4; does not prove a specific diagnosis in CASE012.",
+          "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
+          "id": "E-CAND-1",
+          "location": "nccn_b_cell_lymphomas_v4_2026_p0062",
+          "proposition": "Classification of large cell B-cell lymphoma requires sufficient immunophenotyping; PMBCL and mediastinal gray zone lymphoma have separate diagnostic routes.",
+          "retrieval_ref": "R1:4",
+          "rights_status": "restricted_authorized_private",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "c32f9c96483b40a603720db1dbb9cbdf79b5f68224766d2d2f416e29a2fde8fd",
+          "source_type": "guideline",
+          "title": "NCCN Guidelines Version 4.2026: Diffuse Large B-Cell Lymphoma",
+          "year": 2026
+        },
+        {
+          "applicability": "Directly supports H4, W1/W2/W5 and the need for H1/H2 demarcation; there are no tissue signs in CASE012 yet.",
+          "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
+          "id": "E-CAND-2",
+          "location": "nccn_b_cell_lymphomas_v4_2026_p0076",
+          "proposition": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "retrieval_ref": "R1:2",
+          "rights_status": "restricted_authorized_private",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "c32f9c96483b40a603720db1dbb9cbdf79b5f68224766d2d2f416e29a2fde8fd",
+          "source_type": "guideline",
+          "title": "NCCN Guidelines Version 4.2026: Diffuse Large B-Cell Lymphoma",
+          "year": 2026
+        },
+        {
+          "applicability": "Supports W1/W2/W5 for H2; does not establish classical Hodgkin lymphoma without morphology.",
+          "bibliographic_id": "nccn_hodgkin_lymphoma_v2_2026",
+          "id": "E-CAND-3",
+          "location": "nccn_hodgkin_lymphoma_v2_2026_p0008",
+          "proposition": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "retrieval_ref": "R2:3",
+          "rights_status": "restricted_authorized_private",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "03cc68f397fd717d06c8f51844119eb24ba8bafed5681e1f1fa124ce8a2f67e8",
+          "source_type": "guideline",
+          "title": "NCCN Guidelines Version 2.2026: Hodgkin Lymphoma (Age ≥18 years)",
+          "year": 2026
+        },
+        {
+          "applicability": "Supports differentiation of H2 from other lymphomas; the clinical phenotype does not allow choosing the option without tissue.",
+          "bibliographic_id": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12",
+          "id": "E-CAND-4",
+          "location": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12_p0012",
+          "proposition": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "retrieval_ref": "R3:5",
+          "rights_status": "allowed_by_admission_manifest",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "70d1e1d0f1bb469ca97ceaa56f68ffa94174c3146c375c1885efa9e94e338cca",
+          "source_type": "evidence_summary",
+          "title": "Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
+          "year": 2026
+        },
+        {
+          "applicability": "Supports diagnostic differentiation of H3 and W4; this source is about ALL, so the treatment provisions were not transferred to CASE012.",
+          "bibliographic_id": "nci_text_snapshot_adult_all_2026_08_12",
+          "id": "E-CAND-5",
+          "location": "nci_text_snapshot_adult_all_2026_08_12_p0002",
+          "proposition": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "retrieval_ref": "R5:1",
+          "rights_status": "allowed_by_admission_manifest",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "673d39f2886d6f6b0428d580cdd845198518bdb123c400ef8a6b6e353a2be3bc",
+          "source_type": "evidence_summary",
+          "title": "Adult Acute Lymphoblastic Leukemia Treatment (PDQ®)–Health Professional Version",
+          "year": 2025
+        },
+        {
+          "applicability": "Supports H1/H3, W2 ranking and the need for sufficient tissue verification; does not determine the histology of a specific mass.",
+          "bibliographic_id": "nci_text_snapshot_aggressive_b_cell_nhl_2026_08_12",
+          "id": "E-CAND-6",
+          "location": "nci_text_snapshot_aggressive_b_cell_nhl_2026_08_12_p0008",
+          "proposition": "Mediastinal adenopathy is a hallmark of lymphoblastic lymphoma and PMBCL in young adults; histological type is determined by tissue biopsy, with excisional biopsy more likely to provide a definitive diagnosis than core needle biopsy.",
+          "retrieval_ref": "R4:1",
+          "rights_status": "allowed_by_admission_manifest",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "26d6eb966fd1fe50d4f5bba686a6286ece915b9fc67b5cca837b6107bec9b2df",
+          "source_type": "evidence_summary",
+          "title": "Aggressive B-Cell Non-Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
+          "year": 2026
+        },
+        {
+          "applicability": "Supports clinical H1 compliance, H1/H2/H4 delineation need, and compressive risk assessment; does not replace morphology.",
+          "bibliographic_id": "nci_text_snapshot_aggressive_b_cell_nhl_2026_08_12",
+          "id": "E-CAND-7",
+          "location": "nci_text_snapshot_aggressive_b_cell_nhl_2026_08_12_p0013",
+          "proposition": "PMBCL in young adults may present as a locally invasive anterior mediastinal mass with respiratory symptoms or superior vena cava syndrome and overlaps with nodular sclerosing classical Hodgkin lymphoma.",
+          "retrieval_ref": "R4:2",
+          "rights_status": "allowed_by_admission_manifest",
+          "source_review_route": "visual_semantic",
+          "source_sha256": "26d6eb966fd1fe50d4f5bba686a6286ece915b9fc67b5cca837b6107bec9b2df",
+          "source_type": "evidence_summary",
+          "title": "Aggressive B-Cell Non-Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
+          "year": 2026
+        }
+      ],
+      "hypotheses": [
+        {
+          "applicability_limits": [
+            "Clinicoradiologic correspondence does not replace tissue classification.",
+            "Quantitative laboratory values ​​given are an undated slice; their trends and relation to reference intervals have not been established."
+          ],
+          "clinical_role": "diagnostic_hypothesis",
+          "id": "H1",
+          "label": "Primary mediastinal large B-cell lymphoma",
+          "missing_evidence": [
+            "Morphology of viable tissue.",
+            "IHC with confirmation of the mature B-cell lineage and phenotype of PMBCL.",
+            "Expert differentiation with classical Hodgkin lymphoma and mediastinal gray zone lymphoma."
+          ],
+          "rank": 1,
+          "role_rationale": "PMBCL is a diagnostic hypothesis because it can independently explain the main clinical pattern: a large anterior mediastinal mass with compression of the superior vena cava and central airways, cervical supraclavicular nodal involvement, and systemic symptoms.",
+          "short_label": "PMBCL",
+          "summary": "The most consistent candidate diagnosis: A 36-year-old patient with a large invasive anterior/middle mediastinal mass presenting with respiratory symptoms and marked superior vena cava and airway compression with cervical supraclavicular nodes and systemic symptoms. Sources describe PMBCL in young adults as an anterior mediastinal mass that may cause respiratory symptoms or superior vena cava syndrome, but the diagnosis requires clinicopathological comparison."
+        },
+        {
+          "applicability_limits": [
+            "Systemic symptoms and massive mediastinal involvement are not specific.",
+            "The stage and prognostic group are not defined."
+          ],
+          "clinical_role": "diagnostic_hypothesis",
+          "id": "H2",
+          "label": "Classical Hodgkin lymphoma, possibly the nodular sclerosis subtype",
+          "missing_evidence": [
+            "Tissue architecture and characteristic tumor cells.",
+            "IHC-source supporting classical Hodgkin lymphoma.",
+            "Differentiation from PMBCL and mediastinal gray zone."
+          ],
+          "rank": 2,
+          "role_rationale": "Classical Hodgkin lymphoma is a diagnostic hypothesis because it can independently explain a massive mediastinal lesion, cervical supraclavicular lymphadenopathy, weight loss, and night sweats.",
+          "short_label": "Classical Hodgkin lymphoma",
+          "summary": "Close alternative due to young age, massive mediastinal lesion, supraclavicular nodes, weight loss and night sweats. A large mass of more than 10 cm corresponds to a sign of a massive lesion in the sources, but there is no histological confirmation of classical Hodgkin lymphoma."
+        },
+        {
+          "applicability_limits": [
+            "The given undated complete blood count without reference intervals does not define a lymphoma or leukemic form.",
+            "The NCI source describes mostly ALL; its diagnostic provisions apply only to the distinction between lymphoblastic lymphoma/leukemia."
+          ],
+          "clinical_role": "diagnostic_hypothesis",
+          "id": "H3",
+          "label": "T-lymphoblastic lymphoma",
+          "missing_evidence": [
+            "Morphology of lymphoblasts.",
+            "IHC or flow cytometry with TdT and markers of immature T-cell ownership.",
+            "Peripheral blood smear and bone marrow evaluation for confirmed lymphoblastic phenotype."
+          ],
+          "rank": 3,
+          "role_rationale": "T-lymphoblastic lymphoma is a diagnostic hypothesis because it may be the underlying cause of a large mediastinal mass with compression of vital structures in a young man.",
+          "short_label": "T-lymphoblastic lymphoma",
+          "summary": "Critical differential in a young man with a large mediastinal mass. Sources directly refer lymphoblastic lymphoma to processes with marked mediastinal adenopathy in young adults and require cellular identity by morphology, IHC/flow cytometry, and bone marrow evaluation."
+        },
+        {
+          "applicability_limits": [
+            "This is a classification possibility, not an inference from clinical data.",
+            "Should not be used as an indefinite label for a non-representative biopsy."
+          ],
+          "clinical_role": "diagnostic_hypothesis",
+          "id": "H4",
+          "label": "Mediastinal gray zone lymphoma between PMBCL and classical Hodgkin lymphoma",
+          "missing_evidence": [
+            "Sufficient tissue architecture; core needle biopsy alone may not be sufficient.",
+            "IHC profile with transitional features between PMBCL and classical Hodgkin lymphoma.",
+            "Expert hematopathological review."
+          ],
+          "rank": 4,
+          "role_rationale": "A mediastinal gray zone lymphoma is a diagnostic hypothesis because such a lymphoid neoplasia can independently explain the large anterior mediastinal mass and clinicomorphologic overlap between PMBCL and classical Hodgkin lymphoma.",
+          "short_label": "Mediastinal gray zone",
+          "summary": "Added during alignment as a morphologically significant branch between the two leading candidates. Sources describe it in young adults with a large anterior mediastinal mass and emphasize expert revision, adequate tissue, and transitional immunophenotype."
+        },
+        {
+          "applicability_limits": [
+            "Age, sex, and anterior mediastinal localization are only grounds for holding the critical alternative.",
+            "There is no specific source for this nosology in the allowed source package; sources W1 support the general need for sufficient tissue diagnosis of lymphomas and do not prove H5."
+          ],
+          "clinical_role": "diagnostic_hypothesis",
+          "id": "H5",
+          "label": "Mediastinal germ cell tumor",
+          "missing_evidence": [
+            "Serum alpha-fetoprotein and β-human chorionic gonadotropin.",
+            "Evaluation of the testes and other possible gonadal primary cells.",
+            "Morphology and IHC with germ cell tumor markers."
+          ],
+          "rank": 5,
+          "role_rationale": "Mediastinal germ cell tumor is a diagnostic hypothesis because it may be the underlying cause of a large anterior mediastinal mass with necrosis and compression in a young man, although the available data do not establish its nature.",
+          "short_label": "Germ cell tumor",
+          "summary": "A critical alternative hypothesis in a 36-year-old man with a large anterior mediastinal mass. Age, sex and localization support the need to keep it in the differential, but do not establish a diagnosis. There is no specific source on mediastinal germ cell tumors in the admitted package, so the hypothesis has no external confirmation and is maintained as mandatory for tissue exclusion."
+        }
+      ],
+      "limitations": [
+        "Biopsy at work; morphology, IHC and tissue sufficiency unknown.",
+        "All 16 quants are an undated single slice: CS-5A26CA4AA826FE43, CS-9E3DC691783BFA8D, CS-32AC1F95D01605A3, CS-351CC8BFF269C7E9, CS-081AE6B0D50F6BBC, CS-85863771EAB1206B, CS-F179C0139CB839C1, CS-0B26A7A8015FCCF6, CS-4B468134C4EDCD9C, CS-981FDDCB2B6D5896, CS-F7115A0889D26CB9, CS-500466E06CB91B2C, CS-018DB9A68691BDC3, CS-6389D70055CBDC88, CS-C0E7D5E92D64AE3F, CS-75BD76F5E6E5E279. The speakers were not displayed.",
+        "Reference intervals for quantitative values ​​are not provided; compliance or non-whether values are within reference limits was not shown.",
+        "The erythrocyte unit in CF-7B99B43232C204A2 / CS-351CC8BFF269C7E9 was damaged at the source (× 10¹²/) and would not be repaired.",
+        "The SUVmax unit in CF-EED715A1EEB57E82 / CS-6389D70055CBDC88 is not fixed; value was not used as a histological differentiator.",
+        "For germ cell tumor, epithelial tumor of the thymus, granulomatous infection and a separate pulmonary process, the fresh package does not contain specific sources; these branches received no decorative links.",
+        "Deferred source entry SR-AEA016046978-P0001 was not interpreted.",
+        "The result is a candidate for medical review and is not a diagnosis or authorization for treatment."
+      ],
+      "relations": [
+        {
+          "direction": "support",
+          "hypothesis_id": "H1",
+          "rationale": "A young adult fits the typical age range of PMBCL, but age is not diagnostic.",
+          "source_id": "CF-219C5BF25E64EC43"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H1",
+          "rationale": "A large anterior/middle mediastinal mass is the central clinical feature of PMBCL.",
+          "source_id": "CF-479528A502E22272"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H1",
+          "rationale": "superior vena cava compression is consistent with the described presentation of rapidly growing PMBCL.",
+          "source_id": "CF-7AE0A73487377D57"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H1",
+          "rationale": "Compression of the trachea and right main bronchus is consistent with a locally invasive mediastinal mass.",
+          "source_id": "CF-8D704124398A16AF"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H1",
+          "rationale": "The biopsy is still in progress, so there is no tissue confirmation.",
+          "source_id": "CF-B293D636FA601DAB"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H1",
+          "rationale": "Fixed LDH 612 U/L; date and reference interval are missing, so the value is not interpreted.",
+          "source_id": "CS-0B26A7A8015FCCF6"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H2",
+          "rationale": "Weight loss is consistent with the systemic manifestations of lymphoma, but is not specific.",
+          "source_id": "CF-58152920D4D76CBE"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H2",
+          "rationale": "Night sweats are compatible with systemic manifestations of classical Hodgkin's lymphoma.",
+          "source_id": "CF-48019AC84FF27431"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H2",
+          "rationale": "A mediastinal mass with the largest size of 15 cm corresponds to a massive lesion, but does not determine the histology.",
+          "source_id": "CF-479528A502E22272"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H2",
+          "rationale": "The morphological result is not yet available.",
+          "source_id": "CF-B293D636FA601DAB"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H3",
+          "rationale": "Male sex in combination with young age and mediastinal mass supports the inclusion of T-lymphoblastic lymphoma in the differential, but does not prove it.",
+          "source_id": "CF-64537E0D10CC9FFC"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H3",
+          "rationale": "A large mediastinal mass is the typical clinical setting of lymphoblastic lymphoma.",
+          "source_id": "CF-479528A502E22272"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H3",
+          "rationale": "Leukocytes were recorded at 9.8 × 10⁹/l; date and reference interval are missing, so the value is not interpreted.",
+          "source_id": "CS-4B468134C4EDCD9C"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H3",
+          "rationale": "Platelets 318 ×10⁹/l were recorded; date and reference interval are missing, so the value is not interpreted.",
+          "source_id": "CS-018DB9A68691BDC3"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H4",
+          "rationale": "Necrosis may occur in the mediastinal gray zone lymphoma, but this sign is nonspecific.",
+          "source_id": "CF-CFB6EECFC1F96DB5"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H4",
+          "rationale": "A large anterior mediastinal mass in a young adult is consistent with the clinical context of the mediastinal gray zone lymphoma.",
+          "source_id": "CF-479528A502E22272"
+        },
+        {
+          "direction": "neutral",
+          "hypothesis_id": "H4",
+          "rationale": "Without a complete biopsy, there is no reason to establish a transitional morphological phenotype.",
+          "source_id": "CF-B293D636FA601DAB"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H5",
+          "rationale": "The male sex supports the need to retain a mediastinal germ cell tumor as a critical alternative, but does not prove it.",
+          "source_id": "CF-64537E0D10CC9FFC"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H5",
+          "rationale": "The age of 36 years supports the need to keep a germ cell tumor in the differential, but is not diagnostic.",
+          "source_id": "CF-219C5BF25E64EC43"
+        },
+        {
+          "direction": "support",
+          "hypothesis_id": "H5",
+          "rationale": "A large anterior mediastinal mass is the basis for tissue exclusion of a germ cell tumor, but does not determine its nature.",
+          "source_id": "CF-479528A502E22272"
+        }
+      ],
+      "role": "candidate_for_clinician_review",
+      "schema_version": "hematoboard.v2.candidate-synthesis/1.1",
+      "workup": [
+        {
+          "discriminates": [
+            "H1",
+            "H2",
+            "H3",
+            "H4",
+            "H5"
+          ],
+          "evidence_refs": [
+            "E-CAND-1",
+            "E-CAND-2",
+            "E-CAND-3",
+            "E-CAND-4",
+            "E-CAND-5"
+          ],
+          "id": "W1",
+          "label": "Complete tissue verification with morphology and extensive primary IHC panel",
+          "necessity": "classification_exclusion_required",
+          "priority": "critical",
+          "rationale": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "trigger": null
+        },
+        {
+          "discriminates": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "evidence_refs": [
+            "E-CAND-2",
+            "E-CAND-3",
+            "E-CAND-6"
+          ],
+          "id": "W2",
+          "label": "Check the adequacy and viability of the biopsy and organize an expert hematopathological review",
+          "necessity": "key_discriminator",
+          "priority": "high",
+          "rationale": "A large necrotic mass increases the risk of an nonrepresentative sample; for the mediastinal gray zone, the source separately emphasizes expert review and the inadmissibility of establishing a diagnosis based on a core needle biopsy alone.",
+          "trigger": null
+        },
+        {
+          "discriminates": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "evidence_refs": [
+            "E-CAND-7"
+          ],
+          "id": "W3",
+          "label": "Assess current clinical threat of superior vena cava compression and central airways",
+          "necessity": "urgent_if_triggered",
+          "priority": "critical",
+          "rationale": "CT already records significant narrowing superior vena cava and compression of the trachea/right main bronchus; source describes respiratory symptoms and superior vena cava syndrome as manifestations of rapidly growing PMBCL. Urgency is determined clinically, not by histological grade.",
+          "trigger": "Dyspnea at rest, orthopnea, stridor, cyanosis, face/neck edema, venous congestion, syncope, progression of hypoxemia, or hemodynamic instability."
+        },
+        {
+          "discriminates": [
+            "H3"
+          ],
+          "evidence_refs": [
+            "E-CAND-4",
+            "E-CAND-5"
+          ],
+          "id": "W4",
+          "label": "For lymphoblastic morphology, perform flow cytometry and evaluate bone marrow",
+          "necessity": "conditional_adjunct",
+          "priority": "high",
+          "rationale": "immunophenotyping and bone marrow evaluation are required to determine T-cell lineage and differentiation between lymphoma and leukemic form.",
+          "trigger": "Morphology or primary IHC indicates an immature lymphoid neoplasm."
+        },
+        {
+          "discriminates": [
+            "H1",
+            "H2",
+            "H3",
+            "H4"
+          ],
+          "evidence_refs": [
+            "E-CAND-2",
+            "E-CAND-3",
+            "E-CAND-5"
+          ],
+          "id": "W5",
+          "label": "Repeat or change biopsy method if current material is nondiagnostic",
+          "necessity": "conditional_adjunct",
+          "priority": "high",
+          "rationale": "Insufficient material should not complete the classification; resampling from a viable site or accessible node should provide the architecture and material for additional techniques.",
+          "trigger": "Predominance of necrosis, insufficient architecture, indeterminate IHC-profile, or clinicopathological inconsistency."
+        }
+      ]
+    },
+    "candidate_sha256": "c6af184aef34e29aa09f835ab1424c1555d837632f009233f6a8b7d4d6b2e2bd",
+    "capabilities": {
+      "clinician_review": false,
+      "data": true,
+      "gaps": true,
+      "graph": true,
+      "overview": true,
+      "source_drawer": true,
+      "timeline": true
+    },
+    "case": {
+      "id": "CASE012",
+      "status": "candidate_projection"
+    },
+    "clinical_input_sha256": "214ac62c9d63a8fe1dc7c6e667ccbd9c5307f2b1d4540a01d6c1675c1913fbd6",
+    "clinical_run_id": "RUN-20260819T064355540269Z-CASE012-AEA01604",
+    "deferred_source_record_ids": [
+      "SR-AEA016046978-P0001"
+    ],
+    "facts": [
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "sex",
+        "category": "demographics",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-64537E0D10CC9FFC",
+        "kind": "demographic",
+        "label": "Sex",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 1,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Man",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "age",
+        "category": "demographics",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-219C5BF25E64EC43",
+        "kind": "demographic",
+        "label": "Age",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 1,
+        "unit": "years",
+        "unit_resolution": null,
+        "value": {
+          "number": 36,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "symptoms_course",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-D2A3F501511E5955",
+        "kind": "statement",
+        "label": "Symptoms and course",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 2,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "He complained of progressive exertional dyspnea, a dry cough, intermittent discomfort and a feeling of pressure behind the sternum.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "symptoms_course",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-DAC9BEF236271E97",
+        "kind": "statement",
+        "label": "Symptoms and course",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 3,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "During the last 2 months, he notes a decline in functional capacity and intolerance to physical exertion.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "other",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-58152920D4D76CBE",
+        "kind": "statement",
+        "label": "Clinical record",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 4,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Over the last 6 weeks, he lost approximately 6 kg.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "symptoms_course",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-48019AC84FF27431",
+        "kind": "statement",
+        "label": "Symptoms and course",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 5,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Periodically notes night sweats.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-1AEA5171B665BA41",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 6,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Condition of moderate severity.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-641E8E1476334290",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 7,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "The skin is pale, without hemorrhagic rashes.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-A75B5A80D205B3A2",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 8,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Peripheral lymph nodes: cervical, supraclavicular, axillary - slightly enlarged or not palpable.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-523D09EF19EECCFC",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 9,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Heart rate — 102/min.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-A41C26965C79837E",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 10,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Blood pressure — 125/75 mm Hg. Art.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-602EA2965E735F2F",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 11,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "SpO₂ — 94% in room air.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-0F8A30DB7ABEDE9B",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 12,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "On auscultation of the lungs, breathing is slightly weakened in the upper right parts.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-4E973789D0324DEE",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 13,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "The liver protrudes 1–2 cm from the edge of the costal arch.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "examination",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-D968D8856FBF6A93",
+        "kind": "statement",
+        "label": "Physical examination",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 14,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "The spleen is not palpable.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "laboratory",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-4CCB4F22959B2104",
+        "kind": "statement",
+        "label": "Laboratory conclusion",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Laboratory studies: SAC: Hb — 108 g/l, RBC — 3.7 × 10¹²/, WBC — 9.8 × 10⁹/l, neutrophils — 6.9 × 10⁹/l, lymphocytes — 1.8 × 10⁹/l, platelets — 318 × 10⁹/l, ESR — 48 mm/h",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "laboratory",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-FD804B7BE9561324",
+        "kind": "statement",
+        "label": "Laboratory conclusion",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Biochemical analysis: creatinine — 82 μmol/l, ALT — 28 U/L, AST — 25 U/L, total bilirubin — 13 μmol/l, LDH — 612 U/L, uric acid — 410 μmol/l, β₂-microglobulin — elevated",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "laboratory",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-7F41997F64D4BB38",
+        "kind": "statement",
+        "label": "Laboratory conclusion",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 17,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "HIV is negative.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "laboratory",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-8FA9C8CBABCE5E47",
+        "kind": "statement",
+        "label": "Laboratory conclusion",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 18,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "HBsAg is negative.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "laboratory",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-3D639BF13C012560",
+        "kind": "statement",
+        "label": "Laboratory conclusion",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 19,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Anti-HCV is negative.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-479528A502E22272",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 20,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Chest CT: a bulky mass of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-CFB6EECFC1F96DB5",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 21,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "The formation of a heterogeneous structure, with areas of necrosis.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-7AE0A73487377D57",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 22,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Superior vena cava compression is present with a significant narrowing of its lumen.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-8D704124398A16AF",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 23,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "There is also compression of the trachea and right main bronchus.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-C8F6F3EC00443C7C",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 24,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Enlarged lymph nodes of the cervical and supraclavicular groups are visualized.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-ED116D01F8935C48",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 25,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "In the lungs, there are several small foci up to 5–6 mm in size, the nature of which requires clarification.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-CFC5872AB9BBE2DB",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 26,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "There is no pleural effusion.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-3B1C655E28658DE7",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 27,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "PET/CT: intense pathological FDG uptake in the mediastinal mass is revealed, SUVmax is 24.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-D3146612EBF1E4D0",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 28,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Pathological metabolic activity in cervical and supraclavicular lymph nodes is also determined.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "negative",
+        "canonical_analyte": null,
+        "category": "imaging",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-D96E653872F008BA",
+        "kind": "statement",
+        "label": "Visualization",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 29,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "No distant foci of intense FDG uptake were detected.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "pending",
+        "canonical_analyte": null,
+        "category": "pathology_procedure",
+        "comparator": null,
+        "component": null,
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-B293D636FA601DAB",
+        "kind": "statement",
+        "label": "Morphology or procedure",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 30,
+        "unit": null,
+        "unit_resolution": null,
+        "value": {
+          "text": "Biopsy of the tumor is pending.",
+          "type": "text"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "heart_rate",
+        "category": "examination",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-C1FF2260A42AD3A4",
+        "kind": "measurement",
+        "label": "Heart rate",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 9,
+        "unit": "/min",
+        "unit_resolution": {
+          "canonical_unit": "/min",
+          "confidence": "exact",
+          "display_unit": "/min",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 102,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "oxygen_saturation",
+        "category": "examination",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-BC26BD17EB1AD1A5",
+        "kind": "measurement",
+        "label": "SpO₂",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 11,
+        "unit": "%",
+        "unit_resolution": {
+          "canonical_unit": "%",
+          "confidence": "exact",
+          "display_unit": "%",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 94,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "hemoglobin",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-391978F27124EB28",
+        "kind": "measurement",
+        "label": "Hemoglobin",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "g/l",
+        "unit_resolution": {
+          "canonical_unit": "g/L",
+          "confidence": "exact",
+          "display_unit": "g/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 108,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "source_corrupted",
+        "canonical_analyte": "erythrocytes",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-7B99B43232C204A2",
+        "kind": "measurement",
+        "label": "Erythrocytes",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "× 10¹²/",
+        "unit_resolution": {
+          "canonical_unit": null,
+          "confidence": "unresolved",
+          "display_unit": "× 10¹²/",
+          "method": "none",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_corrupted"
+        },
+        "value": {
+          "number": 3.7,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "leukocytes",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-A7B1444F58154D46",
+        "kind": "measurement",
+        "label": "Leukocytes",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "× 10⁹/l",
+        "unit_resolution": {
+          "canonical_unit": "10*9/L",
+          "confidence": "exact",
+          "display_unit": "×10⁹/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 9.8,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "neutrophils",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "absolute",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-18E32E0A752CDC9E",
+        "kind": "measurement",
+        "label": "Neutrophils, absolute value",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "× 10⁹/l",
+        "unit_resolution": {
+          "canonical_unit": "10*9/L",
+          "confidence": "exact",
+          "display_unit": "×10⁹/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 6.9,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "lymphocytes",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "absolute",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-B189E90C0677D0E9",
+        "kind": "measurement",
+        "label": "Lymphocytes, absolute value",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "× 10⁹/l",
+        "unit_resolution": {
+          "canonical_unit": "10*9/L",
+          "confidence": "exact",
+          "display_unit": "×10⁹/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 1.8,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "platelets",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-1DC2BAC774B22F74",
+        "kind": "measurement",
+        "label": "Platelets",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "× 10⁹/l",
+        "unit_resolution": {
+          "canonical_unit": "10*9/L",
+          "confidence": "exact",
+          "display_unit": "×10⁹/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 318,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "esr",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-183A8EF33B71B4B0",
+        "kind": "measurement",
+        "label": "ESR",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 15,
+        "unit": "mm/hour",
+        "unit_resolution": {
+          "canonical_unit": "mm/h",
+          "confidence": "exact",
+          "display_unit": "mm/hour",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 48,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "creatinine",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-3F6257530E36037D",
+        "kind": "measurement",
+        "label": "Creatinine",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "μmol/l",
+        "unit_resolution": {
+          "canonical_unit": "umol/L",
+          "confidence": "exact",
+          "display_unit": "μmol/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 82,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "alt",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-6F4F46CAB5023818",
+        "kind": "measurement",
+        "label": "ALT",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "U/L",
+        "unit_resolution": {
+          "canonical_unit": "U/L",
+          "confidence": "exact",
+          "display_unit": "U/L",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 28,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "ast",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-1DA092A2DB4EC4D4",
+        "kind": "measurement",
+        "label": "AST",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "U/L",
+        "unit_resolution": {
+          "canonical_unit": "U/L",
+          "confidence": "exact",
+          "display_unit": "U/L",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 25,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "total_bilirubin",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-AC9A60F5051F90C0",
+        "kind": "measurement",
+        "label": "Total bilirubin",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "μmol/l",
+        "unit_resolution": {
+          "canonical_unit": "umol/L",
+          "confidence": "exact",
+          "display_unit": "μmol/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 13,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "ldh",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-F9F63ACAA62EC90B",
+        "kind": "measurement",
+        "label": "LDH",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "U/L",
+        "unit_resolution": {
+          "canonical_unit": "U/L",
+          "confidence": "exact",
+          "display_unit": "U/L",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 612,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "uric_acid",
+        "category": "laboratory",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-03582A2E098A40D1",
+        "kind": "measurement",
+        "label": "Uric acid",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 16,
+        "unit": "μmol/l",
+        "unit_resolution": {
+          "canonical_unit": "umol/L",
+          "confidence": "exact",
+          "display_unit": "μmol/l",
+          "method": "source_exact",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "source_recorded"
+        },
+        "value": {
+          "number": 410,
+          "type": "number"
+        }
+      },
+      {
+        "assertion_status": "recorded",
+        "canonical_analyte": "suvmax",
+        "category": "imaging",
+        "comparator": null,
+        "component": "single",
+        "date_status": "not_recorded",
+        "effective_at": null,
+        "id": "CF-EED715A1EEB57E82",
+        "kind": "measurement",
+        "label": "SUVmax",
+        "reference_range": null,
+        "source_record_ids": [
+          "SR-AEA016046978-P0002"
+        ],
+        "source_segment_index": 27,
+        "unit": null,
+        "unit_resolution": {
+          "canonical_unit": null,
+          "confidence": "unresolved",
+          "display_unit": null,
+          "method": "none",
+          "registry_id": "hematoboard.hematology-unit-registry/1.0",
+          "rule_id": null,
+          "status": "unresolved"
+        },
+        "value": {
+          "number": 24,
+          "type": "number"
+        }
+      }
+    ],
+    "justification_graph": {
+      "edges": [
+        {
+          "id": "GE-330AAF25B797B30D",
+          "label": "A young adult fits the typical age range of PMBCL, but age is not diagnostic.",
+          "role": "support",
+          "source": "CF-219C5BF25E64EC43",
+          "target": "H1"
+        },
+        {
+          "id": "GE-8AE0CE9373D2478E",
+          "label": "A large anterior/middle mediastinal mass is the central clinical feature of PMBCL.",
+          "role": "support",
+          "source": "CF-479528A502E22272",
+          "target": "H1"
+        },
+        {
+          "id": "GE-44DD10CDD9698081",
+          "label": "superior vena cava compression is consistent with the described presentation of rapidly growing PMBCL.",
+          "role": "support",
+          "source": "CF-7AE0A73487377D57",
+          "target": "H1"
+        },
+        {
+          "id": "GE-CE058CD41E3F1848",
+          "label": "Compression of the trachea and right main bronchus is consistent with a locally invasive mediastinal mass.",
+          "role": "support",
+          "source": "CF-8D704124398A16AF",
+          "target": "H1"
+        },
+        {
+          "id": "GE-48848D1A693643E7",
+          "label": "The biopsy is still in progress, so there is no tissue confirmation.",
+          "role": "neutral",
+          "source": "CF-B293D636FA601DAB",
+          "target": "H1"
+        },
+        {
+          "id": "GE-01817754A07ED9A3",
+          "label": "Fixed LDH 612 U/L; date and reference interval are missing, so the value is not interpreted.",
+          "role": "neutral",
+          "source": "CS-0B26A7A8015FCCF6",
+          "target": "H1"
+        },
+        {
+          "id": "GE-C83C7EF7397C566A",
+          "label": "Weight loss is consistent with the systemic manifestations of lymphoma, but is not specific.",
+          "role": "support",
+          "source": "CF-58152920D4D76CBE",
+          "target": "H2"
+        },
+        {
+          "id": "GE-96F6BFACF5DE93EF",
+          "label": "Night sweats are compatible with systemic manifestations of classical Hodgkin's lymphoma.",
+          "role": "support",
+          "source": "CF-48019AC84FF27431",
+          "target": "H2"
+        },
+        {
+          "id": "GE-A33EA0EE54B0EB95",
+          "label": "A mediastinal mass with the largest size of 15 cm corresponds to a massive lesion, but does not determine the histology.",
+          "role": "support",
+          "source": "CF-479528A502E22272",
+          "target": "H2"
+        },
+        {
+          "id": "GE-35CC9C0232E2CA1A",
+          "label": "The morphological result is not yet available.",
+          "role": "neutral",
+          "source": "CF-B293D636FA601DAB",
+          "target": "H2"
+        },
+        {
+          "id": "GE-0B6E50830803B847",
+          "label": "Male sex in combination with young age and mediastinal mass supports the inclusion of T-lymphoblastic lymphoma in the differential, but does not prove it.",
+          "role": "support",
+          "source": "CF-64537E0D10CC9FFC",
+          "target": "H3"
+        },
+        {
+          "id": "GE-04B8687BBF39052E",
+          "label": "A large mediastinal mass is the typical clinical setting of lymphoblastic lymphoma.",
+          "role": "support",
+          "source": "CF-479528A502E22272",
+          "target": "H3"
+        },
+        {
+          "id": "GE-E3B128369732AC3F",
+          "label": "Leukocytes were recorded at 9.8 × 10⁹/l; date and reference interval are missing, so the value is not interpreted.",
+          "role": "neutral",
+          "source": "CS-4B468134C4EDCD9C",
+          "target": "H3"
+        },
+        {
+          "id": "GE-164F07860E28D412",
+          "label": "Platelets 318 ×10⁹/l were recorded; date and reference interval are missing, so the value is not interpreted.",
+          "role": "neutral",
+          "source": "CS-018DB9A68691BDC3",
+          "target": "H3"
+        },
+        {
+          "id": "GE-39A3AEB0083976E5",
+          "label": "Necrosis may occur in the mediastinal gray zone lymphoma, but this sign is nonspecific.",
+          "role": "support",
+          "source": "CF-CFB6EECFC1F96DB5",
+          "target": "H4"
+        },
+        {
+          "id": "GE-DC8173612135E3B0",
+          "label": "A large anterior mediastinal mass in a young adult is consistent with the clinical context of the mediastinal gray zone lymphoma.",
+          "role": "support",
+          "source": "CF-479528A502E22272",
+          "target": "H4"
+        },
+        {
+          "id": "GE-B515F6A4F79C3082",
+          "label": "Without a complete biopsy, there is no reason to establish a transitional morphological phenotype.",
+          "role": "neutral",
+          "source": "CF-B293D636FA601DAB",
+          "target": "H4"
+        },
+        {
+          "id": "GE-620776EAB03DEEB8",
+          "label": "The male sex supports the need to retain a mediastinal germ cell tumor as a critical alternative, but does not prove it.",
+          "role": "support",
+          "source": "CF-64537E0D10CC9FFC",
+          "target": "H5"
+        },
+        {
+          "id": "GE-68D83A5FE3CB11A5",
+          "label": "The age of 36 years supports the need to keep a germ cell tumor in the differential, but is not diagnostic.",
+          "role": "support",
+          "source": "CF-219C5BF25E64EC43",
+          "target": "H5"
+        },
+        {
+          "id": "GE-0ECA798701B72149",
+          "label": "A large anterior mediastinal mass is the basis for tissue exclusion of a germ cell tumor, but does not determine its nature.",
+          "role": "support",
+          "source": "CF-479528A502E22272",
+          "target": "H5"
+        },
+        {
+          "id": "GE-DC7B7642DD64B7EC",
+          "label": "Classification of large cell B-cell lymphoma requires sufficient immunophenotyping; PMBCL and mediastinal gray zone lymphoma have separate diagnostic routes.",
+          "role": "grounds",
+          "source": "E-CAND-1",
+          "target": "W1"
+        },
+        {
+          "id": "GE-ED53DAF9877E772D",
+          "label": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "role": "grounds",
+          "source": "E-CAND-2",
+          "target": "W1"
+        },
+        {
+          "id": "GE-9D119EFBC830CB03",
+          "label": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "role": "grounds",
+          "source": "E-CAND-3",
+          "target": "W1"
+        },
+        {
+          "id": "GE-D2FDCB1AEA3D3FBD",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "role": "grounds",
+          "source": "E-CAND-4",
+          "target": "W1"
+        },
+        {
+          "id": "GE-33099835BCAC6AE6",
+          "label": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "role": "grounds",
+          "source": "E-CAND-5",
+          "target": "W1"
+        },
+        {
+          "id": "GE-624A9BF321F17AFA",
+          "label": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "role": "discriminates",
+          "source": "W1",
+          "target": "H1"
+        },
+        {
+          "id": "GE-9033409E68046500",
+          "label": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "role": "discriminates",
+          "source": "W1",
+          "target": "H2"
+        },
+        {
+          "id": "GE-DEC98A1C386F4014",
+          "label": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "role": "discriminates",
+          "source": "W1",
+          "target": "H3"
+        },
+        {
+          "id": "GE-E1355845B615FE6F",
+          "label": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "role": "discriminates",
+          "source": "W1",
+          "target": "H4"
+        },
+        {
+          "id": "GE-02A15751937E5897",
+          "label": "Sufficient tissue should differentiate between mature B-cell lymphoma, classical Hodgkin lymphoma, mediastinal gray zone, lymphoblastic neoplasm, and germ cell tumor; the clinical and radiological phenotype is insufficient for this. The available references support the general need for adequate tissue diagnosis of lymphomas and are not specific support for H5.",
+          "role": "discriminates",
+          "source": "W1",
+          "target": "H5"
+        },
+        {
+          "id": "GE-A3E4602487668555",
+          "label": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "role": "grounds",
+          "source": "E-CAND-2",
+          "target": "W2"
+        },
+        {
+          "id": "GE-8D9F8AB7073FF52D",
+          "label": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "role": "grounds",
+          "source": "E-CAND-3",
+          "target": "W2"
+        },
+        {
+          "id": "GE-193A1B07274BC1F4",
+          "label": "Mediastinal adenopathy is a hallmark of lymphoblastic lymphoma and PMBCL in young adults; histological type is determined by tissue biopsy, with excisional biopsy more likely to provide a definitive diagnosis than core needle biopsy.",
+          "role": "grounds",
+          "source": "E-CAND-6",
+          "target": "W2"
+        },
+        {
+          "id": "GE-BE53AD4792FC44F2",
+          "label": "A large necrotic mass increases the risk of an nonrepresentative sample; for the mediastinal gray zone, the source separately emphasizes expert review and the inadmissibility of establishing a diagnosis based on a core needle biopsy alone.",
+          "role": "discriminates",
+          "source": "W2",
+          "target": "H1"
+        },
+        {
+          "id": "GE-86C20183C3ED60F0",
+          "label": "A large necrotic mass increases the risk of an nonrepresentative sample; for the mediastinal gray zone, the source separately emphasizes expert review and the inadmissibility of establishing a diagnosis based on a core needle biopsy alone.",
+          "role": "discriminates",
+          "source": "W2",
+          "target": "H2"
+        },
+        {
+          "id": "GE-E5830E800A47D985",
+          "label": "A large necrotic mass increases the risk of an nonrepresentative sample; for the mediastinal gray zone, the source separately emphasizes expert review and the inadmissibility of establishing a diagnosis based on a core needle biopsy alone.",
+          "role": "discriminates",
+          "source": "W2",
+          "target": "H3"
+        },
+        {
+          "id": "GE-705753B852D1B5B9",
+          "label": "A large necrotic mass increases the risk of an nonrepresentative sample; for the mediastinal gray zone, the source separately emphasizes expert review and the inadmissibility of establishing a diagnosis based on a core needle biopsy alone.",
+          "role": "discriminates",
+          "source": "W2",
+          "target": "H4"
+        },
+        {
+          "id": "GE-15277086EAA64D8A",
+          "label": "PMBCL in young adults may present as a locally invasive anterior mediastinal mass with respiratory symptoms or superior vena cava syndrome and overlaps with nodular sclerosing classical Hodgkin lymphoma.",
+          "role": "grounds",
+          "source": "E-CAND-7",
+          "target": "W3"
+        },
+        {
+          "id": "GE-BE24DF0F864DE92F",
+          "label": "CT already records significant narrowing superior vena cava and compression of the trachea/right main bronchus; source describes respiratory symptoms and superior vena cava syndrome as manifestations of rapidly growing PMBCL. Urgency is determined clinically, not by histological grade.",
+          "role": "discriminates",
+          "source": "W3",
+          "target": "H1"
+        },
+        {
+          "id": "GE-3E6CBA66C8FF9874",
+          "label": "CT already records significant narrowing superior vena cava and compression of the trachea/right main bronchus; source describes respiratory symptoms and superior vena cava syndrome as manifestations of rapidly growing PMBCL. Urgency is determined clinically, not by histological grade.",
+          "role": "discriminates",
+          "source": "W3",
+          "target": "H2"
+        },
+        {
+          "id": "GE-C2F036CB69AA9E56",
+          "label": "CT already records significant narrowing superior vena cava and compression of the trachea/right main bronchus; source describes respiratory symptoms and superior vena cava syndrome as manifestations of rapidly growing PMBCL. Urgency is determined clinically, not by histological grade.",
+          "role": "discriminates",
+          "source": "W3",
+          "target": "H3"
+        },
+        {
+          "id": "GE-C631986BF4045CBD",
+          "label": "CT already records significant narrowing superior vena cava and compression of the trachea/right main bronchus; source describes respiratory symptoms and superior vena cava syndrome as manifestations of rapidly growing PMBCL. Urgency is determined clinically, not by histological grade.",
+          "role": "discriminates",
+          "source": "W3",
+          "target": "H4"
+        },
+        {
+          "id": "GE-F789A9B10D7D2601",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "role": "grounds",
+          "source": "E-CAND-4",
+          "target": "W4"
+        },
+        {
+          "id": "GE-1F255857346451B6",
+          "label": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "role": "grounds",
+          "source": "E-CAND-5",
+          "target": "W4"
+        },
+        {
+          "id": "GE-634508188813BB88",
+          "label": "immunophenotyping and bone marrow evaluation are required to determine T-cell lineage and differentiation between lymphoma and leukemic form.",
+          "role": "discriminates",
+          "source": "W4",
+          "target": "H3"
+        },
+        {
+          "id": "GE-8FA0FF7CA108895F",
+          "label": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "role": "grounds",
+          "source": "E-CAND-2",
+          "target": "W5"
+        },
+        {
+          "id": "GE-FFE1FD81E28EF98D",
+          "label": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "role": "grounds",
+          "source": "E-CAND-3",
+          "target": "W5"
+        },
+        {
+          "id": "GE-29D5DD22134161E5",
+          "label": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "role": "grounds",
+          "source": "E-CAND-5",
+          "target": "W5"
+        },
+        {
+          "id": "GE-3F7EA87C3EBD3E93",
+          "label": "Insufficient material should not complete the classification; resampling from a viable site or accessible node should provide the architecture and material for additional techniques.",
+          "role": "discriminates",
+          "source": "W5",
+          "target": "H1"
+        },
+        {
+          "id": "GE-0857E8C465DB5CD1",
+          "label": "Insufficient material should not complete the classification; resampling from a viable site or accessible node should provide the architecture and material for additional techniques.",
+          "role": "discriminates",
+          "source": "W5",
+          "target": "H2"
+        },
+        {
+          "id": "GE-BA0619D790107281",
+          "label": "Insufficient material should not complete the classification; resampling from a viable site or accessible node should provide the architecture and material for additional techniques.",
+          "role": "discriminates",
+          "source": "W5",
+          "target": "H3"
+        },
+        {
+          "id": "GE-FD0FF689ECFD4480",
+          "label": "Insufficient material should not complete the classification; resampling from a viable site or accessible node should provide the architecture and material for additional techniques.",
+          "role": "discriminates",
+          "source": "W5",
+          "target": "H4"
+        },
+        {
+          "id": "GE-2ADBA7EF0FA196ED",
+          "label": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "role": "grounds",
+          "source": "E-CAND-2",
+          "target": "G1"
+        },
+        {
+          "id": "GE-48951EDB54492EEE",
+          "label": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "role": "grounds",
+          "source": "E-CAND-3",
+          "target": "G1"
+        },
+        {
+          "id": "GE-E76737942433E542",
+          "label": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "role": "grounds",
+          "source": "E-CAND-5",
+          "target": "G1"
+        },
+        {
+          "id": "GE-02C9B3F72D280E67",
+          "label": "Necrosis and the lack of a ready conclusion leave the risk of nonrepresentative tissue and misclassification.",
+          "role": "limits",
+          "source": "G1",
+          "target": "H1"
+        },
+        {
+          "id": "GE-2511AC6CEB098C06",
+          "label": "Necrosis and the lack of a ready conclusion leave the risk of nonrepresentative tissue and misclassification.",
+          "role": "limits",
+          "source": "G1",
+          "target": "H2"
+        },
+        {
+          "id": "GE-F862398ACCCA3AB6",
+          "label": "Necrosis and the lack of a ready conclusion leave the risk of nonrepresentative tissue and misclassification.",
+          "role": "limits",
+          "source": "G1",
+          "target": "H3"
+        },
+        {
+          "id": "GE-E9606223BC6AE874",
+          "label": "Necrosis and the lack of a ready conclusion leave the risk of nonrepresentative tissue and misclassification.",
+          "role": "limits",
+          "source": "G1",
+          "target": "H4"
+        },
+        {
+          "id": "GE-F5A104E156C1DF3D",
+          "label": "Classification of large cell B-cell lymphoma requires sufficient immunophenotyping; PMBCL and mediastinal gray zone lymphoma have separate diagnostic routes.",
+          "role": "grounds",
+          "source": "E-CAND-1",
+          "target": "G2"
+        },
+        {
+          "id": "GE-531989D6F54A7B06",
+          "label": "The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+          "role": "grounds",
+          "source": "E-CAND-2",
+          "target": "G2"
+        },
+        {
+          "id": "GE-7C11E86EF0EF8B40",
+          "label": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+          "role": "grounds",
+          "source": "E-CAND-3",
+          "target": "G2"
+        },
+        {
+          "id": "GE-89F73E3FB8DEC093",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "role": "grounds",
+          "source": "E-CAND-4",
+          "target": "G2"
+        },
+        {
+          "id": "GE-DB6CE9BA7928E0A1",
+          "label": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+          "role": "grounds",
+          "source": "E-CAND-5",
+          "target": "G2"
+        },
+        {
+          "id": "GE-715B5AC787D977AB",
+          "label": "It is the tissue phenotype, not FDG intensity or mass size, that determines the classification route.",
+          "role": "limits",
+          "source": "G2",
+          "target": "H1"
+        },
+        {
+          "id": "GE-BA0D974EDDBC9DA7",
+          "label": "It is the tissue phenotype, not FDG intensity or mass size, that determines the classification route.",
+          "role": "limits",
+          "source": "G2",
+          "target": "H2"
+        },
+        {
+          "id": "GE-C899126E20BC7D84",
+          "label": "It is the tissue phenotype, not FDG intensity or mass size, that determines the classification route.",
+          "role": "limits",
+          "source": "G2",
+          "target": "H3"
+        },
+        {
+          "id": "GE-ECB042E96A5BECE7",
+          "label": "It is the tissue phenotype, not FDG intensity or mass size, that determines the classification route.",
+          "role": "limits",
+          "source": "G2",
+          "target": "H4"
+        },
+        {
+          "id": "GE-93443E79DFA24F3B",
+          "label": "PMBCL in young adults may present as a locally invasive anterior mediastinal mass with respiratory symptoms or superior vena cava syndrome and overlaps with nodular sclerosing classical Hodgkin lymphoma.",
+          "role": "grounds",
+          "source": "E-CAND-7",
+          "target": "G3"
+        },
+        {
+          "id": "GE-6B45301D2351FAFE",
+          "label": "Anatomical compression has already been documented, but actual clinical severity and need for immediate action have not been documented.",
+          "role": "limits",
+          "source": "G3",
+          "target": "H1"
+        },
+        {
+          "id": "GE-D8EAA8F4F6F5A089",
+          "label": "Anatomical compression has already been documented, but actual clinical severity and need for immediate action have not been documented.",
+          "role": "limits",
+          "source": "G3",
+          "target": "H2"
+        },
+        {
+          "id": "GE-46C5BB9246E21412",
+          "label": "Anatomical compression has already been documented, but actual clinical severity and need for immediate action have not been documented.",
+          "role": "limits",
+          "source": "G3",
+          "target": "H3"
+        },
+        {
+          "id": "GE-EA5AE0FFD0D83245",
+          "label": "Anatomical compression has already been documented, but actual clinical severity and need for immediate action have not been documented.",
+          "role": "limits",
+          "source": "G3",
+          "target": "H4"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "CF-219C5BF25E64EC43",
+          "kind": "fact",
+          "label": "Age"
+        },
+        {
+          "id": "CF-479528A502E22272",
+          "kind": "fact",
+          "label": "Chest CT: a bulky mass of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum."
+        },
+        {
+          "id": "CF-48019AC84FF27431",
+          "kind": "fact",
+          "label": "Periodically notes night sweats."
+        },
+        {
+          "id": "CF-58152920D4D76CBE",
+          "kind": "fact",
+          "label": "Over the last 6 weeks, he lost approximately 6 kg."
+        },
+        {
+          "id": "CF-64537E0D10CC9FFC",
+          "kind": "fact",
+          "label": "Sex"
+        },
+        {
+          "id": "CF-7AE0A73487377D57",
+          "kind": "fact",
+          "label": "Superior vena cava compression is present with a significant narrowing of its lumen."
+        },
+        {
+          "id": "CF-8D704124398A16AF",
+          "kind": "fact",
+          "label": "There is also compression of the trachea and right main bronchus."
+        },
+        {
+          "id": "CF-B293D636FA601DAB",
+          "kind": "fact",
+          "label": "Biopsy of the tumor is pending."
+        },
+        {
+          "id": "CF-CFB6EECFC1F96DB5",
+          "kind": "fact",
+          "label": "The formation of a heterogeneous structure, with areas of necrosis."
+        },
+        {
+          "id": "CS-018DB9A68691BDC3",
+          "kind": "signal",
+          "label": "Platelets"
+        },
+        {
+          "id": "CS-0B26A7A8015FCCF6",
+          "kind": "signal",
+          "label": "LDH"
+        },
+        {
+          "id": "CS-4B468134C4EDCD9C",
+          "kind": "signal",
+          "label": "Leukocytes"
+        },
+        {
+          "id": "H1",
+          "kind": "hypothesis",
+          "label": "PMBCL"
+        },
+        {
+          "id": "H2",
+          "kind": "hypothesis",
+          "label": "Classical Hodgkin lymphoma"
+        },
+        {
+          "id": "H3",
+          "kind": "hypothesis",
+          "label": "T-lymphoblastic lymphoma"
+        },
+        {
+          "id": "H4",
+          "kind": "hypothesis",
+          "label": "Mediastinal gray zone"
+        },
+        {
+          "id": "H5",
+          "kind": "hypothesis",
+          "label": "Germ cell tumor"
+        },
+        {
+          "id": "W1",
+          "kind": "workup",
+          "label": "Complete tissue verification with morphology and extensive primary IHC panel"
+        },
+        {
+          "id": "W2",
+          "kind": "workup",
+          "label": "Check the adequacy and viability of the biopsy and organize an expert hematopathological review"
+        },
+        {
+          "id": "W3",
+          "kind": "workup",
+          "label": "Assess current clinical threat of superior vena cava compression and central airways"
+        },
+        {
+          "id": "W4",
+          "kind": "workup",
+          "label": "For lymphoblastic morphology, perform flow cytometry and evaluate bone marrow"
+        },
+        {
+          "id": "W5",
+          "kind": "workup",
+          "label": "Repeat or change biopsy method if current material is nondiagnostic"
+        },
+        {
+          "id": "G1",
+          "kind": "gap",
+          "label": "Is the current biopsy viable and adequate for architectural evaluation, IHC and, if necessary, flow cytometry?"
+        },
+        {
+          "id": "G2",
+          "kind": "gap",
+          "label": "What integrated morphologic and IHC profile distinguishes PMBCL, classical Hodgkin lymphoma, mediastinal gray zone, and T-lymphoblastic lymphoma?"
+        },
+        {
+          "id": "G3",
+          "kind": "gap",
+          "label": "Are there any signs of decompensation due to superior vena cava or airway compression now?"
+        },
+        {
+          "id": "E-CAND-1",
+          "kind": "evidence",
+          "label": "NCCN Guidelines Version 4.2026: Diffuse Large B-Cell Lymphoma"
+        },
+        {
+          "id": "E-CAND-2",
+          "kind": "evidence",
+          "label": "NCCN Guidelines Version 4.2026: Diffuse Large B-Cell Lymphoma"
+        },
+        {
+          "id": "E-CAND-3",
+          "kind": "evidence",
+          "label": "NCCN Guidelines Version 2.2026: Hodgkin Lymphoma (Age ≥18 years)"
+        },
+        {
+          "id": "E-CAND-4",
+          "kind": "evidence",
+          "label": "Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version"
+        },
+        {
+          "id": "E-CAND-5",
+          "kind": "evidence",
+          "label": "Adult Acute Lymphoblastic Leukemia Treatment (PDQ®)–Health Professional Version"
+        },
+        {
+          "id": "E-CAND-6",
+          "kind": "evidence",
+          "label": "Aggressive B-Cell Non-Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version"
+        },
+        {
+          "id": "E-CAND-7",
+          "kind": "evidence",
+          "label": "Aggressive B-Cell Non-Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version"
+        }
+      ]
+    },
+    "provenance": {
+      "candidate_sha256": "c6af184aef34e29aa09f835ab1424c1555d837632f009233f6a8b7d4d6b2e2bd",
+      "counts": {
+        "context_facts": 31,
+        "deferred_source_records": 1,
+        "facts": 47,
+        "measurement_facts": 16,
+        "signals": 16,
+        "source_records": 2
+      },
+      "critic_sha256": "fab5ac5ff706af68b834d6bf67aa1c345924a0ed8b773f672421bbdf9d676982",
+      "graph_counts": {
+        "edges": 73,
+        "nodes": 32
+      },
+      "source_document_sha256": "aea016046978db5c8d1f3170bde2ec8f0fe06898e04f7fde2da135ccae1a4cd6"
+    },
+    "reasoning_run_id": "SYN-20260820T173716061403Z-CASE012-ROLE-DC170886",
+    "review_status": {
+      "candidate_only": true,
+      "clinician_accepted": false,
+      "critic_pass": true,
+      "projection_verified": true
+    },
+    "schema_version": "hematoboard.v2.candidate-dashboard-projection/1.0",
+    "signals": [
+      {
+        "canonical_analyte": "alt",
+        "component": "single",
+        "fact_ids": [
+          "CF-6F4F46CAB5023818"
+        ],
+        "id": "CS-5A26CA4AA826FE43",
+        "kind": "measurement_series",
+        "label": "ALT",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-6F4F46CAB5023818",
+            "source_unit": "U/L",
+            "unit": "U/L",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 28
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "U/L",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "ast",
+        "component": "single",
+        "fact_ids": [
+          "CF-1DA092A2DB4EC4D4"
+        ],
+        "id": "CS-9E3DC691783BFA8D",
+        "kind": "measurement_series",
+        "label": "AST",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-1DA092A2DB4EC4D4",
+            "source_unit": "U/L",
+            "unit": "U/L",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 25
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "U/L",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "creatinine",
+        "component": "single",
+        "fact_ids": [
+          "CF-3F6257530E36037D"
+        ],
+        "id": "CS-32AC1F95D01605A3",
+        "kind": "measurement_series",
+        "label": "Creatinine",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-3F6257530E36037D",
+            "source_unit": "μmol/l",
+            "unit": "μmol/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 82
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "μmol/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "erythrocytes",
+        "component": "single",
+        "fact_ids": [
+          "CF-7B99B43232C204A2"
+        ],
+        "id": "CS-351CC8BFF269C7E9",
+        "kind": "measurement_series",
+        "label": "Erythrocytes",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-7B99B43232C204A2",
+            "source_unit": "× 10¹²/",
+            "unit": "× 10¹²/",
+            "unit_resolution_status": "source_corrupted",
+            "value_number": 3.7
+          }
+        ],
+        "review_flags": [
+          "undated_reading",
+          "unit_source_corrupted"
+        ],
+        "unit": "× 10¹²/",
+        "unit_resolution_statuses": [
+          "source_corrupted"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "esr",
+        "component": "single",
+        "fact_ids": [
+          "CF-183A8EF33B71B4B0"
+        ],
+        "id": "CS-081AE6B0D50F6BBC",
+        "kind": "measurement_series",
+        "label": "ESR",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-183A8EF33B71B4B0",
+            "source_unit": "mm/hour",
+            "unit": "mm/hour",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 48
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "mm/hour",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "heart_rate",
+        "component": "single",
+        "fact_ids": [
+          "CF-C1FF2260A42AD3A4"
+        ],
+        "id": "CS-85863771EAB1206B",
+        "kind": "measurement_series",
+        "label": "Heart rate",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-C1FF2260A42AD3A4",
+            "source_unit": "/min",
+            "unit": "/min",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 102
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "/min",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "hemoglobin",
+        "component": "single",
+        "fact_ids": [
+          "CF-391978F27124EB28"
+        ],
+        "id": "CS-F179C0139CB839C1",
+        "kind": "measurement_series",
+        "label": "Hemoglobin",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-391978F27124EB28",
+            "source_unit": "g/l",
+            "unit": "g/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 108
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "g/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "ldh",
+        "component": "single",
+        "fact_ids": [
+          "CF-F9F63ACAA62EC90B"
+        ],
+        "id": "CS-0B26A7A8015FCCF6",
+        "kind": "measurement_series",
+        "label": "LDH",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-F9F63ACAA62EC90B",
+            "source_unit": "U/L",
+            "unit": "U/L",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 612
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "U/L",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "leukocytes",
+        "component": "single",
+        "fact_ids": [
+          "CF-A7B1444F58154D46"
+        ],
+        "id": "CS-4B468134C4EDCD9C",
+        "kind": "measurement_series",
+        "label": "Leukocytes",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-A7B1444F58154D46",
+            "source_unit": "× 10⁹/l",
+            "unit": "×10⁹/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 9.8
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "×10⁹/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "lymphocytes",
+        "component": "absolute",
+        "fact_ids": [
+          "CF-B189E90C0677D0E9"
+        ],
+        "id": "CS-981FDDCB2B6D5896",
+        "kind": "measurement_series",
+        "label": "Lymphocytes, absolute value",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-B189E90C0677D0E9",
+            "source_unit": "× 10⁹/l",
+            "unit": "×10⁹/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 1.8
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "×10⁹/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "neutrophils",
+        "component": "absolute",
+        "fact_ids": [
+          "CF-18E32E0A752CDC9E"
+        ],
+        "id": "CS-F7115A0889D26CB9",
+        "kind": "measurement_series",
+        "label": "Neutrophils, absolute value",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-18E32E0A752CDC9E",
+            "source_unit": "× 10⁹/l",
+            "unit": "×10⁹/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 6.9
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "×10⁹/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "oxygen_saturation",
+        "component": "single",
+        "fact_ids": [
+          "CF-BC26BD17EB1AD1A5"
+        ],
+        "id": "CS-500466E06CB91B2C",
+        "kind": "measurement_series",
+        "label": "SpO₂",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-BC26BD17EB1AD1A5",
+            "source_unit": "%",
+            "unit": "%",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 94
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "%",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "platelets",
+        "component": "single",
+        "fact_ids": [
+          "CF-1DC2BAC774B22F74"
+        ],
+        "id": "CS-018DB9A68691BDC3",
+        "kind": "measurement_series",
+        "label": "Platelets",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-1DC2BAC774B22F74",
+            "source_unit": "× 10⁹/l",
+            "unit": "×10⁹/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 318
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "×10⁹/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "suvmax",
+        "component": "single",
+        "fact_ids": [
+          "CF-EED715A1EEB57E82"
+        ],
+        "id": "CS-6389D70055CBDC88",
+        "kind": "measurement_series",
+        "label": "SUVmax",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-EED715A1EEB57E82",
+            "source_unit": null,
+            "unit": null,
+            "unit_resolution_status": "unresolved",
+            "value_number": 24
+          }
+        ],
+        "review_flags": [
+          "undated_reading",
+          "unit_not_recorded"
+        ],
+        "unit": null,
+        "unit_resolution_statuses": [
+          "unresolved"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "total_bilirubin",
+        "component": "single",
+        "fact_ids": [
+          "CF-AC9A60F5051F90C0"
+        ],
+        "id": "CS-C0E7D5E92D64AE3F",
+        "kind": "measurement_series",
+        "label": "Total bilirubin",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-AC9A60F5051F90C0",
+            "source_unit": "μmol/l",
+            "unit": "μmol/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 13
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "μmol/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      },
+      {
+        "canonical_analyte": "uric_acid",
+        "component": "single",
+        "fact_ids": [
+          "CF-03582A2E098A40D1"
+        ],
+        "id": "CS-75BD76F5E6E5E279",
+        "kind": "measurement_series",
+        "label": "Uric acid",
+        "readings": [
+          {
+            "effective_at": null,
+            "fact_id": "CF-03582A2E098A40D1",
+            "source_unit": "μmol/l",
+            "unit": "μmol/l",
+            "unit_resolution_status": "source_recorded",
+            "value_number": 410
+          }
+        ],
+        "review_flags": [
+          "undated_reading"
+        ],
+        "unit": "μmol/l",
+        "unit_resolution_statuses": [
+          "source_recorded"
+        ],
+        "visibility": "data_only"
+      }
+    ],
+    "source_records": [
+      {
+        "derived_pdf_page": null,
+        "effective_at": null,
+        "id": "SR-AEA016046978-P0001",
+        "kind": "paragraph",
+        "literal": "Case number 2",
+        "locator": {
+          "paragraph_index": 1,
+          "part": "word/document.xml"
+        },
+        "source_order": 1
+      },
+      {
+        "derived_pdf_page": null,
+        "effective_at": null,
+        "id": "SR-AEA016046978-P0002",
+        "kind": "paragraph",
+        "literal": "Male, 36 years old. He complained of progressive exertional dyspnea, dry cough, intermittent discomfort and a feeling of pressure behind the sternum. During the last 2 months, he notes a decline in functional capacity and intolerance to physical exertion. Over the last 6 weeks, he lost approximately 6 kg. He periodically notes night sweats. The patient is moderately ill. The skin is pale, without hemorrhagic rashes. Peripheral lymph nodes: cervical, supraclavicular, axillary - slightly enlarged or not palpable. Heart rate — 102/min. Blood pressure — 125/75 mm Hg. Art. SpO₂ — 94% in room air. On auscultation of the lungs, breathing is slightly weakened in the upper right parts. The liver protrudes 1–2 cm from the edge of the costal arch. The spleen is not palpable. Laboratory tests: CBC: Hb — 108 g/l, RBC — 3.7 × 10¹²/, WBC — 9.8 × 10⁹/l, neutrophils — 6.9 × 10⁹/l, lymphocytes — 1.8 × 10⁹/l, platelets — 318 × 10⁹/l, ESR — 48 mm/h Biochemical analysis: creatinine — 82 μmol/L, ALT — 28 U/L, AST — 25 U/L, total bilirubin — 13 μmol/L, LDH — 612 U/L, uric acid — 410 μmol/l, β₂-microglobulin — elevated. HIV — negative. HBsAg is negative. Anti-HCV is negative. CT chest organs: in the anterior upper and middle mediastinum, a voluminous conglomerate formation of approximately 12.5 × 9.0 × 15.0 cm is determined. Formation of a heterogeneous structure, with areas of necrosis. Superior vena cava compression is present with a significant narrowing of its lumen. There is also compression of the trachea and right main bronchus. Enlarged lymph nodes of the cervical and supraclavicular groups are visualized. In the lungs, there are several small foci up to 5–6 mm in size, the nature of which requires clarification. There is no pleural effusion. PET/CT: intense pathological FDG uptake in the mediastinal formation is revealed, SUVmax is 24. Pathological metabolic activity in cervical and supraclavicular lymph nodes is also determined. No distant foci of intense FDG accumulation were detected. Biopsy of the tumor is in progress.",
+        "locator": {
+          "paragraph_index": 2,
+          "part": "word/document.xml"
+        },
+        "source_order": 2
+      }
+    ]
+  },
+  "publication": {
+    "archived_source_case_id": "CASE012",
+    "candidate_sha256": "c6af184aef34e29aa09f835ab1424c1555d837632f009233f6a8b7d4d6b2e2bd",
+    "display_case_id": "CASE002",
+    "docx_case_number": 2,
+    "generation": "v2",
+    "source_case_id": "CASE002"
+  },
+  "reasoning_log": {
+    "audit": {
+      "clinician_accepted": false,
+      "critic_attempts": 1,
+      "language_clean": true,
+      "language_revision_seconds": 0.0,
+      "model_calls": 2,
+      "narrative_seconds": 208.3,
+      "projection_verified": true,
+      "synthesis_seconds": 4582.294,
+      "total_seconds": 4790.594,
+      "unresolved_critical": 0,
+      "unresolved_high": 0
+    },
+    "disclaimer": "It is a coherent clinical reconstruction based on recorded data, source review decisions, and independent critique. It explains the differential diagnosis, the clinical roles of concomitant conditions, and the basis for the leading diagnostic hypothesis. The clinician determines the final diagnosis and treatment decision.",
+    "narrative": [
+      {
+        "emphasis_terms": [
+          "36-year-old man",
+          "morphological and immunohistochemical characteristics of the tissue"
+        ],
+        "evidence_ids": [],
+        "id": "p01",
+        "kind": "context",
+        "source_fact_ids": [
+          "CF-219C5BF25E64EC43",
+          "CF-64537E0D10CC9FFC",
+          "CF-58152920D4D76CBE",
+          "CF-48019AC84FF27431"
+        ],
+        "text": "The clinical investigation concerns a 36-year-old man with systemic manifestations of a malignancy: during six weeks, body weight decreased by approximately 6 kg, intermittent night sweats occurred. Young age, male sex, and this symptom trajectory warrant a broad hematologic oncology differential diagnosis. These findings are supportive rather than diagnostic, since the final nature of the process is established by the morphological and immunohistochemical characteristics of the tissue."
+      },
+      {
+        "emphasis_terms": [
+          "mass involving the anterior, superior, and middle mediastinum",
+          "compressive risk"
+        ],
+        "evidence_ids": [],
+        "id": "p02",
+        "kind": "context",
+        "source_fact_ids": [
+          "CF-479528A502E22272",
+          "CF-CFB6EECFC1F96DB5",
+          "CF-7AE0A73487377D57",
+          "CF-8D704124398A16AF"
+        ],
+        "text": "The defining finding is a large heterogeneous mass involving the anterior, superior, and middle mediastinum up to 15 cm in size with areas of necrosis. It significantly narrows the superior vena cava, compresses the trachea and the right main bronchus. This configuration explains the respiratory manifestations and creates a potential compressive risk. The anatomic pattern directs the diagnostic workup primarily to primary tumors of the anterior mediastinum and mediastinal lymphomas."
+      },
+      {
+        "emphasis_terms": [
+          "primary mediastinal large B-cell lymphoma",
+          "classical Hodgkin lymphoma",
+          "T-lymphoblastic lymphoma",
+          "mediastinal gray zone",
+          "mediastinal germ cell tumor"
+        ],
+        "evidence_ids": [],
+        "id": "p03",
+        "kind": "differential",
+        "source_fact_ids": [
+          "CF-219C5BF25E64EC43",
+          "CF-64537E0D10CC9FFC",
+          "CF-479528A502E22272",
+          "CF-CFB6EECFC1F96DB5"
+        ],
+        "text": "The ranked differential diagnosis comprises five diagnoses, each of which can independently explain an anterior mediastinal mass. The leading hypothesis is primary mediastinal large B-cell lymphoma. Next are classical Hodgkin lymphoma, a possible nodular sclerosis subtype; T-lymphoblastic lymphoma; mediastinal gray zone between primary mediastinal large B-cell lymphoma and classical Hodgkin lymphoma; mediastinal germ cell tumor. The ranks reflect the current agreement with the clinicoradiologic picture."
+      },
+      {
+        "emphasis_terms": [
+          "Primary mediastinal large B-cell lymphoma",
+          "leading working hypothesis",
+          "PMBCL",
+          "Tissue classification"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-7"
+        ],
+        "id": "p04",
+        "kind": "hypothesis",
+        "source_fact_ids": [
+          "CF-219C5BF25E64EC43",
+          "CF-479528A502E22272",
+          "CF-7AE0A73487377D57",
+          "CF-8D704124398A16AF",
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "Primary mediastinal large B-cell lymphoma is the leading working hypothesis. It best combines young age, a large anterior mediastinal mass, compression of the superior vena cava and central airways, and locoregional nodal spread. Sources describe PMBCL in young adults as a locally invasive mediastinal mass with respiratory manifestations or superior vena cava syndrome. Tissue classification remains a mandatory condition for confirmation."
+      },
+      {
+        "emphasis_terms": [
+          "Classical Hodgkin lymphoma",
+          "PMBCL",
+          "mediastinal gray zone"
+        ],
+        "evidence_ids": [
+          "E-CAND-3",
+          "E-CAND-4",
+          "E-CAND-7"
+        ],
+        "id": "p05",
+        "kind": "hypothesis",
+        "source_fact_ids": [
+          "CF-58152920D4D76CBE",
+          "CF-48019AC84FF27431",
+          "CF-479528A502E22272",
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "Classical Hodgkin lymphoma, possibly the nodular sclerosis subtype, ranks second. Young age, massive mediastinal lesion, weight loss and night sweats are fully compatible with this diagnosis. The size of the formation confirms the presence of bulky disease, but by itself does not determine the histology. Verification requires tissue architecture, characteristic tumor cells, and an appropriate IHC profile that distinguishes it from PMBCL and mediastinal gray zone."
+      },
+      {
+        "emphasis_terms": [
+          "T-lymphoblastic lymphoma",
+          "flow cytometry",
+          "TdT",
+          "bone marrow evaluation"
+        ],
+        "evidence_ids": [
+          "E-CAND-5",
+          "E-CAND-6"
+        ],
+        "id": "p06",
+        "kind": "hypothesis",
+        "source_fact_ids": [
+          "CF-64537E0D10CC9FFC",
+          "CF-479528A502E22272"
+        ],
+        "text": "T-lymphoblastic lymphoma ranks third and is a critical diagnosis for timely exclusion. A large mediastinal mass in a young man is a typical clinical presentation of lymphoblastic neoplasm. The lower rank is due to the absence of morphological or immunophenotypic signs of immature T-cell lineage. Morphology, IHC or flow cytometry with TdT and T-cell markers will be decisive, with bone marrow evaluation if the phenotype is compatible."
+      },
+      {
+        "emphasis_terms": [
+          "mediastinal gray zone",
+          "sufficient tissue architecture"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-2"
+        ],
+        "id": "p07",
+        "kind": "hypothesis",
+        "source_fact_ids": [
+          "CF-CFB6EECFC1F96DB5",
+          "CF-479528A502E22272",
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "The mediastinal gray zone between primary mediastinal large B-cell lymphoma and classical Hodgkin lymphoma ranks fourth. This is a distinct classification entity capable of causing a large anterior mediastinal mass. Its diagnosis requires sufficient tissue architecture, transitional immunophenotype and expert hematopathological review. Necrosis increases the risk of nonrepresentative tissue, so a limited sample may leave this branch unresolved."
+      },
+      {
+        "emphasis_terms": [
+          "Mediastinal germ cell tumor",
+          "alpha-fetoprotein"
+        ],
+        "evidence_ids": [],
+        "id": "p08",
+        "kind": "hypothesis",
+        "source_fact_ids": [
+          "CF-64537E0D10CC9FFC",
+          "CF-219C5BF25E64EC43",
+          "CF-479528A502E22272",
+          "CF-CFB6EECFC1F96DB5"
+        ],
+        "text": "Mediastinal germ cell tumor ranks fifth as an independent tumor diagnosis. Male sex, age 36 years, anterior mediastinal localization, necrosis and compression support mandatory exclusion of this nosology. The lymphoma-like nodular phenotype and lack of specific markers explain the lower rank. Available external sources do not provide separate support for germ cell tumor, so serum alpha-fetoprotein and β-human chorionic gonadotropin, evaluation of the gonadal primary, and tissue markers will be decisive."
+      },
+      {
+        "emphasis_terms": [
+          "excisional biopsy"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-2",
+          "E-CAND-3",
+          "E-CAND-6"
+        ],
+        "id": "p09",
+        "kind": "evidence",
+        "source_fact_ids": [
+          "CF-B293D636FA601DAB",
+          "CF-CFB6EECFC1F96DB5"
+        ],
+        "text": "Source comparison supports a tissue-based diagnostic pathway. The B-cell lymphoma guideline requires sufficient immunophenotyping and separately describes diagnostic pathways for PMBCL and mediastinal gray zone lymphoma. The Hodgkin lymphoma guideline indicates the need for biopsy and IHC and the resource for aggressive B-cell lymphomas emphasizes the higher diagnostic yield of excisional biopsy compared to core needle biopsy. These provisions determine the method of verification."
+      },
+      {
+        "emphasis_terms": [
+          "flow cytometry",
+          "CD2",
+          "CD3",
+          "CD7",
+          "CD34",
+          "TdT",
+          "tissue classification"
+        ],
+        "evidence_ids": [
+          "E-CAND-4",
+          "E-CAND-5"
+        ],
+        "id": "p10",
+        "kind": "evidence",
+        "source_fact_ids": [
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "Separate sources specify morphologic distinctions. For classical Hodgkin lymphoma, an established histologic classification and typical IHC-profile are described. For lymphoblastic neoplasms, morphology, flow cytometry, lineage assignment and bone marrow evaluation are required; markers of T-cell progenitors include CD2, CD3, CD7, CD34 and TdT. The applicability of these provisions is limited by differential diagnosis, and the choice of treatment requires a complete tissue classification."
+      },
+      {
+        "emphasis_terms": [
+          "expert hematopathological review"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-2",
+          "E-CAND-3",
+          "E-CAND-5",
+          "E-CAND-6"
+        ],
+        "id": "p11",
+        "kind": "action",
+        "source_fact_ids": [
+          "CF-B293D636FA601DAB",
+          "CF-CFB6EECFC1F96DB5"
+        ],
+        "text": "The most informative next step is to complete tissue verification of viable material with architectural assessment and a broad primary IHC panel. At the same time, the sufficiency of the biopsy should be checked and an expert hematopathological review should be organized. Predominance of necrosis, loss of architecture, indeterminate IHC-profile, or clinicopathologic discordance are indications for repeat or alternative biopsy from a viable site or an accessible lymph node."
+      },
+      {
+        "emphasis_terms": [
+          "alpha-fetoprotein",
+          "Flow cytometry"
+        ],
+        "evidence_ids": [
+          "E-CAND-5",
+          "E-CAND-7"
+        ],
+        "id": "p12",
+        "kind": "action",
+        "source_fact_ids": [
+          "CF-7AE0A73487377D57",
+          "CF-8D704124398A16AF",
+          "CF-64537E0D10CC9FFC",
+          "CF-219C5BF25E64EC43"
+        ],
+        "text": "The compressive risk should be evaluated according to the current clinical condition. Dyspnea at rest, orthopnea, stridor, cyanosis, edema of the face or neck, venous congestion, syncope, progression of hypoxemia, or hemodynamic instability will require immediate intervention. For the germ cell tumor pathway, alpha-fetoprotein, β-human chorionic gonadotropin, examination and testicular ultrasonography are required. Flow cytometry and bone marrow are added for lymphoblastic morphology."
+      },
+      {
+        "emphasis_terms": [
+          "Independent critique",
+          "role classification",
+          "There are no unresolved critical or major findings",
+          "germ cell tumor"
+        ],
+        "evidence_ids": [],
+        "id": "p13",
+        "kind": "critic",
+        "source_fact_ids": [],
+        "text": "Independent critique confirmed the correctness of the role classification and ranking. All five positions are true competing diagnoses for an underlying anterior mediastinal mass; complications, comorbidities, and data quality issues are not included in this ranking. There are no unresolved critical or major findings. A separate caveat regarding germ cell tumor is kept: there is no specific external support, so its fifth rank is based on the clinical need for tissue exclusion."
+      },
+      {
+        "emphasis_terms": [
+          "primary mediastinal large B-cell lymphoma",
+          "representative morphology",
+          "IHC"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-2",
+          "E-CAND-3",
+          "E-CAND-5",
+          "E-CAND-7"
+        ],
+        "id": "p14",
+        "kind": "conclusion",
+        "source_fact_ids": [
+          "CF-479528A502E22272",
+          "CF-7AE0A73487377D57",
+          "CF-8D704124398A16AF",
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "The current conclusion supports primary mediastinal large B-cell lymphoma as the leading working hypothesis and retains the four valid alternatives in the specified order. Final nosology, histologic subtype, staging, and treatment strategy depend on representative morphology, IHC and targeted additional studies. New tissue data may change ranks. The result is intended to be reviewed by a clinician; the clinical team determines the urgency of the compression syndrome and makes diagnostic and treatment decisions."
+      },
+      {
+        "emphasis_terms": [
+          "SUVmax",
+          "viability",
+          "ranked differential"
+        ],
+        "evidence_ids": [],
+        "id": "p15",
+        "kind": "conclusion",
+        "source_fact_ids": [
+          "CF-7B99B43232C204A2",
+          "CF-EED715A1EEB57E82",
+          "CF-B293D636FA601DAB"
+        ],
+        "text": "Evaluation of laboratory data has certain limitations. Sixteen quantitative indicators are presented in one undated slice without reference intervals, so it is impossible to establish the dynamics and whether values are within reference limits. The erythrocyte unit is corrupted in the primary record, the SUVmax unit is missing; both values ​​are preserved without reconstruction and excluded from the histologic differential diagnosis. The biopsy is in progress, and its viability, architectural integrity, and adequacy for advanced IHC or flow cytometry remain unknown. These limitations reduce classification certainty, although the ranked differential remains clinically useful for planning verification."
+      },
+      {
+        "emphasis_terms": [
+          "primary mediastinal large B-cell lymphoma",
+          "classical Hodgkin lymphoma",
+          "T-lymphoblastic lymphoma",
+          "mediastinal gray zone",
+          "mediastinal germ cell tumor",
+          "compressive risk"
+        ],
+        "evidence_ids": [
+          "E-CAND-1",
+          "E-CAND-2",
+          "E-CAND-3",
+          "E-CAND-4",
+          "E-CAND-5",
+          "E-CAND-7"
+        ],
+        "id": "p16",
+        "kind": "conclusion",
+        "source_fact_ids": [
+          "CF-B293D636FA601DAB",
+          "CF-479528A502E22272",
+          "CF-7AE0A73487377D57",
+          "CF-8D704124398A16AF"
+        ],
+        "text": "The order of hypotheses will be subject to revision after obtaining representative tissue. A mature B-cell phenotype with appropriate morphology will strengthen primary mediastinal large B-cell lymphoma; the characteristic profile of classical Hodgkin lymphoma will shift the leading diagnosis; signs of immature T-cell neoplasia will raise the rank of T-lymphoblastic lymphoma. A transitional phenotype will require expert evaluation of the mediastinal gray zone lymphoma. Elevation of tumor markers or germ cell tumor immunophenotype will strengthen mediastinal germ cell tumor. Until these results appear, it is advisable to keep the entire five-diagnosis differential in clinical work and simultaneously monitor and manage the compressive risk."
+      }
+    ],
+    "opening_summary": "The reasoning narrative leads from the initial constellation of findings to the candidate diagnosis \"Primary mediastinal large B-cell lymphoma\" and covers the rationale for it, alternatives, source limitations, corrections after critique, and conditions that would prompt revision of the conclusion.",
+    "reading_time_minutes": 10,
+    "source_library": [
+      {
+        "applicability": "Supports the PMBCL/Mediastinal Gray Zone tissue classification structure; does not prove a specific diagnosis in CASE002. Directly supports Mediastinal gray zone, appropriate diagnostic step/appropriate diagnostic step/appropriate diagnostic step and need to differentiate PMBCL/Classical Hodgkin lymphoma; no tissue findings are available in CASE002 yet.",
+        "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
+        "id": "E-CAND-1",
+        "location": "with. 62; with. 76",
+        "proposition": "Classification of large cell B-cell lymphoma requires sufficient immunophenotyping; PMBCL and mediastinal gray zone lymphoma have separate diagnostic routes. The mediastinal gray zone may manifest as a large anterior mediastinal mass; expert hematopathological review, adequate architecture, and transitional immunophenotype are required, and the diagnosis should not be established by core needle biopsy alone.",
+        "title": "NCCN Guidelines Version 4.2026: Diffuse Large B-Cell Lymphoma",
+        "type_label": "Guideline",
+        "url": null,
+        "year": 2026
+      },
+      {
+        "applicability": "Supports appropriate diagnostic step/appropriate diagnostic step/appropriate diagnostic step for Classical Hodgkin lymphoma; does not establish classical Hodgkin lymphoma without morphology.",
+        "bibliographic_id": "nccn_hodgkin_lymphoma_v2_2026",
+        "id": "E-CAND-3",
+        "location": "with. 8",
+        "proposition": "Diagnosis of Hodgkin lymphoma requires biopsy and IHC; an excisional biopsy is recommended, and a core needle biopsy may be sufficient only with a diagnostic result.",
+        "title": "NCCN Guidelines Version 2.2026: Hodgkin Lymphoma (Age ≥18 years)",
+        "type_label": "Guideline",
+        "url": null,
+        "year": 2026
+      },
+      {
+        "applicability": "Supports differentiation of classical Hodgkin's lymphoma from other lymphomas; the clinical phenotype does not allow choosing the option without tissue.",
+        "bibliographic_id": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12",
+        "id": "E-CAND-4",
+        "location": "with. 12",
+        "proposition": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+        "title": "Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
+        "type_label": "Evidence review",
+        "url": null,
+        "year": 2026
+      },
+      {
+        "applicability": "Supports diagnostic delimitation T-lymphoblastic lymphoma and corresponding diagnostic step; this source is about ALL, so the treatment provisions were not transferred to CASE002.",
+        "bibliographic_id": "nci_text_snapshot_adult_all_2026_08_12",
+        "id": "E-CAND-5",
+        "location": "with. 2",
+        "proposition": "Lymphoblastic neoplasias require morphology, flow cytometry to determine cellular identity and bone marrow evaluation; T-cell progenitors often express CD2, CD3, CD7, CD34, and TdT.",
+        "title": "Adult Acute Lymphoblastic Leukemia Treatment (PDQ®)–Health Professional Version",
+        "type_label": "Evidence review",
+        "url": null,
+        "year": 2025
+      },
+      {
+        "applicability": "Supports PMBCL/T-lymphoblastic lymphoma ranking, appropriate diagnostic step and need for sufficient tissue verification; does not determine the histology of a specific mass. Supports the clinical relevance of PMBCL, the need for PMBCL/Classical Hodgkin lymphoma/Mediastinal gray zone delineation and compressive threat assessment; does not replace morphology.",
+        "bibliographic_id": "nci_text_snapshot_aggressive_b_cell_nhl_2026_08_12",
+        "id": "E-CAND-6",
+        "location": "with. 8; with. 13",
+        "proposition": "Mediastinal adenopathy is a hallmark of lymphoblastic lymphoma and PMBCL in young adults; histological type is determined by tissue biopsy, with excisional biopsy more likely to provide a definitive diagnosis than core needle biopsy. PMBCL in young adults may present as a locally invasive anterior mediastinal mass with respiratory symptoms or superior vena cava syndrome and overlaps with nodular sclerosing classical Hodgkin lymphoma.",
+        "title": "Aggressive B-Cell Non-Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
+        "type_label": "Evidence review",
+        "url": null,
+        "year": 2026
+      }
+    ],
+    "title": "Clinical Reasoning Narrative"
+  },
+  "schema_version": "hematoboard.v2.public-candidate-dashboard/1.0"
+}

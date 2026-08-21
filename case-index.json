@@ -1,0 +1,23 @@
+{
+  "schema_version": "hematoboard.public-case-index/2.0.0",
+  "cases": [
+    {
+      "key": "case001",
+      "case_id": "CASE001",
+      "source_case_id": "CASE001",
+      "data_path": "case001/public-dashboard.v1.json"
+    },
+    {
+      "key": "case002",
+      "case_id": "CASE002",
+      "source_case_id": "CASE002",
+      "data_path": "case002/public-dashboard.v1.json"
+    },
+    {
+      "key": "case003",
+      "case_id": "CASE003",
+      "source_case_id": "CASE003",
+      "data_path": "case003/public-dashboard.v1.json"
+    }
+  ]
+}

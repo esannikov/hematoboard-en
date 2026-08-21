@@ -111,9 +111,12 @@ def main() -> int:
         if manifest_by_key[case_key]["clinician_accepted"] is not False:
             errors.append(f"{case_key}: manifest clinician status mismatch")
 
-    for asset in (ROOT / "index.html", ROOT / "styles.css", ROOT / "app.js"):
+    for asset in (ROOT / "index.html", ROOT / "source-ui/src/styles.css", ROOT / "source-ui/src/main.tsx"):
         if CYRILLIC.search(asset.read_text(encoding="utf-8")):
-            errors.append(f"{asset.name}: Cyrillic remains")
+            errors.append(f"{asset.relative_to(ROOT)}: Cyrillic remains")
+    for asset in (ROOT / "assets").glob("*.js"):
+        if CYRILLIC.search(asset.read_text(encoding="utf-8")):
+            errors.append(f"{asset.relative_to(ROOT)}: Cyrillic remains")
     if 'lang="en"' not in (ROOT / "index.html").read_text(encoding="utf-8"):
         errors.append("index.html language is not en")
 

@@ -167,7 +167,7 @@
           "Do not attribute small lung foci to the main disease without additional comparison.",
           "Do not interpret undated laboratory values ​​as dynamics or as compliance with reference intervals."
         ],
-        "rationale": "H1, a primary mediastinal large B-cell lymphoma, is the first candidate diagnosis by clinico-radiological phenotype. Representative morphology and IHC are required for definitive classification and delineation with classical Hodgkin lymphoma, mediastinal gray zone, T-lymphoblastic lymphoma, and mediastinal germ cell tumor; their absence blocks treatment selection and staging, but not work prioritization.",
+        "rationale": "H1, a primary mediastinal large B-cell lymphoma, is the first candidate diagnosis by clinicoradiologic phenotype. Representative morphology and IHC are required for definitive classification and delineation with classical Hodgkin lymphoma, mediastinal gray zone, T-lymphoblastic lymphoma, and mediastinal germ cell tumor; their absence blocks treatment selection and staging, but not work prioritization.",
         "required_next_information": [
           "Representative morphology and IHC of viable tissue with assessment of biopsy adequacy.",
           "Clinical assessment of actual severity of compression superior vena cava and central airways.",
@@ -224,7 +224,7 @@
           "bibliographic_id": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12",
           "id": "E-CAND-4",
           "location": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12_p0012",
-          "proposition": "Classic Hodgkin's lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "proposition": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
           "retrieval_ref": "R3:5",
           "rights_status": "allowed_by_admission_manifest",
           "source_review_route": "visual_semantic",
@@ -279,8 +279,8 @@
       "hypotheses": [
         {
           "applicability_limits": [
-            "Clinico-radiological correspondence does not replace tissue classification.",
-            "Quantitative laboratory values ​​given are an undated slice; their dynamics and compliance with reference intervals have not been established."
+            "Clinicoradiologic correspondence does not replace tissue classification.",
+            "Quantitative laboratory values ​​given are an undated slice; their trends and relation to reference intervals have not been established."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H1",
@@ -309,8 +309,8 @@
             "Differentiation from PMBCL and mediastinal gray zone."
           ],
           "rank": 2,
-          "role_rationale": "Classic Hodgkin's lymphoma is a diagnostic hypothesis because it can independently explain a massive mediastinal lesion, cervical supraclavicular lymphadenopathy, weight loss, and night sweats.",
-          "short_label": "Classic Hodgkin's lymphoma",
+          "role_rationale": "Classical Hodgkin lymphoma is a diagnostic hypothesis because it can independently explain a massive mediastinal lesion, cervical supraclavicular lymphadenopathy, weight loss, and night sweats.",
+          "short_label": "Classical Hodgkin lymphoma",
           "summary": "Close alternative due to young age, massive mediastinal lesion, supraclavicular nodes, weight loss and night sweats. A large mass of more than 10 cm corresponds to a sign of a massive lesion in the sources, but there is no histological confirmation of classical Hodgkin lymphoma."
         },
         {
@@ -682,7 +682,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "He complained of progressive shortness of breath during physical exertion, a dry cough, periodic discomfort and a feeling of pressure behind the sternum.",
+          "text": "He complained of progressive exertional dyspnea, a dry cough, intermittent discomfort and a feeling of pressure behind the sternum.",
           "type": "text"
         }
       },
@@ -705,7 +705,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "During the last 2 months, he notes a decrease in working capacity and intolerance to physical exertion.",
+          "text": "During the last 2 months, he notes a decline in functional capacity and intolerance to physical exertion.",
           "type": "text"
         }
       },
@@ -728,7 +728,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "In the last 6 weeks, I lost about 6 kg.",
+          "text": "Over the last 6 weeks, he lost approximately 6 kg.",
           "type": "text"
         }
       },
@@ -1096,7 +1096,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "CT thoracic organs: a bulky conglomerate formation of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum.",
+          "text": "Chest CT: a bulky mass of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum.",
           "type": "text"
         }
       },
@@ -1142,7 +1142,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "superior vena cava compression is noted with a significant narrowing of its lumen.",
+          "text": "Superior vena cava compression is present with a significant narrowing of its lumen.",
           "type": "text"
         }
       },
@@ -1165,7 +1165,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "Compression of the trachea and right main bronchus is also determined.",
+          "text": "There is also compression of the trachea and right main bronchus.",
           "type": "text"
         }
       },
@@ -1257,7 +1257,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "PET/CT: intensive pathological accumulation of FDG in the mediastinal mass is revealed, SUVmax is 24.",
+          "text": "PET/CT: intense pathological FDG uptake in the mediastinal mass is revealed, SUVmax is 24.",
           "type": "text"
         }
       },
@@ -1303,7 +1303,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "No distant foci of intensive FDG accumulation were detected.",
+          "text": "No distant foci of intense FDG uptake were detected.",
           "type": "text"
         }
       },
@@ -1326,7 +1326,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "Biopsy of a tumor formation in work.",
+          "text": "Biopsy of the tumor is pending.",
           "type": "text"
         }
       },
@@ -1992,7 +1992,7 @@
         },
         {
           "id": "GE-D2FDCB1AEA3D3FBD",
-          "label": "Classic Hodgkin's lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W1"
@@ -2125,7 +2125,7 @@
         },
         {
           "id": "GE-F789A9B10D7D2601",
-          "label": "Classic Hodgkin's lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W4"
@@ -2265,7 +2265,7 @@
         },
         {
           "id": "GE-89F73E3FB8DEC093",
-          "label": "Classic Hodgkin's lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+          "label": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "G2"
@@ -2350,7 +2350,7 @@
         {
           "id": "CF-479528A502E22272",
           "kind": "fact",
-          "label": "CT thoracic organs: a bulky conglomerate formation of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum."
+          "label": "Chest CT: a bulky mass of approximately 12.5 × 9.0 × 15.0 cm is determined in the anterior superior and middle mediastinum."
         },
         {
           "id": "CF-48019AC84FF27431",
@@ -2360,7 +2360,7 @@
         {
           "id": "CF-58152920D4D76CBE",
           "kind": "fact",
-          "label": "In the last 6 weeks, I lost about 6 kg."
+          "label": "Over the last 6 weeks, he lost approximately 6 kg."
         },
         {
           "id": "CF-64537E0D10CC9FFC",
@@ -2370,17 +2370,17 @@
         {
           "id": "CF-7AE0A73487377D57",
           "kind": "fact",
-          "label": "superior vena cava compression is noted with a significant narrowing of its lumen."
+          "label": "Superior vena cava compression is present with a significant narrowing of its lumen."
         },
         {
           "id": "CF-8D704124398A16AF",
           "kind": "fact",
-          "label": "Compression of the trachea and right main bronchus is also determined."
+          "label": "There is also compression of the trachea and right main bronchus."
         },
         {
           "id": "CF-B293D636FA601DAB",
           "kind": "fact",
-          "label": "Biopsy of a tumor formation in work."
+          "label": "Biopsy of the tumor is pending."
         },
         {
           "id": "CF-CFB6EECFC1F96DB5",
@@ -2410,7 +2410,7 @@
         {
           "id": "H2",
           "kind": "hypothesis",
-          "label": "Classic Hodgkin's lymphoma"
+          "label": "Classical Hodgkin lymphoma"
         },
         {
           "id": "H3",
@@ -2999,7 +2999,7 @@
         "effective_at": null,
         "id": "SR-AEA016046978-P0002",
         "kind": "paragraph",
-        "literal": "Male, 36 years old. He complained of progressive shortness of breath during physical exertion, dry cough, periodic discomfort and a feeling of pressure behind the sternum. During the last 2 months, he notes a decrease in working capacity and intolerance to physical exertion. In the last 6 weeks, I lost about 6 kg. He periodically notes night sweats. The condition is of medium severity. The skin is pale, without hemorrhagic rashes. Peripheral lymph nodes: cervical, supraclavicular, axillary - slightly enlarged or not palpable. Heart rate — 102/min. Blood pressure — 125/75 mm Hg. Art. SpO₂ — 94% in room air. On auscultation of the lungs, breathing is slightly weakened in the upper right parts. The liver protrudes 1–2 cm from the edge of the costal arch. The spleen is not palpable. Laboratory tests: CKD: Hb — 108 g/l, RBC — 3.7 × 10¹²/, WBC — 9.8 × 10⁹/l, neutrophils — 6.9 × 10⁹/l, lymphocytes — 1.8 × 10⁹/l, platelets — 318 × 10⁹/l, ESR — 48 mm/h Biochemical analysis: creatinine — 82 μmol/L, ALT — 28 U/L, AST — 25 U/L, total bilirubin — 13 μmol/L, LDH — 612 U/L, uric acid — 410 μmol/l, β₂-microglobulin — elevated. HIV — negative. HBsAg is negative. Anti-HCV is negative. CT chest organs: in the anterior upper and middle mediastinum, a voluminous conglomerate formation of approximately 12.5 × 9.0 × 15.0 cm is determined. Formation of a heterogeneous structure, with areas of necrosis. superior vena cava compression is noted with a significant narrowing of its lumen. Compression of the trachea and right main bronchus is also determined. Enlarged lymph nodes of the cervical and supraclavicular groups are visualized. In the lungs, there are several small foci up to 5–6 mm in size, the nature of which requires clarification. There is no pleural effusion. PET/CT: intensive pathological accumulation of FDG in the mediastinal formation is revealed, SUVmax is 24. Pathological metabolic activity in cervical and supraclavicular lymph nodes is also determined. No distant foci of intense FDG accumulation were detected. Biopsy of the tumor is in progress.",
+        "literal": "Male, 36 years old. He complained of progressive exertional dyspnea, dry cough, intermittent discomfort and a feeling of pressure behind the sternum. During the last 2 months, he notes a decline in functional capacity and intolerance to physical exertion. Over the last 6 weeks, he lost approximately 6 kg. He periodically notes night sweats. The patient is moderately ill. The skin is pale, without hemorrhagic rashes. Peripheral lymph nodes: cervical, supraclavicular, axillary - slightly enlarged or not palpable. Heart rate — 102/min. Blood pressure — 125/75 mm Hg. Art. SpO₂ — 94% in room air. On auscultation of the lungs, breathing is slightly weakened in the upper right parts. The liver protrudes 1–2 cm from the edge of the costal arch. The spleen is not palpable. Laboratory tests: CBC: Hb — 108 g/l, RBC — 3.7 × 10¹²/, WBC — 9.8 × 10⁹/l, neutrophils — 6.9 × 10⁹/l, lymphocytes — 1.8 × 10⁹/l, platelets — 318 × 10⁹/l, ESR — 48 mm/h Biochemical analysis: creatinine — 82 μmol/L, ALT — 28 U/L, AST — 25 U/L, total bilirubin — 13 μmol/L, LDH — 612 U/L, uric acid — 410 μmol/l, β₂-microglobulin — elevated. HIV — negative. HBsAg is negative. Anti-HCV is negative. CT chest organs: in the anterior upper and middle mediastinum, a voluminous conglomerate formation of approximately 12.5 × 9.0 × 15.0 cm is determined. Formation of a heterogeneous structure, with areas of necrosis. Superior vena cava compression is present with a significant narrowing of its lumen. There is also compression of the trachea and right main bronchus. Enlarged lymph nodes of the cervical and supraclavicular groups are visualized. In the lungs, there are several small foci up to 5–6 mm in size, the nature of which requires clarification. There is no pleural effusion. PET/CT: intense pathological FDG uptake in the mediastinal formation is revealed, SUVmax is 24. Pathological metabolic activity in cervical and supraclavicular lymph nodes is also determined. No distant foci of intense FDG accumulation were detected. Biopsy of the tumor is in progress.",
         "locator": {
           "paragraph_index": 2,
           "part": "word/document.xml"
@@ -3107,6 +3107,7 @@
       },
       {
         "emphasis_terms": [
+          "Classical Hodgkin lymphoma",
           "PMBCL",
           "mediastinal gray zone"
         ],
@@ -3339,7 +3340,7 @@
     "reading_time_minutes": 10,
     "source_library": [
       {
-        "applicability": "Supports the PMBCL/Mediastinal Gray Zone tissue classification structure; does not prove a specific diagnosis in CASE002. Directly supports Mediastinal gray zone, appropriate diagnostic step/appropriate diagnostic step/appropriate diagnostic step and need to differentiate PMBCL/Classical Hodgkin lymphoma; there are no fabric signs in CASE002 yet.",
+        "applicability": "Supports the PMBCL/Mediastinal Gray Zone tissue classification structure; does not prove a specific diagnosis in CASE002. Directly supports Mediastinal gray zone, appropriate diagnostic step/appropriate diagnostic step/appropriate diagnostic step and need to differentiate PMBCL/Classical Hodgkin lymphoma; no tissue findings are available in CASE002 yet.",
         "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
         "id": "E-CAND-1",
         "location": "with. 62; with. 76",
@@ -3365,7 +3366,7 @@
         "bibliographic_id": "nci_text_snapshot_hodgkin_lymphoma_2026_08_12",
         "id": "E-CAND-4",
         "location": "with. 12",
-        "proposition": "Classic Hodgkin's lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
+        "proposition": "Classical Hodgkin lymphoma has a separate histological classification and a typical IHC-profile; nodular sclerosis is one option.",
         "title": "Hodgkin Lymphoma Treatment (PDQ®)–Health Professional Version",
         "type_label": "Evidence review",
         "url": null,

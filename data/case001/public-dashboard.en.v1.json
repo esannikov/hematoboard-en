@@ -81,7 +81,7 @@
             "B11"
           ],
           "disposition": "projected",
-          "rationale": "Potentially reversible infectious causes and drug fever are retained in the diagnostic series. A possible humoral immune deficiency is indicated as a concomitant condition, and a thyroid nodule is indicated as a separate finding; detailed actions are reserved for the profile source route.",
+          "rationale": "Potentially reversible infectious causes and drug fever are retained in the diagnostic series. A possible humoral immune deficiency is indicated as a concomitant condition, and a thyroid nodule is indicated as a separate finding; detailed actions are reserved for the condition-specific source route.",
           "sector": "reversible_treatable",
           "target_refs": [
             "H2",
@@ -240,7 +240,7 @@
         "required_next_information": [
           "Full protocol and image CT dated 04/16/2026 with exact dimensions of spleen, description of all lymph nodes, characterization of thyroid node and contrast parameters.",
           "Determination of a biopsy-accessible lesion; if available, tissue verification with morphology and immunophenotyping.",
-          "Complete blood count with leukocyte formula, smear, reticulocytes and, as indicated, flow cytometry of peripheral blood.",
+          "Complete blood count with differential white blood cell count, smear, reticulocytes and, as indicated, flow cytometry of peripheral blood.",
           "Original laboratory forms with dates, methods, units and reference intervals, especially for LDH, β₂-microglobulin, IgA, procalcitonin and biochemistry dated 07/31/2026.",
           "Separate controlled search of profiled sources for infective endocarditis, deep infections, adult-onset Still disease, systemic autoimmune diseases, vasculitis, thyroid pathology, drug fever and thromboembolic conditions.",
           "Current clinical status: ongoing fever, accurate temperature profile, intensity of night sweats, weight change, and new localizing symptoms."
@@ -277,7 +277,7 @@
           "year": 2025
         },
         {
-          "applicability": "Clinical facts have numbers LDH and β₂-microglobulin without dates and source reference intervals. The current candidate does not apply these indexes and uses the page to fix the gap.",
+          "applicability": "Clinical facts have LDH values and β₂-microglobulin without dates and source reference intervals. The current candidate does not apply these indexes and uses the source to document the gap.",
           "bibliographic_id": "jsh_lymphoma_overview_2023",
           "id": "E-CAND-3",
           "location": "jsh_lymphoma_overview_2023_p0006",
@@ -295,7 +295,7 @@
           "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
           "id": "E-CAND-4",
           "location": "nccn_b_cell_lymphomas_v4_2026_p0043",
-          "proposition": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "proposition": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "retrieval_ref": "R2:8",
           "rights_status": "restricted_authorized_private",
           "source_review_route": "visual_semantic",
@@ -309,7 +309,7 @@
           "bibliographic_id": "nccn_hodgkin_lymphoma_v2_2026",
           "id": "E-CAND-5",
           "location": "nccn_hodgkin_lymphoma_v2_2026_p0075",
-          "proposition": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "proposition": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "retrieval_ref": "R3:1",
           "rights_status": "restricted_authorized_private",
           "source_review_route": "visual_semantic",
@@ -319,11 +319,11 @@
           "year": 2026
         },
         {
-          "applicability": "Fever, night sweats, numerical dynamics of C-reactive protein and ESR and splenomegaly give partial overlap with small criteria. In the clinical facts, there is no multinodular lesion and histology, so Castleman disease has a lower current weight.",
+          "applicability": "Fever, night sweats, serial values of C-reactive protein and ESR and splenomegaly give partial overlap with minor criteria. In the clinical facts, there is no lymphadenopathy in multiple nodal stations and histology, so Castleman disease has a lower current priority.",
           "bibliographic_id": "nccn_castleman_disease_v2_2026",
           "id": "E-CAND-6",
           "location": "nccn_castleman_disease_v2_2026_p0014",
-          "proposition": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "proposition": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "retrieval_ref": "R4:2",
           "rights_status": "restricted_authorized_private",
           "source_review_route": "visual_semantic",
@@ -333,11 +333,11 @@
           "year": 2026
         },
         {
-          "applicability": "Fever and splenomegaly support targeted evaluation for secondary hemophagocytic syndrome as a possible critical hyperinflammatory complication. The available complete blood count has one time slice without a formula; the source supports only the conditional bone marrow step and captures the need for a separate profile source.",
+          "applicability": "Fever and splenomegaly support targeted evaluation for secondary hemophagocytic syndrome as a possible critical hyperinflammatory complication. The available complete blood count has a single time point without a differential count; the source supports only the conditional bone marrow step and captures the need for a separate condition-specific source.",
           "bibliographic_id": "nccn_histiocytic_neoplasms_v1_2026",
           "id": "E-CAND-7",
           "location": "nccn_histiocytic_neoplasms_v1_2026_p0010",
-          "proposition": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow study to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
+          "proposition": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow examination to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
           "retrieval_ref": "R5:4",
           "rights_status": "restricted_authorized_private",
           "source_review_route": "visual_semantic",
@@ -373,7 +373,7 @@
           "label": "Mature lymphoid neoplasm with splenic or bone marrow involvement",
           "missing_evidence": [
             "A complete description of the distribution of lymph nodes and the exact size of the spleen.",
-            "Leukocyte formula, peripheral blood smear and flow cytometry.",
+            "Differential white blood cell count, peripheral blood smear and flow cytometry.",
             "Morphology and immunophenotype of biopsy material or bone marrow according to clinical indications.",
             "Source reference intervals for LDH and β₂-microglobulin."
           ],
@@ -429,12 +429,12 @@
           "missing_evidence": [
             "Ferritin, triglycerides, fibrinogen and liver parameters with laboratory reference intervals.",
             "Description of rash, arthritis, sore throat, and daily pattern of fever.",
-            "Profile source for classification and exclusion criteria."
+            "Condition-specific source for classification and exclusion criteria."
           ],
           "rank": 4,
-          "role_rationale": "Systemic auto-inflammatory syndrome can be an independent cause of prolonged fever and pronounced inflammatory dynamics; the absence of characteristic clinical signs and ferritin determines lower confidence.",
-          "short_label": "Systemic auto-inflammatory syndrome",
-          "summary": "Prolonged fever and significant amplitude of C-reactive protein dynamics support a systemic auto-inflammatory direction. No data on ferritin, rash, arthritis, sore throat, or typical daily temperature pattern."
+          "role_rationale": "Systemic autoinflammatory syndrome can be an independent cause of prolonged fever and pronounced inflammatory dynamics; the absence of characteristic clinical signs and ferritin determines lower confidence.",
+          "short_label": "Systemic autoinflammatory syndrome",
+          "summary": "Prolonged fever and significant amplitude of C-reactive protein dynamics support a systemic autoinflammatory direction. No data on ferritin, rash, arthritis, sore throat, or typical daily temperature pattern."
         },
         {
           "applicability_limits": [
@@ -457,7 +457,7 @@
         {
           "applicability_limits": [
             "Slight splenomegaly and systemic symptoms do not replace major diagnostic criteria.",
-            "C-reactive protein and ESR have numerical dynamics, but Castleman disease requires histology, multinodular involvement, small criteria, and exclusion of mimics."
+            "C-reactive protein and ESR have serial values, but Castleman disease requires histology, lymphadenopathy in multiple nodal stations, minor criteria, and exclusion of mimics."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H6",
@@ -470,19 +470,19 @@
           "rank": 6,
           "role_rationale": "Multicentric Castleman disease, if mandatory criteria were confirmed, could independently explain systemic symptoms, inflammation, and splenomegaly; currently large criteria are not shown.",
           "short_label": "Castleman disease",
-          "summary": "Fever, night sweats, C-reactive protein dynamics, and splenomegaly partially overlap with the clinical spectrum of multicentric Castleman disease. Two mandatory major criteria are missing in the available data: characteristic lymph node histology and enlarged nodes in at least two stations. This version is saved as a separate lymphoproliferative differential with a lower current weight."
+          "summary": "Fever, night sweats, C-reactive protein dynamics, and splenomegaly partially overlap with the clinical spectrum of multicentric Castleman disease. Two mandatory major criteria are missing in the available data: characteristic lymph node histology and enlarged nodes in at least two stations. This version is saved as a separate lymphoproliferative differential with a lower current priority."
         },
         {
           "applicability_limits": [
-            "A single complete blood count without a formula and source references does not close the evaluation of dynamic cytopenia.",
+            "A single complete blood count without a differential count and source references does not close the evaluation of dynamic cytopenia.",
             "The selected source does not contain a complete diagnostic algorithm for hemophagocytic syndrome in adults."
           ],
           "clinical_role": "complication",
           "id": "H7",
           "label": "Secondary hemophagocytic syndrome",
           "missing_evidence": [
-            "Ferritin, triglycerides, fibrinogen, coagulogram and serial complete blood count with formula.",
-            "Profile source with validated criteria for adults.",
+            "Ferritin, triglycerides, fibrinogen, coagulogram and serial complete blood count with differential.",
+            "Condition-specific source with validated criteria for adults.",
             "Searching for a possible infectious, malignant, or autoimmune trigger."
           ],
           "rank": null,
@@ -492,8 +492,8 @@
         },
         {
           "applicability_limits": [
-            "ESR source reference interval not provided; only numerical dynamics is used.",
-            "There is no profile source for this branch in the selected package."
+            "ESR source reference interval not provided; only serial values is used.",
+            "There is no condition-specific source for this branch in the selected package."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H8",
@@ -504,14 +504,14 @@
             "Profile instruction on vasculitis."
           ],
           "rank": 7,
-          "role_rationale": "Large-vessel vasculitis or other systemic vasculitis can independently cause prolonged fever and an inflammatory response; the absence of vascular symptoms and imaging reduces his current weight.",
+          "role_rationale": "Large-vessel vasculitis or other systemic vasculitis can independently cause prolonged fever and an inflammatory response; the absence of vascular symptoms and imaging reduces its current priority.",
           "short_label": "Systemic vasculitis",
           "summary": "Age 55, persistent fever, and a ESR range of 62–66 mm/h support a vascular inflammatory pathway for review. Negative antineutrophil cytoplasmic antibodies do not cover all forms of vasculitis. Vascular symptoms, pulse examination and targeted imaging were not recorded."
         },
         {
           "applicability_limits": [
             "The IgA count is used as a signal for retesting without categorical assessment relative to the laboratory range.",
-            "There is no profile source for primary and secondary immunodeficiencies."
+            "There is no condition-specific source for primary and secondary immunodeficiencies."
           ],
           "clinical_role": "concurrent_condition",
           "id": "H9",
@@ -523,13 +523,13 @@
           ],
           "rank": null,
           "role_rationale": "A possible humoral immune deficiency is considered as a concomitant condition that can contribute to infectious or autoimmune manifestations; undated IgA without a reference interval does not independently explain the entire pattern of fever, night sweats, and splenomegaly.",
-          "short_label": "Violation of humoral immunity",
+          "short_label": "Possible humoral immune deficiency",
           "summary": "IgA 0.06 g/L without source reference interval, positive antinuclear antibodies, and prior suspicion of infection warrant testing for a possible concomitant disorder of humoral immunity. IgG, IgM, electrophoresis, immunofixation and history of repeated infections are absent; the available data are not sufficient to consider this condition as an independent explanation of the main clinical pattern."
         },
         {
           "applicability_limits": [
             "A PSA of 0.307 ng/ml is recorded without a source reference interval and does not evaluate other locations.",
-            "There is no profile source for neoplastic fever in the selected package."
+            "There is no condition-specific source for neoplastic fever in the selected package."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H10",
@@ -565,7 +565,7 @@
         {
           "applicability_limits": [
             "The onset of fever to known antibiotics reduces the unifying power of this version.",
-            "There is no profile source for drug fever."
+            "There is no condition-specific source for drug fever."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H12",
@@ -573,11 +573,11 @@
           "missing_evidence": [
             "A complete timeline of prescription, over-the-counter, and herbal remedies.",
             "Relationship of temperature with the start and withdrawal of each drug.",
-            "Leukocyte formula with eosinophils, urinalysis and laboratory dynamics of organ damage."
+            "Differential white blood cell count with eosinophils, urinalysis and laboratory dynamics of organ damage."
           ],
           "rank": 9,
           "role_rationale": "Drug-induced fever, in the presence of drug exposure before the onset of symptoms, can independently explain the fever and inflammatory response. A known inpatient course of antibiotics was started later, but a complete chronology of other medications is not available; this reduces the current weight without changing the causal role.",
-          "short_label": "Medical fever",
+          "short_label": "Drug fever",
           "summary": "Meropenem and vancomycin are documented exposures. The onset of fever was prior to known inpatient antibacterial therapy, so these exposures alone do not explain the initial syndrome. A complete medication history up to April 2026 is not available, so drug fever from a different or earlier exposure remains a low-ranking diagnostic hypothesis that requires precise temporal mapping."
         },
         {
@@ -591,7 +591,7 @@
           "missing_evidence": [
             "Symptoms and risk factors of venous and arterial thrombosis.",
             "Assessment of preliminary clinical probability prior to laboratory or imaging testing.",
-            "Profile source on thromboembolic conditions."
+            "Condition-specific source on thromboembolic conditions."
           ],
           "rank": 10,
           "role_rationale": "Thromboembolic or another sterile vascular process can independently cause fever and thus remains a critical diagnostic mimic; minimal direct support defines the lowest diagnostic rank, but does not convert it into a concomitant finding.",
@@ -600,7 +600,7 @@
         }
       ],
       "limitations": [
-        "The source package is formed by six targeted search receipts with a predominantly oncohematological focus; most non-oncohematological branches do not have a profile source support.",
+        "The source package is formed by six targeted search receipts with a predominantly oncohematological focus; most non-oncohematological branches do not have a condition-specific source support.",
         "The full CT protocol and image from 04/16/2026 are not available, so the distribution of lymph nodes, exact size of the spleen, and the presence of a biopsy target are not verified.",
         "There is no tissue, bone marrow or flow cytometric verification.",
         "For LDH, β₂-microglobulin, IgA, procalcitonin, and part of biochemistry, source reference intervals are not provided; the nine ones are deterministically restored by the register and read only as ones.",
@@ -719,7 +719,7 @@
         {
           "direction": "neutral",
           "hypothesis_id": "H6",
-          "rationale": "Platelets 279 ×10⁹/l recorded in one time slice; subtyping by this number is not carried out.",
+          "rationale": "Platelets 279 ×10⁹/l recorded in a single time point; subtyping by this number is not carried out.",
           "source_id": "CF-897521BD6DD39992"
         },
         {
@@ -889,7 +889,7 @@
           "label": "Hematological and immunoprotein characteristics of blood",
           "necessity": "key_discriminator",
           "priority": "high",
-          "rationale": "Complete blood count with formula and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
+          "rationale": "Complete blood count with differential and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
           "trigger": null
         },
         {
@@ -960,7 +960,7 @@
           "label": "PET/CT to locate the active lesion",
           "necessity": "conditional_adjunct",
           "priority": "conditional",
-          "rationale": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious accumulation is also possible, so each atypical site must be confirmed clinically or morphologically.",
+          "rationale": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious uptake is also possible, so each atypical site must be confirmed clinically or morphologically.",
           "trigger": "Consider after full review of CT if fever persists, biopsy target is unclear, or clinical suspicion for systemic lymphoproliferative disease remains high."
         },
         {
@@ -2363,7 +2363,7 @@
         },
         {
           "id": "GE-B92ED64C4C7A4398",
-          "label": "Platelets 279 ×10⁹/l recorded in one time slice; subtyping by this number is not carried out.",
+          "label": "Platelets 279 ×10⁹/l recorded in a single time point; subtyping by this number is not carried out.",
           "role": "neutral",
           "source": "CF-897521BD6DD39992",
           "target": "H6"
@@ -2503,21 +2503,21 @@
         },
         {
           "id": "GE-D2FDCB1AEA3D3FBD",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W1"
         },
         {
           "id": "GE-33099835BCAC6AE6",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "W1"
         },
         {
           "id": "GE-584F3442B9E77191",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W1"
@@ -2552,21 +2552,21 @@
         },
         {
           "id": "GE-E4F22791E1BEB8A7",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W2"
         },
         {
           "id": "GE-705BAF133E0AA99C",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "W2"
         },
         {
           "id": "GE-193A1B07274BC1F4",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W2"
@@ -2615,14 +2615,14 @@
         },
         {
           "id": "GE-ACEAC033D48EAEE8",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W3"
         },
         {
           "id": "GE-68C651B447C11F98",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W3"
@@ -2636,14 +2636,14 @@
         },
         {
           "id": "GE-BE24DF0F864DE92F",
-          "label": "Complete blood count with formula and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
+          "label": "Complete blood count with differential and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
           "role": "discriminates",
           "source": "W3",
           "target": "H1"
         },
         {
           "id": "GE-5BF27ED7F01E6DA1",
-          "label": "Complete blood count with formula and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
+          "label": "Complete blood count with differential and smear, flow cytometry as indicated, quantitative immunoglobulins, electrophoresis, and immunofixation may reveal a clonal population or a polyclonal immunoprotein pattern. These results distinguish between mature lymphoid neoplasm and Castleman disease within the exact positions of E-CAND-1, E-CAND-4, E-CAND-6, and E-CAND-8.",
           "role": "discriminates",
           "source": "W3",
           "target": "H6"
@@ -2657,7 +2657,7 @@
         },
         {
           "id": "GE-1F255857346451B6",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "W4"
@@ -2671,7 +2671,7 @@
         },
         {
           "id": "GE-4624A9CAFDA0E404",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W5"
@@ -2762,70 +2762,70 @@
         },
         {
           "id": "GE-64022B2D7065E9FC",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W7"
         },
         {
           "id": "GE-FABC3EB4B809C263",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "W7"
         },
         {
           "id": "GE-632A6F88822AFC44",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W7"
         },
         {
           "id": "GE-AC178360E75A1594",
-          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious accumulation is also possible, so each atypical site must be confirmed clinically or morphologically.",
+          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious uptake is also possible, so each atypical site must be confirmed clinically or morphologically.",
           "role": "discriminates",
           "source": "W7",
           "target": "H1"
         },
         {
           "id": "GE-28190D5AC3E01B31",
-          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious accumulation is also possible, so each atypical site must be confirmed clinically or morphologically.",
+          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious uptake is also possible, so each atypical site must be confirmed clinically or morphologically.",
           "role": "discriminates",
           "source": "W7",
           "target": "H3"
         },
         {
           "id": "GE-9F90236EF7353DBC",
-          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious accumulation is also possible, so each atypical site must be confirmed clinically or morphologically.",
+          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious uptake is also possible, so each atypical site must be confirmed clinically or morphologically.",
           "role": "discriminates",
           "source": "W7",
           "target": "H6"
         },
         {
           "id": "GE-57336873641D77FA",
-          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious accumulation is also possible, so each atypical site must be confirmed clinically or morphologically.",
+          "label": "PET/CT can determine the distribution of active lesions and help select the biopsy site. Inflammatory or infectious uptake is also possible, so each atypical site must be confirmed clinically or morphologically.",
           "role": "discriminates",
           "source": "W7",
           "target": "H10"
         },
         {
           "id": "GE-4CDFA740D28F7430",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "W8"
         },
         {
           "id": "GE-674D448A7F63E723",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "W8"
         },
         {
           "id": "GE-11B653468BD8F8A2",
-          "label": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow study to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
+          "label": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow examination to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "W8"
@@ -2853,7 +2853,7 @@
         },
         {
           "id": "GE-396AE3A1DD7C2CA3",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "W9"
@@ -2888,21 +2888,21 @@
         },
         {
           "id": "GE-86984773588685F5",
-          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+          "label": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
           "role": "grounds",
           "source": "E-CAND-4",
           "target": "G1"
         },
         {
           "id": "GE-E76737942433E542",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "G1"
         },
         {
           "id": "GE-F15BBBDE8685B89D",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "G1"
@@ -2951,7 +2951,7 @@
         },
         {
           "id": "GE-DB6CE9BA7928E0A1",
-          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+          "label": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
           "role": "grounds",
           "source": "E-CAND-5",
           "target": "G2"
@@ -2972,7 +2972,7 @@
         },
         {
           "id": "GE-93443E79DFA24F3B",
-          "label": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow study to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
+          "label": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow examination to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "G3"
@@ -3028,7 +3028,7 @@
         },
         {
           "id": "GE-957A338A4DF4E22E",
-          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+          "label": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
           "role": "grounds",
           "source": "E-CAND-6",
           "target": "G5"
@@ -3173,7 +3173,7 @@
         {
           "id": "H4",
           "kind": "hypothesis",
-          "label": "Systemic auto-inflammatory syndrome"
+          "label": "Systemic autoinflammatory syndrome"
         },
         {
           "id": "H5",
@@ -3198,7 +3198,7 @@
         {
           "id": "H9",
           "kind": "hypothesis",
-          "label": "Violation of humoral immunity"
+          "label": "Possible humoral immune deficiency"
         },
         {
           "id": "H10",
@@ -3213,7 +3213,7 @@
         {
           "id": "H12",
           "kind": "hypothesis",
-          "label": "Medical fever"
+          "label": "Drug fever"
         },
         {
           "id": "H13",
@@ -4322,7 +4322,8 @@
       {
         "emphasis_terms": [
           "Secondary hemophagocytic syndrome",
-          "a possible critical hyperinflammatory complication"
+          "a possible critical hyperinflammatory complication",
+          "humoral immune deficiency"
         ],
         "evidence_ids": [
           "E-CAND-7"
@@ -4443,7 +4444,7 @@
           "CF-D7E2F23D3BFAA95F",
           "CF-AB38E46E4752A36B"
         ],
-        "text": "A separate safety assessment addresses possible secondary hemophagocytic syndrome: ferritin, triglycerides, fibrinogen, coagulogram, and serial complete blood count with formula are required along with a search for an infectious, malignant, or autoimmune trigger. The accompanying immune status is clarified by a repeated profile of immunoglobulins and a history of recurrent infections. Thyroid nodule requires TSH, free T4 and standardized ultrasound; fine-needle aspiration biopsy is determined by ultrasound features and size."
+        "text": "A separate safety assessment addresses possible secondary hemophagocytic syndrome: ferritin, triglycerides, fibrinogen, coagulogram, and serial complete blood count with differential are required along with a search for an infectious, malignant, or autoimmune trigger. The accompanying immune status is clarified by a repeated profile of immunoglobulins and a history of recurrent infections. Thyroid nodule requires TSH, free T4 and standardized ultrasound; fine-needle aspiration biopsy is determined by ultrasound features and size."
       },
       {
         "emphasis_terms": [
@@ -4514,7 +4515,7 @@
     "reading_time_minutes": 10,
     "source_library": [
       {
-        "applicability": "Fever, night sweats, and splenomegaly justify this diagnostic route. The page defines the test method and does not diagnose lymphoma in this patient. In the clinical facts, a temperature of up to 38 °C and night sweats without characteristics of intensity are indicated. Available data do not allow automatic classification of systemic symptoms. Clinical facts have numbers LDH and β₂-microglobulin without dates and source reference intervals. The current candidate does not apply these indexes and uses the page to fix the gap.",
+        "applicability": "Fever, night sweats, and splenomegaly justify this diagnostic route. The page defines the test method and does not diagnose lymphoma in this patient. In the clinical facts, a temperature of up to 38 °C and night sweats without characteristics of intensity are indicated. Available data do not allow automatic classification of systemic symptoms. Clinical facts have LDH values and β₂-microglobulin without dates and source reference intervals. The current candidate does not apply these indexes and uses the source to document the gap.",
         "bibliographic_id": "jsh_lymphoma_overview_2023",
         "id": "E-CAND-1",
         "location": "with. 1; with. 4; with. 6",
@@ -4529,7 +4530,7 @@
         "bibliographic_id": "nccn_b_cell_lymphomas_v4_2026",
         "id": "E-CAND-4",
         "location": "with. 43",
-        "proposition": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with formula, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
+        "proposition": "Splenic marginal zone lymphoma requires proper immunophenotyping, complete blood count with differential, biochemistry, and imaging. The diagnosis can be reasonably assumed by peripheral blood clonal small lymphoid cells or bone marrow with a consistent phenotype; the morphology of the spleen has the highest classification certainty.",
         "title": "NCCN Clinical Practice Guidelines in Oncology: B-Cell Lymphomas, Version 4.2026",
         "type_label": "Guideline",
         "url": null,
@@ -4540,29 +4541,29 @@
         "bibliographic_id": "nccn_hodgkin_lymphoma_v2_2026",
         "id": "E-CAND-5",
         "location": "with. 75",
-        "proposition": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core biopsy may be sufficient for diagnostic material, while fine-needle aspiration is mostly insufficient. PET/CT is used for initial staging, taking into account possible accumulation during infection and inflammation.",
+        "proposition": "The initial diagnosis of Hodgkin lymphoma usually requires excisional lymph node biopsy; core needle biopsy may suffice when it yields diagnostic material, while fine-needle aspiration is generally insufficient. PET/CT is used for initial staging, taking into account possible uptake related to infection or inflammation.",
         "title": "NCCN Clinical Practice Guidelines in Oncology: Hodgkin Lymphoma, Version 2.2026",
         "type_label": "Guideline",
         "url": null,
         "year": 2026
       },
       {
-        "applicability": "Fever, night sweats, numerical dynamics of C-reactive protein and ESR and splenomegaly give partial overlap with small criteria. In the clinical facts, there is no multinodular lesion and histology, so Castleman disease has a lower current weight.",
+        "applicability": "Fever, night sweats, serial values of C-reactive protein and ESR and splenomegaly give partial overlap with minor criteria. In the clinical facts, there is no lymphadenopathy in multiple nodal stations and histology, so Castleman disease has a lower current priority.",
         "bibliographic_id": "nccn_castleman_disease_v2_2026",
         "id": "E-CAND-6",
         "location": "with. 14",
-        "proposition": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, small criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
+        "proposition": "Consensus criteria for idiopathic multicentric Castleman disease require both major criteria: characteristic histopathological changes in the lymph node and enlarged nodes in at least two stations. Additionally, minor criteria and exclusion of infectious, autoimmune, and lymphoproliferative mimics are required.",
         "title": "NCCN Clinical Practice Guidelines in Oncology: Castleman Disease, Version 2.2026",
         "type_label": "Guideline",
         "url": null,
         "year": 2026
       },
       {
-        "applicability": "Fever and splenomegaly support targeted evaluation for secondary hemophagocytic syndrome as a possible critical hyperinflammatory complication. The available complete blood count has one time slice without a formula; the source supports only the conditional bone marrow step and captures the need for a separate profile source.",
+        "applicability": "Fever and splenomegaly support targeted evaluation for secondary hemophagocytic syndrome as a possible critical hyperinflammatory complication. The available complete blood count has a single time point without a differential count; the source supports only the conditional bone marrow step and captures the need for a separate condition-specific source.",
         "bibliographic_id": "nccn_histiocytic_neoplasms_v1_2026",
         "id": "E-CAND-7",
         "location": "with. 10",
-        "proposition": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow study to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
+        "proposition": "In the histiocytic neoplasia route, an unexplained change in the complete blood count is a reason to consider the bone marrow examination to evaluate for hemophagocytic syndrome, histiocytic or concomitant myeloid neoplasia. The page does not provide full criteria for adults.",
         "title": "NCCN Clinical Practice Guidelines in Oncology: Histiocytic Neoplasms, Version 1.2026",
         "type_label": "Guideline",
         "url": null,

@@ -166,7 +166,7 @@
           ],
           "id": "G2",
           "question": "What cell population carries BRAF V600E?",
-          "rationale": "Establishing the cellular identity of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification."
+          "rationale": "Establishing the cell-specific attribution of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification."
         },
         {
           "evidence_refs": [
@@ -225,17 +225,17 @@
           ],
           "id": "G6",
           "question": "Do spleen, monocyte, and peripheral blood morphology data distinguish HCL from splenic alternatives?",
-          "rationale": "In the existing depersonalized clinical set, the key clinico-morphological comparison is missing."
+          "rationale": "In the existing de-identified clinical dataset, the key clinicopathologic comparison is missing."
         }
       ],
       "decision_readiness": {
         "blocked_actions": [
           "Do not establish a final diagnosis of HCL without morphological examination, tissue IHC and comparison with the results of flow cytometry and BRAF study.",
-          "Do not attribute bony changes and numbness of the chin to a B-cell clone without confirmation of concordance of tissue findings.",
+          "Do not attribute bone lesions and numbness of the chin to a B-cell clone without confirmation of concordance of tissue findings.",
           "Do not exclude plasma cell neoplasm, aggressive B-cell lymphoma, or other concomitant process.",
           "Do not specify the stage, indications for treatment or treatment regimen."
         ],
-        "rationale": "Classic HCL can be responsibly considered as the leading working hypothesis: 22% of mature B cells expressing CD19/CD20/CD22/CD11c/CD25/CD103 as well as BRAF V600E were recorded in the source. CD10 expression, defective κ/λ transcription, unclear cellular identity of BRAF, and lack of morphological confirmation preclude definitive classification of the process or association of all bone and neurologic manifestations with it.",
+        "rationale": "Classic HCL can be responsibly considered as the leading working hypothesis: 22% of mature B cells expressing CD19/CD20/CD22/CD11c/CD25/CD103 as well as BRAF V600E were recorded in the source. CD10 expression, defective κ/λ transcription, unclear cell-specific attribution of BRAF, and lack of morphological confirmation preclude definitive classification of the process or association of all bone and neurologic manifestations with it.",
         "required_next_information": [
           "Morphologic examination of the bone marrow aspirate and trephine biopsy and IHC.",
           "Primary FCS files, the exact κ/λ result result, and confirmation of markers belonging to the same cell population.",
@@ -247,11 +247,11 @@
       },
       "external_evidence": [
         {
-          "applicability": "The statement directly addresses the recorded phenotype, but this is an adapted NCI review: the page does not prove the diagnosis in this patient, does not establish the cellular identity of BRAF, and does not determine the nature of the bone lesions.",
+          "applicability": "The statement directly addresses the recorded phenotype, but this is an adapted NCI review: the page does not prove the diagnosis in this patient, does not establish the cell-specific attribution of BRAF, and does not determine the nature of the bone lesions.",
           "bibliographic_id": "nci_text_snapshot_hairy_cell_leukemia_2026_08_12",
           "id": "E-CAND-1",
           "location": "nci_text_snapshot_hairy_cell_leukemia_2026_08_12_p0001",
-          "proposition": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "proposition": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "retrieval_ref": "R1:1",
           "rights_status": "allowed_by_admission_manifest",
           "source_review_route": "visual_semantic",
@@ -261,11 +261,11 @@
           "year": 2025
         },
         {
-          "applicability": "The provision is applicable to distinguish HCL and former HCL-v/SBLPN; population description is not a substitute for morphological study and determination of BRAF in a specific cell population.",
+          "applicability": "The statement applies to distinguishing HCL and former HCL-v/SBLPN; population description is not a substitute for morphologic evaluation and determination of BRAF in a defined cell population.",
           "bibliographic_id": "nci_text_snapshot_hairy_cell_leukemia_2026_08_12",
           "id": "E-CAND-2",
           "location": "nci_text_snapshot_hairy_cell_leukemia_2026_08_12_p0002",
-          "proposition": "In the HCL-v source, it is delimited by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
+          "proposition": "The source distinguishes HCL-v by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
           "retrieval_ref": "R1:5",
           "rights_status": "allowed_by_admission_manifest",
           "source_review_route": "visual_semantic",
@@ -335,7 +335,7 @@
           "bibliographic_id": "nccn_multiple_myeloma_v5_2026",
           "id": "E-CAND-7",
           "location": "nccn_multiple_myeloma_v5_2026_p0009",
-          "proposition": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "proposition": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "retrieval_ref": "R4:6",
           "rights_status": "restricted_authorized_private",
           "source_review_route": "visual_semantic",
@@ -377,7 +377,7 @@
           "bibliographic_id": "geltamo_follicular_lymphoma_2025",
           "id": "E-CAND-10",
           "location": "geltamo_follicular_lymphoma_2025_p0005",
-          "proposition": "For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+          "proposition": "For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
           "retrieval_ref": "R5:2",
           "rights_status": "allowed_by_admission_manifest",
           "source_review_route": "visual_semantic",
@@ -405,8 +405,8 @@
         {
           "applicability_limits": [
             "A working hypothesis, not a definitive diagnosis.",
-            "Bony changes and numbness of the chin are not automatically considered manifestations of HCL.",
-            "Restored units of general blood analysis identify indicators and their dynamics; whether values are within reference limits is not assessed without reference intervals."
+            "Bone lesions and numbness of the chin are not automatically considered manifestations of HCL.",
+            "Restored units of complete blood count identify indicators and their dynamics; whether values are within reference limits is not assessed without reference intervals."
           ],
           "clinical_role": "diagnostic_hypothesis",
           "id": "H1",
@@ -414,14 +414,14 @@
           "missing_evidence": [
             "Morphology and degree of fibrosis of trephine biopsy.",
             "Annexin A1, CD123, TRAP/DBA.44.",
-            "Determination of BRAF in a specific cell population.",
+            "Determination of BRAF in a defined cell population.",
             "The size of the spleen, the number of monocytes and the morphology of peripheral blood.",
-            "Consistency of tissue findings in the bone nucleus and bone marrow."
+            "Consistency of tissue findings in the bone lesion and bone marrow."
           ],
           "rank": 1,
           "role_rationale": "May independently explain mature B-cell population with HCL phenotype and systemic bone marrow involvement; a causal relationship with bony foci and chin numbness requires tissue confirmation.",
           "short_label": "Classic HCL",
-          "summary": "B-cell mature CD11c+/CD25+/CD103+ population and BRAF V600E most strongly favor classical HCL. Imaging confirms a systemic bone marrow lesion, but does not determine the cellular origin of the process. CD10 expression and lack of morphological confirmation leave the classification open."
+          "summary": "Mature B-cell CD11c+/CD25+/CD103+ population and BRAF V600E most strongly favor classical HCL. Imaging confirms a systemic bone marrow involvement, but does not determine the cellular origin of the process. CD10 expression and lack of morphological confirmation leave the classification open."
         },
         {
           "applicability_limits": [
@@ -480,7 +480,7 @@
           ],
           "rank": 4,
           "role_rationale": "It can independently explain the dominant bone pattern, pain and numbness of the chin, so it remains a diagnostic hypothesis; the recorded B-cell population does not confirm the plasma cell nature of the lesion.",
-          "short_label": "Plasma cell neoplasia",
+          "short_label": "Plasma cell neoplasm",
           "summary": "Cranial and axial skeletal changes, pain, chin numbness, and ESR dynamics retain multiple myeloma or plasmacytoma as a critical differential. Flow cytometry describes B cells, but no data on plasma cells."
         },
         {
@@ -516,12 +516,12 @@
             "Localization of damage to the lower jaw or nerve.",
             "Histology of the bone cell and its consistency with the bone marrow.",
             "Metabolic laboratory indicators in the presence of a corresponding clinical condition.",
-            "Determination of BRAF in a specific cell population.",
+            "Determination of BRAF in a defined cell population.",
             "Targeted search for the primary cell only in the presence of tissue or imaging grounds."
           ],
           "rank": null,
           "role_rationale": "This is a possible parallel skeletal, jaw, or metabolic process that may coexist with the B-cell clone; its causal independence must be confirmed tissue or anatomically.",
-          "short_label": "A model of two processes",
+          "short_label": "Two-process model",
           "summary": "Unilateral chin numbness, cranial bone demineralization, and bone marrow multifocal changes may reflect a separate metastatic, histiocytic, metabolic, or local process in the mandible. The available data do not give reasons to positively rank any of these mechanisms."
         },
         {
@@ -537,7 +537,7 @@
             "Primary FCS files and cell population isolation strategy.",
             "The exact result of κ/λ.",
             "Re-specimen and morphological comparison.",
-            "Orthogonal detection of BRAF in a specific cell population."
+            "Orthogonal detection of BRAF in a defined cell population."
           ],
           "rank": null,
           "role_rationale": "Indicates a possible non-representativeness or analytical or pre-analytical problem with the flow cytometry, κ/λ, or BRAF data that limits the reliability of cell population classification.",
@@ -550,8 +550,8 @@
         "All 41 requested pages were reviewed on contact sheets; each cited page is opened in full resolution; there is no unresolved layout ambiguity.",
         "NCI materials are adapted offline reviews; NCCN materials are private candidate sources with limited access; none of them are a clinician decision.",
         "There is no accepted source specific for metastatic process, histiocytosis, metabolic osteopathy, or chin numbness syndrome; these options remain in H6 and the list of unresolved issues.",
-        "Units of general blood analysis are used only to identify indicators and assess their dynamics; there are no reference intervals, so whether values are within reference limits is not determined.",
-        "The depersonalized clinical set lacks morphology, primary FCS files, exact κ/λ result, BRAF method/VAF/cellularity, plasma cell studies, and bone marrow histology.",
+        "Units of complete blood count are used only to identify indicators and assess their dynamics; there are no reference intervals, so whether values are within reference limits is not determined.",
+        "The de-identified clinical dataset lacks morphology, primary FCS files, exact κ/λ result, BRAF method/VAF/cellularity, plasma cell studies, and bone marrow histology.",
         "The ranked differential diagnosis covers H1–H5; H6 describes a possible parallel skeletal or jaw process, H7 a data quality problem."
       ],
       "relations": [
@@ -564,13 +564,13 @@
         {
           "direction": "support",
           "hypothesis_id": "H1",
-          "rationale": "Fixed BRAF V600E enhances H1, but the cellular origin of the mutation is unknown.",
+          "rationale": "Detected BRAF V600E enhances H1, but the cellular origin of the mutation is unknown.",
           "source_id": "CF-D027B38BA435D275"
         },
         {
           "direction": "support",
           "hypothesis_id": "H1",
-          "rationale": "bone marrow multifocal lesion suggests a systemic process, but does not determine its cellular origin.",
+          "rationale": "multifocal bone marrow involvement suggests a systemic process, but does not determine its cellular origin.",
           "source_id": "CF-816A58A898382830"
         },
         {
@@ -636,7 +636,7 @@
         {
           "direction": "support",
           "hypothesis_id": "H5",
-          "rationale": "bone marrow multifocal lesion may be observed in lymphoma.",
+          "rationale": "multifocal bone marrow involvement may be observed in lymphoma.",
           "source_id": "CF-816A58A898382830"
         },
         {
@@ -970,7 +970,7 @@
         "unit": null,
         "unit_resolution": null,
         "value": {
-          "text": "Immunophenotyping of punctate bone marrow dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected.",
+          "text": "Immunophenotyping of bone marrow aspirate dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected.",
           "type": "text"
         }
       },
@@ -1821,14 +1821,14 @@
         },
         {
           "id": "GE-677D8857CF52133C",
-          "label": "Fixed BRAF V600E enhances H1, but the cellular origin of the mutation is unknown.",
+          "label": "Detected BRAF V600E enhances H1, but the cellular origin of the mutation is unknown.",
           "role": "support",
           "source": "CF-D027B38BA435D275",
           "target": "H1"
         },
         {
           "id": "GE-D25DA3116CA51C8F",
-          "label": "bone marrow multifocal lesion suggests a systemic process, but does not determine its cellular origin.",
+          "label": "multifocal bone marrow involvement suggests a systemic process, but does not determine its cellular origin.",
           "role": "support",
           "source": "CF-816A58A898382830",
           "target": "H1"
@@ -1905,7 +1905,7 @@
         },
         {
           "id": "GE-1D48DD8225549FC4",
-          "label": "bone marrow multifocal lesion may be observed in lymphoma.",
+          "label": "multifocal bone marrow involvement may be observed in lymphoma.",
           "role": "support",
           "source": "CF-816A58A898382830",
           "target": "H5"
@@ -1961,7 +1961,7 @@
         },
         {
           "id": "GE-DC7B7642DD64B7EC",
-          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "role": "grounds",
           "source": "E-CAND-1",
           "target": "W1"
@@ -2024,14 +2024,14 @@
         },
         {
           "id": "GE-C2D2766A593E28AE",
-          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "role": "grounds",
           "source": "E-CAND-1",
           "target": "W2"
         },
         {
           "id": "GE-A3E4602487668555",
-          "label": "In the HCL-v source, it is delimited by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
+          "label": "The source distinguishes HCL-v by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
           "role": "grounds",
           "source": "E-CAND-2",
           "target": "W2"
@@ -2122,7 +2122,7 @@
         },
         {
           "id": "GE-FB11FD26DA44098D",
-          "label": "For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+          "label": "For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
           "role": "grounds",
           "source": "E-CAND-10",
           "target": "W3"
@@ -2150,7 +2150,7 @@
         },
         {
           "id": "GE-C840417F57315C6A",
-          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "W4"
@@ -2192,7 +2192,7 @@
         },
         {
           "id": "GE-64C3258038DA1541",
-          "label": "For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+          "label": "For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
           "role": "grounds",
           "source": "E-CAND-10",
           "target": "W5"
@@ -2241,14 +2241,14 @@
         },
         {
           "id": "GE-5391180B04FB259E",
-          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "W6"
         },
         {
           "id": "GE-5C1140F8806EDBF7",
-          "label": "For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+          "label": "For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
           "role": "grounds",
           "source": "E-CAND-10",
           "target": "W6"
@@ -2332,7 +2332,7 @@
         },
         {
           "id": "GE-11B653468BD8F8A2",
-          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "W8"
@@ -2353,7 +2353,7 @@
         },
         {
           "id": "GE-8955ADC311EBB14C",
-          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "role": "grounds",
           "source": "E-CAND-1",
           "target": "G1"
@@ -2402,14 +2402,14 @@
         },
         {
           "id": "GE-F5A104E156C1DF3D",
-          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "role": "grounds",
           "source": "E-CAND-1",
           "target": "G2"
         },
         {
           "id": "GE-531989D6F54A7B06",
-          "label": "In the HCL-v source, it is delimited by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
+          "label": "The source distinguishes HCL-v by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
           "role": "grounds",
           "source": "E-CAND-2",
           "target": "G2"
@@ -2430,28 +2430,28 @@
         },
         {
           "id": "GE-715B5AC787D977AB",
-          "label": "Establishing the cellular identity of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
+          "label": "Establishing the cell-specific attribution of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
           "role": "limits",
           "source": "G2",
           "target": "H1"
         },
         {
           "id": "GE-BA0D974EDDBC9DA7",
-          "label": "Establishing the cellular identity of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
+          "label": "Establishing the cell-specific attribution of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
           "role": "limits",
           "source": "G2",
           "target": "H2"
         },
         {
           "id": "GE-AF11FE68DBAEEEA8",
-          "label": "Establishing the cellular identity of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
+          "label": "Establishing the cell-specific attribution of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
           "role": "limits",
           "source": "G2",
           "target": "H6"
         },
         {
           "id": "GE-028C91DD4FD53F16",
-          "label": "Establishing the cellular identity of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
+          "label": "Establishing the cell-specific attribution of BRAF changes the likelihood ratio of H1 and H2, tests the possible separate process of H6, and determines how much H7 limits the reliability of the classification.",
           "role": "limits",
           "source": "G2",
           "target": "H7"
@@ -2465,7 +2465,7 @@
         },
         {
           "id": "GE-84DE51D46935D204",
-          "label": "For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+          "label": "For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
           "role": "grounds",
           "source": "E-CAND-10",
           "target": "G3"
@@ -2514,7 +2514,7 @@
         },
         {
           "id": "GE-4D1500A9BA2844FD",
-          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "G4"
@@ -2542,7 +2542,7 @@
         },
         {
           "id": "GE-69A7969AAE58C850",
-          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry.",
+          "label": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry.",
           "role": "grounds",
           "source": "E-CAND-7",
           "target": "G5"
@@ -2577,7 +2577,7 @@
         },
         {
           "id": "GE-6CA29893A460002F",
-          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown.",
+          "label": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown.",
           "role": "grounds",
           "source": "E-CAND-1",
           "target": "G6"
@@ -2605,14 +2605,14 @@
         },
         {
           "id": "GE-3AAE6DFF2A401D69",
-          "label": "In the existing depersonalized clinical set, the key clinico-morphological comparison is missing.",
+          "label": "In the existing de-identified clinical dataset, the key clinicopathologic comparison is missing.",
           "role": "limits",
           "source": "G6",
           "target": "H1"
         },
         {
           "id": "GE-19D4FD22DC8C6846",
-          "label": "In the existing depersonalized clinical set, the key clinico-morphological comparison is missing.",
+          "label": "In the existing de-identified clinical dataset, the key clinicopathologic comparison is missing.",
           "role": "limits",
           "source": "G6",
           "target": "H2"
@@ -2647,7 +2647,7 @@
         {
           "id": "CF-BC45098278905DF1",
           "kind": "fact",
-          "label": "Immunophenotyping of punctate bone marrow dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected."
+          "label": "Immunophenotyping of bone marrow aspirate dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected."
         },
         {
           "id": "CF-D027B38BA435D275",
@@ -2682,7 +2682,7 @@
         {
           "id": "H4",
           "kind": "hypothesis",
-          "label": "Plasma cell neoplasia"
+          "label": "Plasma cell neoplasm"
         },
         {
           "id": "H5",
@@ -2692,7 +2692,7 @@
         {
           "id": "H6",
           "kind": "hypothesis",
-          "label": "A model of two processes"
+          "label": "Two-process model"
         },
         {
           "id": "H7",
@@ -3283,7 +3283,7 @@
         "effective_at": "2025-12-11",
         "id": "SR-39F6D64B344E-P0005",
         "kind": "paragraph",
-        "literal": "Immunophenotyping of punctate bone marrow dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected. Is there a predominance of the expression of light chains of immunoglobulins? (?/? ? 75%/25%). The expression of markers T-cell, NK cell, myeloid and blast lines was not detected. The presence of the BRAF V600E mutation was established by molecular genetic research.",
+        "literal": "Immunophenotyping of bone marrow aspirate dated 11.12.2025: according to the results of immunophenotyping, a population of B-lymphocytes (~22%) with expression of CD19, CD20, CD10, CD22, CD11c, CD25, CD103, HLA-DR was detected. Is there a predominance of the expression of light chains of immunoglobulins? (?/? ? 75%/25%). The expression of markers T-cell, NK cell, myeloid and blast lines was not detected. The presence of the BRAF V600E mutation was established by molecular genetic research.",
         "locator": {
           "paragraph_index": 5,
           "part": "word/document.xml"
@@ -3658,11 +3658,11 @@
     "reading_time_minutes": 10,
     "source_library": [
       {
-        "applicability": "The statement directly addresses the recorded phenotype, but this is an adapted NCI review: the page does not prove the diagnosis in this patient, does not establish the cellular identity of BRAF, and does not determine the nature of the bone lesions. The provision is applicable to distinguish HCL and former HCL-v/SBLPN; population description is not a substitute for morphological study and determination of BRAF in a specific cell population.",
+        "applicability": "The statement directly addresses the recorded phenotype, but this is an adapted NCI review: the page does not prove the diagnosis in this patient, does not establish the cell-specific attribution of BRAF, and does not determine the nature of the bone lesions. The statement applies to distinguishing HCL and former HCL-v/SBLPN; population description is not a substitute for morphologic evaluation and determination of BRAF in a defined cell population.",
         "bibliographic_id": "nci_text_snapshot_hairy_cell_leukemia_2026_08_12",
         "id": "E-CAND-1",
         "location": "with. 1; with. 2",
-        "proposition": "The source describes the diagnostic evaluation of HCL by flow cytometry, aspiration/biopsy bone marrow, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the determining role of BRAF V600E are shown. In the HCL-v source, it is delimited by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
+        "proposition": "The source describes the diagnostic evaluation of HCL by flow cytometry, bone marrow aspiration/biopsy, immunophenotyping, and BRAF testing; the expression of CD19/CD20/CD22 together with CD11c/CD25/CD103 and the diagnostic significance of BRAF V600E are shown. The source distinguishes HCL-v by variable expression of CD103, absence of CD25 and BRAF mutations; this justifies testing the phenotype and BRAF for differentiation from classic HCL.",
         "title": "Hairy Cell Leukemia Treatment (PDQ®)–Health Professional Version",
         "type_label": "Evidence review",
         "url": null,
@@ -3695,7 +3695,7 @@
         "bibliographic_id": "nccn_multiple_myeloma_v5_2026",
         "id": "E-CAND-7",
         "location": "with. 9; with. 16",
-        "proposition": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and aspiration/biopsy bone marrow with IHC and flow cytometry. Multiple myeloma requires clonal bone marrow plasma cells ≥10% or biopsy-proven plasmacytoma together with a myeloma-defining event; such events include process-related osteolytic lesions, CRAB criteria, or defined biomarkers, including more than one focal site at MRI.",
+        "proposition": "Initial diagnostic testing for multiple myeloma includes complete blood count, calcium, albumin, renal function tests, SPEP/SIFE, UPEP/UIFE, serum free light chains, whole body PET/CT or low-dose CT, and bone marrow aspiration/biopsy with IHC and flow cytometry. Multiple myeloma requires clonal bone marrow plasma cells ≥10% or biopsy-proven plasmacytoma together with a myeloma-defining event; such events include process-related osteolytic lesions, CRAB criteria, or defined biomarkers, including more than one focal site at MRI.",
         "title": "NCCN Guidelines Version 5.2026: Multiple Myeloma",
         "type_label": "Guideline",
         "url": null,
@@ -3706,7 +3706,7 @@
         "bibliographic_id": "geltamo_follicular_lymphoma_2025",
         "id": "E-CAND-9",
         "location": "with. 3; with. 5",
-        "proposition": "Follicular lymphoma cells usually express CD19/CD20/CD22/CD79a/BCL2/BCL6/CD10; t(14;18) results in an IGH::BCL2 rearrangement, and biopsies of affected tissue are preferred if available. For follicular lymphoma, the source provides histological verification, aspiration/biopsy bone marrow and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
+        "proposition": "Follicular lymphoma cells usually express CD19/CD20/CD22/CD79a/BCL2/BCL6/CD10; t(14;18) results in an IGH::BCL2 rearrangement, and biopsies of affected tissue are preferred if available. For follicular lymphoma, the source provides histological verification, bone marrow aspiration/biopsy and CT/PET/CT; Peripheral blood immunophenotyping and bone marrow and IGH::BCL2 quantification are additional studies.",
         "title": "Guidelines for Diagnosis, Treatment, and Follow-Up of Patients with Follicular Lymphoma-Spanish Lymphoma Group (GELTAMO) 2025",
         "type_label": "Guideline",
         "url": null,

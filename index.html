@@ -3,51 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="English clinical projection of HematoBoard CASE001–003. Source-pinned candidates for clinician review." />
-    <meta name="theme-color" content="#f7f8fb" />
-    <link rel="icon" href="./favicon.svg" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>HematoBoard · English Clinical Projection</title>
+    <meta name="theme-color" content="#f9f7fb" />
+    <meta name="description" content="HematoBoard v2 — read-only clinical projection with source support and a clinical reasoning record." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>HematoBoard v2 · Clinical Projection</title>
+    <script type="module" crossorigin src="./assets/index-CHsOX2Pz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-6vemKrSR.css">
   </head>
   <body>
-    <header class="appbar">
-      <a class="brand" href="./" aria-label="HematoBoard English clinical projection home">
-        <span class="brand-mark" aria-hidden="true">H</span>
-        <span>HematoBoard <small>English clinical projection</small></span>
-      </a>
-      <label class="case-picker">
-        <span>Case</span>
-        <select id="case-select" aria-label="Select case"></select>
-      </label>
-    </header>
-
-    <div class="shell">
-      <nav class="side-nav" aria-label="Case navigation">
-        <button data-view="overview" aria-current="page"><span aria-hidden="true">01</span>Overview</button>
-        <button data-view="narrative"><span aria-hidden="true">02</span>Clinical narrative</button>
-        <button data-view="differential"><span aria-hidden="true">03</span>Differential</button>
-        <button data-view="plan"><span aria-hidden="true">04</span>Verification plan</button>
-        <button data-view="evidence"><span aria-hidden="true">05</span>Evidence</button>
-        <button data-view="data"><span aria-hidden="true">06</span>Data & provenance</button>
-      </nav>
-
-      <main id="main" tabindex="-1">
-        <div class="loading" role="status">Loading the clinical projection…</div>
-      </main>
-    </div>
-
-    <dialog id="source-dialog" aria-labelledby="source-dialog-title">
-      <div class="dialog-head">
-        <div>
-          <span class="eyebrow">Patient record</span>
-          <h2 id="source-dialog-title">Source support</h2>
-        </div>
-        <button id="source-dialog-close" class="secondary">Close</button>
-      </div>
-      <div id="source-dialog-body"></div>
-    </dialog>
-
-    <noscript>This site requires JavaScript to display the case projections.</noscript>
-    <script type="module" src="./app.js"></script>
+    <div id="root"></div>
   </body>
 </html>
