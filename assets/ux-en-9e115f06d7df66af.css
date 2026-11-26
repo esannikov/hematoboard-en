@@ -1,0 +1,727 @@
+/* 10-shell.css */
+/* 1. Header: case selector no longer outweighs the case title */
+html body .hb-app .hb-case-selector .MuiInputBase-root {
+  background: var(--hb-surface-container-low, #f3f1f6) !important;
+  color: var(--hb-on-surface, #1d1b20) !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--hb-primary, #6750a4) 35%, transparent);
+}
+html body .hb-app .hb-case-selector .MuiSelect-select { color: var(--hb-on-surface, #1d1b20) !important; }
+html body .hb-app .hb-case-selector .MuiInputLabel-root { color: var(--hb-on-surface-variant, #49454f) !important; }
+html body .hb-app .hb-case-selector .MuiSelect-icon,
+html body .hb-app .hb-case-selector svg { color: var(--hb-primary, #6750a4) !important; fill: currentColor; }
+html body .hb-app .hb-case-selector .MuiOutlinedInput-notchedOutline { border-color: transparent !important; }
+
+/* 2. Case strip: counts read as clickable filters, readable size */
+html body .hb-app .hb-case-counts { gap: 6px 8px; font-size: 0.875rem; }
+html body .hb-app .hb-case-counts > span { display: none; }          /* dangling "·" separators */
+html body .hb-app .hb-case-count {
+  min-height: 36px; padding: 4px 12px; border-radius: 999px;
+  background: color-mix(in srgb, var(--hb-surface, #fff) 70%, transparent);
+  box-shadow: inset 0 0 0 1px var(--hb-outline-variant, #cac4d0);
+}
+html body .hb-app .hb-case-count:hover:not(:disabled) {
+  text-decoration: none; box-shadow: inset 0 0 0 1px var(--hb-primary, #6750a4);
+}
+
+/* 3. Physician decision status: directly under the case strip on every view.
+      Amber only while no decision is recorded (data-pending, set by 40-naming.js). */
+html body .hb-app .hb-canvas:has(> .hb-case-strip) { display: flex; flex-direction: column; }
+html body .hb-app .hb-canvas:has(> .hb-case-strip) > .hb-case-strip { order: -2; }
+html body .hb-app .hb-canvas:has(> .hb-case-strip) > .hb-run-id.MuiTypography-root {
+  order: -1; align-self: flex-start;
+  margin: 0 0 16px !important; padding: 6px 12px 6px 30px;
+  font-size: 0.875rem; font-weight: 600; line-height: 1.4;
+  color: var(--hb-on-surface-variant, #49454f); background: var(--hb-surface-container, #f3edf7); border-radius: 999px;
+  position: relative;
+}
+html body .hb-app .hb-canvas:has(> .hb-case-strip) > .hb-run-id.MuiTypography-root::before {
+  content: ""; position: absolute; left: 12px; top: 50%; width: 8px; height: 8px;
+  margin-top: -4px; border-radius: 50%; background: var(--hb-primary, #6750a4);
+}
+html body .hb-app .hb-canvas > .hb-run-id[data-pending="true"].MuiTypography-root { color: #6b4a00; background: #fff4dc; box-shadow: inset 0 0 0 1px #f0d9a6; }
+html body .hb-app .hb-canvas > .hb-run-id[data-pending="true"].MuiTypography-root::before { background: #c98a00; }
+
+/* 17. Case strip: one compact layout on every view */
+html body .hb-app .hb-case-strip.MuiPaper-root {
+  display: grid !important; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center;
+  gap: 4px 20px !important; padding: 10px 20px !important; border-radius: 20px !important; margin-bottom: 16px;
+}
+html body .hb-app .hb-case-strip .hb-case-title-row { grid-area: 1 / 1; gap: 6px 12px; margin: 0 !important; }
+html body .hb-app .hb-case-strip h1.MuiTypography-root { font-size: 1.375rem !important; line-height: 1.3 !important; margin: 0 !important; }
+html body .hb-app .hb-case-strip .hb-case-counts { grid-area: 1 / 2; justify-content: flex-end; margin: 0 !important; }
+html body .hb-app .hb-case-strip .hb-case-context { grid-area: 1 / 3; margin: 0 !important; }
+html body .hb-app .hb-case-strip .hb-case-context > summary { min-height: 40px; padding: 8px 10px; }
+html body .hb-app .hb-case-strip .hb-case-context[open] { grid-area: auto / 1 / auto / -1; padding-top: 4px; }
+html body .hb-app .hb-case-strip :is(.hb-case-caveat, .hb-case-source-mode) { grid-column: 1 / -1; margin: 0 !important; padding: 4px 0 2px; }
+html body .hb-app .hb-case-strip .hb-mobile-jump { grid-column: 1 / -1; }
+@media (max-width: 1199px) {
+  html body .hb-app .hb-case-strip.MuiPaper-root { grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px !important; }
+  html body .hb-app .hb-case-strip .hb-case-title-row { grid-column: 1; }
+  html body .hb-app .hb-case-strip .hb-case-context { grid-column: 2; grid-row: 1; }
+  html body .hb-app .hb-case-strip .hb-case-counts { grid-area: 2 / 1 / auto / -1; justify-content: flex-start; }
+}
+@media (max-width: 600px) {
+  html body .hb-app .hb-case-strip.MuiPaper-root { padding: 8px 12px !important; gap: 0 8px !important; }
+  html body .hb-app .hb-case-strip h1.MuiTypography-root { font-size: 1.125rem !important; }
+}
+/* decision status sits tight under the strip */
+html body .hb-app .hb-canvas:has(> .hb-run-id) > .hb-case-strip { margin-bottom: 10px; }
+
+/* 19. Navigation order: patient layer first (Огляд · Перебіг · Дані), then candidate layer (Граф · План · Міркування) */
+html body .hb-app .hb-rail ul.MuiList-root { display: flex; flex-direction: column; }
+html body .hb-app .hb-rail ul.MuiList-root > span:nth-child(4) { order: 3; }
+html body .hb-app .hb-rail ul.MuiList-root > span:nth-child(3) { order: 4; position: relative; margin-top: 14px; }
+html body .hb-app .hb-rail ul.MuiList-root > span:nth-child(5) { order: 5; }
+html body .hb-app .hb-rail ul.MuiList-root > span:nth-child(6) { order: 6; }
+html body .hb-app .hb-rail ul.MuiList-root > span:nth-child(3)::before {
+  content: ""; position: absolute; top: -8px; left: 22%; right: 22%; height: 1px; background: var(--hb-outline-variant, #cac4d0);
+}
+@media (max-width: 760px) {
+  html body .hb-app .hb-mobile-nav > :nth-child(4) { order: 3; }
+  html body .hb-app .hb-mobile-nav > :nth-child(3) { order: 4; }
+  html body .hb-app .hb-mobile-nav > :nth-child(5) { order: 5; }
+  html body .hb-app .hb-mobile-nav > :nth-child(6) { order: 6; }
+}
+
+
+/* 20-overview.css */
+/* 4. Clinical picture: "Ще" becomes a real, tappable control */
+html body .hb-app .hb-clamp__toggle {
+  min-height: 36px; padding: 6px 2px; font-size: 0.875rem; font-weight: 650;
+  color: var(--hb-primary, #6750a4); text-decoration: underline; text-underline-offset: 0.2em;
+}
+
+/* 5. Urgent block: use the full card width at any breakpoint */
+html body .hb-app .hb-overview-urgent__list,
+html body .hb-app .hb-overview-urgent__step { max-width: none; width: 100%; }
+html body .hb-app .hb-overview-urgent__step:only-child { grid-column: 1 / -1; }
+
+/* 6. Hypothesis notes: one quiet block instead of two loose lines */
+html body .hb-app .hb-overview-differential .hb-hypothesis-coexistence,
+html body .hb-app .hb-overview-differential .hb-hypothesis-order-note {
+  margin: 0; font-size: 0.875rem; color: var(--hb-on-surface-variant, #49454f);
+}
+html body .hb-app .hb-overview-differential .hb-hypothesis-order-note { margin-bottom: 18px; }
+
+/* 7. Hypothesis list: rank badges for ranked items, quieter unranked ones,
+      divider aligned with text */
+html body .hb-app .hb-overview-differential .hb-hypothesis-layout { counter-reset: hb-rank; }
+html body .hb-app .hb-overview-differential .hb-v1-diff__row {
+  grid-template-columns: 28px minmax(0, 1fr) 20px !important;
+  font-size: 0.95rem; line-height: 1.35;
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row::before {
+  content: ""; display: grid !important; place-items: center;
+  width: 26px; height: 26px; border-radius: 8px; position: static;
+  font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row[data-ranked="true"]::before {
+  counter-increment: hb-rank; content: counter(hb-rank);
+  background: var(--hb-primary-container, #eaddff); color: var(--hb-on-primary-container, #21005d);
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row[data-ranked="true"][aria-pressed="true"]::before {
+  background: var(--hb-primary, #6750a4); color: #fff;
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row[data-ranked="false"]::before {
+  content: "–"; color: var(--hb-on-surface-variant, #49454f);
+  box-shadow: inset 0 0 0 1px var(--hb-outline-variant, #cac4d0);
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row[data-ranked="false"] .hb-v1-diff__name {
+  color: var(--hb-on-surface-variant, #49454f);
+}
+html body .hb-app .hb-overview-differential .hb-v1-diff__row[aria-pressed="true"] .hb-v1-diff__name {
+  color: var(--hb-on-surface, #1d1b20); font-weight: 700;
+}
+html body .hb-app .hb-overview-differential .hb-hypothesis-option::after { left: 52px; right: 12px; }
+/* label the unranked group once */
+html body .hb-app .hb-overview-differential
+  .hb-hypothesis-option:has(> [data-ranked="true"]) + .hb-hypothesis-option:has(> [data-ranked="false"])::before {
+  content: "Check order not established";
+  display: block; padding: 14px 12px 4px; font-size: 0.75rem; font-weight: 650;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--hb-on-surface-variant, #49454f);
+}
+
+/* 8. Detail card: height follows content (no empty white field) */
+@media (min-width: 1100px) {
+  html body .hb-app .hb-overview-differential .hb-v1-leading.hb-workup-item.MuiCard-root {
+    height: auto !important; max-height: none !important; align-self: start; overflow: visible;
+  }
+  /* list and card are side by side — "jump" links are redundant here */
+  html body .hb-app .hb-overview-differential .hb-hypothesis-jump,
+  html body .hb-app .hb-overview-differential .hb-hypothesis-return { display: none !important; }
+}
+
+/* 9. Other clinical issues: chevron is enough; urgent issue is labelled */
+html body .hb-app .hb-clinical-issue__action {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+html body .hb-app .hb-clinical-issue__name { font-size: 0.95rem; }
+html body .hb-app .hb-clinical-issue[data-urgent="true"] { border-left: 4px solid #b3261e !important; }
+html body .hb-app .hb-clinical-issue__alert { display: inline-flex; align-items: center; gap: 6px; color: #b3261e; }
+html body .hb-app .hb-clinical-issue__alert::after {
+  content: "Urgent"; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em;
+  padding: 2px 8px; border-radius: 999px; background: #fde7e5; color: #8c1d18; order: 2;
+}
+html body .hb-app .hb-clinical-issue__toggle { gap: 10px; }
+html body .hb-app .hb-clinical-issue__toggle .hb-clinical-issue__name { flex: 1 1 auto; }
+html body .hb-app .hb-clinical-issue__toggle .hb-clinical-issue__alert { order: 2; }
+html body .hb-app .hb-clinical-issue__toggle > svg { order: 3; }
+
+/* 10. Mobile */
+@media (max-width: 760px) {
+  html body .hb-app .hb-mobile-nav .MuiBottomNavigationAction-label,
+  html body .hb-app .hb-mobile-nav .MuiBottomNavigationAction-label.Mui-selected {
+    overflow-wrap: normal; word-break: normal; white-space: nowrap;
+    font-size: 0.66rem; letter-spacing: -0.01em;
+  }
+  html body .hb-app .hb-mobile-nav .MuiBottomNavigationAction-root { padding-inline: 0; }
+  html body .hb-app .hb-case-count { padding: 4px 10px; min-height: 34px; }
+  html body .hb-app .hb-overview-differential .hb-hypothesis-option::after { left: 50px; }
+}
+
+/* 12. Hypothesis section: drop the two explanatory notes */
+html body .hb-app .hb-overview-differential :is(.hb-hypothesis-coexistence, .hb-hypothesis-order-note) { display: none !important; }
+html body .hb-app .hb-overview-differential .hb-readiness { margin-bottom: 16px !important; }
+
+/* 13. Hypotheses: list no longer stretches to the detail card height; no group caption */
+@media (min-width: 1100px) {
+  html body .hb-app .hb-overview-differential .hb-hypothesis-layout {
+    grid-template-rows: repeat(var(--hypothesis-count), min-content) 1fr !important; align-content: start !important;
+  }
+  html body .hb-app .hb-overview-differential .hb-v1-leading.hb-workup-item.MuiCard-root { grid-row: 1 / -1 !important; }
+}
+html body .hb-app .hb-overview-differential
+  .hb-hypothesis-option:has(> [data-ranked="true"]) + .hb-hypothesis-option:has(> [data-ranked="false"])::before { content: none !important; display: none !important; }
+
+
+/* 30-evidence.css */
+/* 11. Evidence block v2: quiet ledger — short labels, one accent per row */
+html body .hb-app .hb-v1-leading .hb-workup-title.MuiTypography-root.MuiTypography-h1 {
+  font-size: 1.375rem !important; line-height: 1.3 !important; letter-spacing: -0.01em;
+}
+
+/* disclosure title: shorter */
+html body .hb-app #hypothesis-evidence > summary .hb-disclosure-summary__label { font-size: 0 !important; }
+html body .hb-app #hypothesis-evidence > summary .hb-disclosure-summary__label::after {
+  content: "Arguments"; font-size: 0.95rem; font-weight: 650;
+}
+
+html body .hb-app .hb-hypothesis-evidence-visible > :is(.hb-item-evidence, .hb-item-neutral) { padding-inline: 24px; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence { display: grid !important; gap: 0 !important; margin: 0 !important; padding-top: 0 !important; }
+
+/* rows */
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute, .hb-item-neutral) {
+  display: grid !important; grid-template-columns: 6.5rem minmax(0, 1fr) !important;
+  column-gap: 16px !important; row-gap: 0 !important; align-items: baseline !important;
+  padding: 14px 0 !important; margin: 0 !important; border: 0 !important; border-radius: 0 !important; background: none !important;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--hb-outline-variant, #cac4d0) 55%, transparent) !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__support { box-shadow: none !important; padding-top: 4px !important; }
+
+/* row labels: short, sentence case, colour = the only accent */
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute, .hb-item-neutral) > .hb-item-heading.MuiTypography-root {
+  grid-column: 1; margin: 0 !important; padding: 0 !important; background: none !important; border: 0 !important;
+  font-size: 0 !important; line-height: 1.4; display: block;
+}
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute, .hb-item-neutral) > .hb-item-heading::after {
+  font-size: 0.8125rem; font-weight: 700; letter-spacing: 0; text-transform: none;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__support > .hb-item-heading::after { content: "For"; color: #2e6b4f; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute > .hb-item-heading::after { content: "Against"; color: #9b2a22; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral > .hb-item-heading::after { content: "Neutral"; color: var(--hb-on-surface-variant, #5f5a66); font-weight: 600; }
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-arg-list, .hb-arg__empty) { grid-column: 2; margin: 0 !important; }
+
+/* empty "against": a dash, not a sentence */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute[data-empty="true"] > .hb-item-heading::after { color: var(--hb-on-surface-variant, #5f5a66); font-weight: 600; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__empty { font-size: 0 !important; padding: 0 !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__empty::after {
+  content: "not recorded"; font-size: 0.875rem; color: var(--hb-on-surface-variant, #5f5a66);
+}
+
+/* argument */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg-list { display: grid; gap: 12px; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg {
+  display: grid !important; gap: 3px !important; padding: 0 !important; margin: 0 !important; border: 0 !important; background: none !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__text { display: block !important; max-width: 70ch; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__text :is(p, strong) {
+  display: block; margin: 0 !important; font-size: 0.9375rem !important; line-height: 1.5 !important;
+  color: var(--hb-on-surface, #1d1b20); font-weight: 450 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__text strong { font-weight: 550 !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__text strong + p {
+  font-size: 0.875rem !important; color: var(--hb-on-surface-variant, #5f5a66);
+}
+
+/* meta: tiny grey line; only the source carries colour */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__meta {
+  display: flex !important; flex-wrap: wrap; align-items: center; gap: 0 12px !important; margin: 0 !important; padding: 0 !important;
+  font-size: 0.78rem; color: var(--hb-on-surface-variant, #5f5a66);
+}
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-arg__chips, .hb-arg__provenance) { display: contents !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__chip {
+  background: none !important; border: 0 !important; padding: 0 !important; min-height: 0 !important;
+  font-size: 0.78rem !important; font-weight: 500 !important; color: var(--hb-on-surface-variant, #5f5a66) !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__kind[data-kind="pattern_compatibility"] { font-size: 0 !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__kind[data-kind="pattern_compatibility"]::after { content: "non-specific"; font-size: 0.78rem; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral .hb-arg__kind[data-kind="context_only"] { display: none !important; }
+
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-arg__source, .hb-arg__more) {
+  background: none !important; border: 0 !important; box-shadow: none !important; border-radius: 4px;
+  padding: 2px 0 !important; min-height: 24px !important; min-width: 0 !important;
+  display: inline-flex !important; align-items: center; gap: 3px;
+  font-size: 0.78rem !important; font-weight: 500 !important; cursor: pointer;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__source { color: var(--hb-primary, #6750a4) !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__more { color: var(--hb-on-surface-variant, #5f5a66) !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__source svg { width: 12px !important; height: 12px !important; opacity: 0.8; }
+/* generic "Джерело" label → icon only (accessible name stays) */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__source[data-generic="true"] > span { display: none; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__source[data-generic="true"] svg { width: 14px !important; height: 14px !important; }
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-arg__source, .hb-arg__more):hover { text-decoration: underline; text-underline-offset: 0.2em; color: var(--hb-primary, #6750a4) !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__details {
+  margin-top: 6px; padding: 8px 12px; border-radius: 10px; font-size: 0.85rem;
+  background: var(--hb-surface-container-low, #f6f3f8);
+}
+
+/* context panel: soft tinted box, short titles, no bullets */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits {
+  display: grid !important; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)) !important; gap: 14px 32px !important;
+  margin: 8px 0 20px !important; padding: 16px 18px !important; border: 0 !important; border-radius: 14px;
+  background: var(--hb-surface-container-low, #f6f4f7) !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits > div { padding: 0 !important; border: 0 !important; background: none !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits .hb-item-heading.MuiTypography-root {
+  margin: 0 0 6px !important; padding: 0 !important; background: none !important; font-size: 0 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits .hb-item-heading::after {
+  font-size: 0.8125rem; font-weight: 700; color: var(--hb-on-surface, #1d1b20);
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits > div:nth-child(1) .hb-item-heading::after { content: "What to check"; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits > div:nth-child(2) .hb-item-heading::after { content: "Limitations"; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits ul { margin: 0 !important; padding: 0 !important; list-style: none !important; display: grid; gap: 6px; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits li {
+  position: relative; padding: 0 0 0 14px !important; margin: 0 !important; font-size: 0.875rem !important; line-height: 1.45 !important;
+  color: var(--hb-on-surface-variant, #4a4550);
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits li::before {
+  content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 1.5px; background: currentColor; opacity: 0.6;
+}
+
+@media (max-width: 760px) {
+  html body .hb-app .hb-hypothesis-evidence-visible > :is(.hb-item-evidence, .hb-item-neutral) { padding-inline: 16px; }
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits { margin: 8px 0 16px !important; padding: 14px !important; }
+  html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute, .hb-item-neutral) {
+    grid-template-columns: minmax(0, 1fr) !important; row-gap: 4px !important;
+  }
+  html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-arg-list, .hb-arg__empty) { grid-column: 1; }
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute { grid-template-columns: auto minmax(0, 1fr) !important; column-gap: 10px !important; }
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute .hb-arg__empty { grid-column: 2; }
+}
+
+/* 11b. "За" / "Проти" as two paired cards; neutral stays a ledger row below */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px !important; padding: 4px 0 12px !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) {
+  display: flex !important; flex-direction: column; gap: 10px !important; align-items: stretch !important;
+  padding: 14px 16px 16px !important; border-radius: 14px !important; min-width: 0;
+  box-shadow: inset 0 3px 0 var(--hb-card-accent), inset 0 0 0 1px var(--hb-card-line) !important;
+  background: var(--hb-card-bg) !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__support {
+  --hb-card-accent: #3c8a64; --hb-card-line: #d3e6da; --hb-card-bg: #f6fbf8;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute {
+  --hb-card-accent: #b3261e; --hb-card-line: #f0d6d3; --hb-card-bg: #fdf7f6;
+}
+/* empty side: dashed, neutral — absence is visible but not alarming */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence > [data-empty="true"] {
+  --hb-card-accent: transparent; --hb-card-bg: transparent;
+  box-shadow: none !important; outline: 1.5px dashed var(--hb-outline-variant, #cac4d0); outline-offset: -1.5px; justify-content: flex-start;
+}
+/* card header: label + count */
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) > .hb-item-heading.MuiTypography-root {
+  display: flex !important; align-items: center; gap: 8px; padding: 0 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) > .hb-item-heading::before {
+  content: ""; width: 18px; height: 18px; border-radius: 50%; flex: none;
+  background: var(--hb-card-accent) no-repeat center / 12px 12px;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__support > .hb-item-heading::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 2.5v7M2.5 6h7' stroke='white' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute > .hb-item-heading::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6h7' stroke='white' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence > [data-empty="true"] > .hb-item-heading::before {
+  background-color: var(--hb-outline-variant, #cac4d0);
+}
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) > .hb-item-heading::after {
+  font-size: 0.875rem !important; font-weight: 700 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__support > .hb-item-heading[data-count]::after { content: "For · " attr(data-count); }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence__refute > .hb-item-heading[data-count]::after { content: "Against · " attr(data-count); }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence > [data-empty="true"] > .hb-item-heading::after { content: "Against" !important; }
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) :is(.hb-arg-list, .hb-arg__empty) { grid-column: auto !important; }
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) .hb-arg-list { gap: 0 !important; }
+html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) .hb-arg + .hb-arg {
+  margin-top: 10px !important; padding-top: 10px !important;
+  border-top: 1px solid var(--hb-card-line) !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence > [data-empty="true"] .hb-arg__empty::after {
+  content: "Not recorded — the case has no refuting data";
+}
+
+/* neutral row now opens the ledger under the cards */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral {
+  box-shadow: none !important; padding-top: 6px !important;
+}
+
+@media (max-width: 760px) {
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence { grid-template-columns: minmax(0, 1fr) !important; gap: 10px !important; }
+  html body .hb-app .hb-hypothesis-evidence-visible :is(.hb-item-evidence__support, .hb-item-evidence__refute) { padding: 12px 14px 14px !important; }
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-evidence > [data-empty="true"] { flex-direction: row; align-items: center !important; flex-wrap: wrap; gap: 6px 10px !important; }
+}
+
+/* 11c. "Нейтрально" = grey card, same width as the "За" column */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral {
+  display: flex !important; flex-direction: column; gap: 10px !important; align-items: stretch !important;
+  width: calc(50% - 6px); box-sizing: border-box !important; min-width: 0; margin: 0 0 4px !important; padding: 14px 16px 16px !important;
+  border-radius: 14px !important; border: 0 !important;
+  background: #f4f4f6 !important; box-shadow: inset 0 3px 0 #9a99a3, inset 0 0 0 1px #e2e1e6 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral > .hb-item-heading.MuiTypography-root {
+  display: flex !important; align-items: center; gap: 8px; padding: 0 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral > .hb-item-heading::before {
+  content: ""; width: 18px; height: 18px; border-radius: 50%; flex: none; background: #8e8d96 no-repeat center / 12px 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='1.6' fill='white'/%3E%3C/svg%3E");
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral > .hb-item-heading::after {
+  font-size: 0.875rem !important; font-weight: 700 !important; color: #5f5e66 !important;
+}
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral > .hb-item-heading[data-count]::after { content: "Neutral · " attr(data-count); }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral .hb-arg-list { grid-column: auto !important; gap: 0 !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral .hb-arg + .hb-arg {
+  margin-top: 10px !important; padding-top: 10px !important; border-top: 1px solid #e2e1e6 !important;
+}
+@media (max-width: 760px) {
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral { width: auto; padding: 12px 14px 14px !important; }
+}
+
+/* 14. Neutral card sits under the red "Проти" card */
+@media (min-width: 761px) {
+  html body .hb-app .hb-hypothesis-evidence-visible .hb-item-neutral { margin-left: calc(50% + 6px) !important; }
+}
+
+
+/* 23. Evidence layout: «За» in the left column, «Проти» + «Нейтрально» stacked on the right,
+       «Що перевірити / Обмеження» full width below. Replaces the margin-based placement of 11c/14. */
+@media (min-width: 761px) {
+  html body .hb-app #hypothesis-evidence[open]::details-content {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto 1fr auto;
+    gap: 12px; align-items: start; padding: 4px 0 20px;
+  }
+  html body .hb-app #hypothesis-evidence .hb-item-evidence { display: contents !important; }
+  html body .hb-app #hypothesis-evidence .hb-item-evidence__support { grid-column: 1; grid-row: 1 / span 2; }
+  html body .hb-app #hypothesis-evidence .hb-item-evidence__refute { grid-column: 2; grid-row: 1; }
+  html body .hb-app #hypothesis-evidence .hb-item-neutral { grid-column: 2; grid-row: 2; width: auto !important; margin: 0 !important; }
+  html body .hb-app #hypothesis-evidence .hb-item-limits { grid-column: 1 / -1; grid-row: 3; margin: 0 !important; }
+}
+/* limits: headings and lists start at the top of each column */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits > div { display: block !important; align-self: start !important; }
+html body .hb-app .hb-hypothesis-evidence-visible .hb-item-limits ul { align-content: start !important; }
+/* meta line: «Деталі» stays on the same line as the source */
+html body .hb-app .hb-hypothesis-evidence-visible .hb-arg__meta { row-gap: 2px !important; }
+
+/* 40-history.css */
+/* 15. Calendar: hide empty months */
+html body .hb-app .hb-time-workspace button[data-month][data-count="0"] { display: none !important; }
+
+/* 16. Journey (Хронологія) */
+html.hbj-on body .hb-app .hb-time-workspace { display: none !important; }
+html body .hb-app .hbj {
+  background: var(--hb-surface, #fffbfe); border-radius: 24px; padding: 24px 28px 20px; margin-bottom: 20px;
+  box-shadow: 0 12px 28px -20px rgba(64, 46, 91, .35), 0 0 0 1px rgba(65, 51, 83, .05);
+  color: var(--hb-on-surface, #1d1b20);
+}
+html:not(.hbj-on) body .hb-app #hb-journey { display: none; }
+.hbj-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.hbj-head h2 { margin: 0; font-size: 1.375rem; font-weight: 650; letter-spacing: -0.01em; }
+.hbj-head p { margin: 4px 0 0; font-size: 0.8125rem; color: var(--hb-on-surface-variant, #5f5a66); font-variant-numeric: tabular-nums; }
+.hbj-switch { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--hb-surface-container, #f3edf7); }
+.hbj-switch button, .hbj-back {
+  font: inherit; font-size: 0.8125rem; font-weight: 600; border: 0; background: none; color: var(--hb-on-surface-variant, #5f5a66);
+  padding: 7px 14px; border-radius: 9px; cursor: pointer; min-height: 34px;
+}
+.hbj-switch button[aria-pressed="true"] { background: #fff; color: var(--hb-on-surface, #1d1b20); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.hbj-back { background: var(--hb-surface-container, #f3edf7); margin: 0 0 12px; }
+html.hbj-on .hbj-back { display: none; }
+.hbj-filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 8px; }
+.hbj-chip {
+  font: inherit; font-size: 0.8125rem; font-weight: 550; cursor: pointer; min-height: 32px;
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px;
+  border: 0; background: none; box-shadow: inset 0 0 0 1px var(--hb-outline-variant, #cac4d0); color: var(--hb-on-surface, #1d1b20);
+}
+.hbj-chip b { font-weight: 650; color: var(--hb-on-surface-variant, #5f5a66); font-variant-numeric: tabular-nums; }
+.hbj-chip.is-on { background: var(--hb-primary, #6750a4); color: #fff; box-shadow: none; }
+.hbj-chip.is-on b { color: rgba(255,255,255,.85); }
+.hbj-chip:focus-visible, .hbj-switch button:focus-visible, .hbj-open:focus-visible, .hbj-back:focus-visible { outline: 2px solid var(--hb-primary, #6750a4); outline-offset: 2px; }
+
+.hbj-year { margin-top: 18px; }
+.hbj-year > h3 {
+  margin: 0 0 10px; font-size: 0.9375rem; font-weight: 700; color: var(--hb-primary, #6750a4);
+  font-variant-numeric: tabular-nums;
+  display: inline-block; padding: 2px 10px; border-radius: 8px; background: var(--hb-surface-container, #f3edf7);
+}
+.hbj-year ol { list-style: none; margin: 0; padding: 0; }
+.hbj-row { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 20px; padding-bottom: 14px; }
+.hbj-when { position: relative; padding: 14px 24px 0 0; text-align: right; }
+.hbj-when time { display: block; font-size: 0.9375rem; font-weight: 650; color: var(--hb-on-surface, #1d1b20); font-variant-numeric: tabular-nums; }
+.hbj-when small { display: block; font-size: 0.6875rem; color: var(--hb-on-surface-variant, #5f5a66); line-height: 1.3; margin-top: 2px; }
+.hbj-when::after { content: ""; position: absolute; top: 24px; bottom: -22px; right: 4px; width: 1px; background: var(--hb-outline-variant, #cac4d0); }
+.hbj-year li:last-child .hbj-when::after { display: none; }
+.hbj-node { position: absolute; top: 18px; right: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--hb-primary, #6750a4); z-index: 1; }
+.hbj-row.is-doc .hbj-node { background: var(--hb-surface, #fff); box-shadow: inset 0 0 0 1.5px var(--hb-primary, #6750a4); }
+.hbj-row.is-doc .hbj-when time { color: var(--hb-on-surface-variant, #5f5a66); font-weight: 600; }
+
+.hbj-stack { display: grid; gap: 8px; min-width: 0; }
+.hbj-card {
+  --tone: #6750a4; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; align-items: start;
+  background: var(--hb-surface-container-low, #f7f2fa); border-radius: 14px; padding: 14px 18px;
+  box-shadow: inset 3px 0 0 var(--tone);
+}
+.hbj-lab { --tone: #3c8a64; } .hbj-img { --tone: #b4536f; } .hbj-path { --tone: #7a5aa8; } .hbj-cons { --tone: #b07d1a; } .hbj-other { --tone: #8e8d96; }
+.hbj-card__main { min-width: 0; display: grid; gap: 3px; }
+.hbj-tag { font-size: 0.72rem; font-weight: 700; color: var(--tone); letter-spacing: 0.01em; }
+.hbj-card h4 { margin: 0; font-size: 0.9375rem; font-weight: 650; line-height: 1.4; }
+.hbj-card p { margin: 0; font-size: 0.875rem; line-height: 1.5; color: var(--hb-on-surface-variant, #4a4550); max-width: 90ch;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.hbj-card small { font-size: 0.75rem; color: var(--hb-on-surface-variant, #5f5a66); font-variant-numeric: tabular-nums; }
+.hbj-open {
+  font: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--hb-primary, #6750a4); background: none; border: 0; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 4px; padding: 6px 4px; min-height: 32px; border-radius: 8px; white-space: nowrap;
+}
+.hbj-open svg { width: 14px; height: 14px; }
+.hbj-open:hover { background: color-mix(in srgb, var(--hb-primary, #6750a4) 8%, transparent); }
+.hbj-note, .hbj-empty { margin: 14px 0 0; font-size: 0.75rem; color: var(--hb-on-surface-variant, #5f5a66); }
+
+@media (max-width: 760px) {
+  html body .hb-app .hbj { padding: 18px 16px 16px; border-radius: 20px; }
+  .hbj-row { grid-template-columns: 58px minmax(0, 1fr); gap: 12px; }
+  .hbj-when { padding-right: 16px; }
+  .hbj-when time { font-size: 0.875rem; }
+  .hbj-card { grid-template-columns: 1fr; padding: 12px 14px; }
+  .hbj-open { justify-self: start; padding-left: 0; }
+}
+
+
+/* 50-supports.css */
+/* 18. Джерельні опори (reasoning view) */
+html.hbs-on body .hb-app .hb-reasoning-log__main > :not(#hb-supports),
+html.hbs-on body .hb-app nav.hb-reasoning-toc { display: none !important; }
+html.hbs-on body .hb-app .hb-reasoning-log__main { grid-column: 1 / -1 !important; }
+html:not(.hbs-on) body .hb-app #hb-supports { display: none; }
+html body .hb-app .hbs { max-width: 1180px; margin-inline: auto; }
+.hbs-article-switch { margin-top: 14px; }
+.hbs-rule {
+  margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; font-size: 0.8125rem; line-height: 1.5;
+  background: var(--hb-surface-container-low, #f7f2fa); color: var(--hb-on-surface-variant, #4a4550);
+}
+.hbs-list { display: grid; gap: 14px; margin-top: 8px; }
+.hbs-card {
+  border-radius: 18px; background: var(--hb-surface, #fff);
+  box-shadow: 0 0 0 1px var(--hb-outline-variant, #e2dde6), 0 10px 24px -20px rgba(64, 46, 91, .35);
+  padding: 18px 20px 16px; scroll-margin-top: calc(var(--hb-appbar-height, 72px) + 16px);
+}
+.hbs-card__head h3 { margin: 0; font-size: 1.0625rem; font-weight: 650; line-height: 1.35; }
+.hbs-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.hbs-disc, .hbs-hyp, .hbs-state, .hbs-type {
+  display: inline-flex; align-items: center; font-size: 0.72rem; font-weight: 650; line-height: 1.3;
+  padding: 3px 8px; border-radius: 999px; white-space: nowrap;
+}
+.hbs-hyp { background: var(--hb-surface-container, #f3edf7); color: var(--hb-on-surface, #1d1b20); font-weight: 550; }
+.hbs-disc--spec { background: #e5f3ea; color: #1f6b44; }
+.hbs-disc--shared { background: #efeff2; color: #55535c; }
+.hbs-disc--undet { background: #fbf0dc; color: #704600; }
+.hbs-cols { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 14px; margin-top: 14px; }
+.hbs-cols h4 { margin: 0 0 8px; display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  font-size: 0.8125rem; font-weight: 700; color: var(--hb-on-surface, #1d1b20); }
+.hbs-patient { border-radius: 14px; padding: 12px 14px; background: #f6faf7; box-shadow: inset 3px 0 0 #3c8a64; }
+.hbs-patient p { margin: 0; font-size: 0.875rem; line-height: 1.55; }
+.hbs-missing { margin-top: 8px !important; color: var(--hb-on-surface-variant, #5f5a66); font-size: 0.8125rem !important; }
+.hbs-missing b { font-weight: 650; color: #704600; }
+.hbs-state--ok { background: #e5f3ea; color: #1f6b44; }
+.hbs-state--gap { background: #fbf0dc; color: #704600; }
+.hbs-state--warn { background: #fbe9e8; color: #8c1d18; }
+.hbs-sources { border-radius: 14px; padding: 12px 14px; background: var(--hb-surface-container-low, #f7f2fa); box-shadow: inset 3px 0 0 var(--hb-primary, #6750a4); }
+.hbs-count { font-weight: 550; color: var(--hb-on-surface-variant, #5f5a66); font-size: 0.75rem; }
+.hbs-sources ol, .hbs-other ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.hbs-thesis + .hbs-thesis { padding-top: 10px; border-top: 1px solid rgba(103, 80, 164, .14); }
+.hbs-thesis > p { margin: 0; font-size: 0.875rem; line-height: 1.55; color: var(--hb-on-surface, #1d1b20); }
+.hbs-cite { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 6px; font-size: 0.75rem; color: var(--hb-on-surface-variant, #5f5a66); }
+.hbs-type--guide { background: #ede4fb; color: #4f378b; }
+.hbs-type--review { background: #e3eef8; color: #1d4f7a; }
+.hbs-type--pub { background: #efeff2; color: #55535c; }
+.hbs-type--other { background: #efeff2; color: #55535c; }
+.hbs-title { font-style: italic; min-width: 0; }
+.hbs-year { font-variant-numeric: tabular-nums; }
+.hbs-link { display: inline-flex; align-items: center; gap: 3px; color: var(--hb-primary, #6750a4); font-weight: 600; text-decoration: none; }
+.hbs-link:hover { text-decoration: underline; }
+.hbs-link svg { width: 12px; height: 12px; }
+.hbs-why { margin-top: 4px; }
+.hbs-why > summary { cursor: pointer; font-size: 0.75rem; font-weight: 600; color: var(--hb-on-surface-variant, #5f5a66); list-style: none; padding: 2px 0; }
+.hbs-why > summary::-webkit-details-marker { display: none; }
+.hbs-why > summary::after { content: " ▾"; font-size: 0.7em; }
+.hbs-why[open] > summary::after { content: " ▴"; }
+.hbs-why p { margin: 4px 0 0; font-size: 0.8125rem; line-height: 1.5; color: var(--hb-on-surface-variant, #4a4550); }
+.hbs-next { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--hb-outline-variant, #e2dde6); }
+.hbs-next > span { font-size: 0.8125rem; font-weight: 650; }
+.hbs-step {
+  font: inherit; font-size: 0.8125rem; font-weight: 550; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
+  border: 0; border-radius: 10px; padding: 6px 10px; min-height: 32px; text-align: left;
+  background: var(--hb-surface-container, #f3edf7); color: var(--hb-primary, #6750a4);
+}
+.hbs-step svg { width: 13px; height: 13px; flex: none; }
+.hbs-step:hover { background: var(--hb-surface-container-high, #ece6f0); }
+.hbs-other { margin-top: 16px; border-radius: 14px; background: var(--hb-surface-container-low, #f7f2fa); padding: 12px 16px; }
+.hbs-other > summary { cursor: pointer; font-size: 0.875rem; font-weight: 650; }
+.hbs-other ol { margin-top: 12px; }
+.hbs-flash { animation: hbs-flash 2s ease-out; }
+@keyframes hbs-flash { 0%, 30% { box-shadow: 0 0 0 3px var(--hb-primary, #6750a4); } 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .hbs-flash { animation: none; } }
+
+/* "Спирається на" in the overview hypothesis card */
+.hbs-onhyp {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--hb-outline-variant, #cac4d0) 70%, transparent);
+  font-size: 0.8125rem; color: var(--hb-on-surface-variant, #4a4550);
+}
+.hbs-onhyp__label { font-weight: 700; color: var(--hb-on-surface, #1d1b20); }
+.hbs-onhyp__list { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; min-width: 0; flex: 1 1 22rem; }
+.hbs-onhyp__list i { font-style: normal; opacity: .5; }
+.hbs-onhyp__go {
+  font: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--hb-primary, #6750a4); background: none; border: 0; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 3px; padding: 6px 4px; min-height: 32px; border-radius: 8px; white-space: nowrap;
+}
+.hbs-onhyp__go svg { width: 13px; height: 13px; }
+.hbs-onhyp__go:hover { background: color-mix(in srgb, var(--hb-primary, #6750a4) 8%, transparent); }
+.hbs-step:focus-visible, .hbs-onhyp__go:focus-visible, .hbs-link:focus-visible, .hbs-why > summary:focus-visible { outline: 2px solid var(--hb-primary, #6750a4); outline-offset: 2px; }
+
+@media (max-width: 860px) {
+  .hbs-cols { grid-template-columns: minmax(0, 1fr); }
+  .hbs-card { padding: 14px 14px 12px; }
+}
+
+/* 21. Hypothesis card: supports as a short list */
+.hbs-onhyp__list { display: grid !important; gap: 4px; }
+.hbs-onhyp__item { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.hbs-onhyp__item > span:last-child { min-width: 0; }
+.hbs-onhyp__more { color: var(--hb-on-surface-variant, #5f5a66); font-size: 0.75rem; }
+.hbs-onhyp { align-items: start; }
+.hbs-onstep {
+  margin: 4px 0 0; font: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--hb-primary, #6750a4);
+  background: none; border: 0; cursor: pointer; padding: 6px 0; min-height: 32px;
+}
+.hbs-onstep:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.hbs-onstep:disabled { color: var(--hb-on-surface-variant, #5f5a66); cursor: default; text-decoration: none; }
+
+
+@media (max-width: 760px) {
+  html body .hb-app .hbs .hbj-filters { flex-wrap: nowrap; overflow-x: auto; margin-inline: -16px; padding: 0 16px 6px; scrollbar-width: none; }
+  html body .hb-app .hbs .hbj-filters::-webkit-scrollbar { display: none; }
+  html body .hb-app .hbs .hbj-chip { flex: none; white-space: nowrap; }
+}
+
+html body .hb-app .hb-reasoning-log__main, html body .hb-app #hb-supports, html body .hb-app .hbs-list, html body .hb-app .hbs-card { min-width: 0; max-width: 100%; }
+html body .hb-app .hbs .hbj-filters { max-width: 100%; }
+
+.hbs-short { font-weight: 700; color: var(--hb-on-surface, #1d1b20); font-style: normal; }
+.hbs-cite .hbs-title { opacity: .85; }
+
+/* 55-observations.css */
+/* 22. «Розгляд даних» (reasoning view): grouped review of every patient record */
+html body .hb-app #reasoning-observations[open] { display: flex; flex-direction: column; gap: 0; }
+html body .hb-app #reasoning-observations > summary { order: -3; }
+html body .hb-app #reasoning-observations > p { order: -2; margin: 4px 0 8px; padding: 0 4px; font-size: 0.8125rem; line-height: 1.5; color: var(--hb-on-surface-variant, #5f5a66); text-align: left; }
+html body .hb-app #reasoning-observations > .hbo-bar { order: -1; display: grid; gap: 8px; padding: 0 4px 10px; }
+.hbo-bar .hbj-filters { margin: 0; }
+.hbo-search {
+  font: inherit; font-size: 0.875rem; width: min(100%, 26rem); min-height: 38px; padding: 6px 12px;
+  border-radius: 10px; border: 1px solid var(--hb-outline-variant, #cac4d0); background: var(--hb-surface, #fff); color: inherit;
+}
+.hbo-search:focus-visible { outline: 2px solid var(--hb-primary, #6750a4); outline-offset: 1px; }
+.hbo-hint { margin: 0; font-size: 0.75rem; color: var(--hb-on-surface-variant, #5f5a66); }
+
+/* one record = one compact row */
+html body .hb-app #reasoning-observations > article {
+  --tone: #8e8d96;
+  display: grid !important; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; align-items: start;
+  margin: 0 !important; padding: 10px 14px 10px 16px !important; text-align: left !important;
+  border-top: 1px solid color-mix(in srgb, var(--hb-outline-variant, #cac4d0) 55%, transparent);
+  box-shadow: inset 3px 0 0 var(--tone);
+}
+html body .hb-app #reasoning-observations > article[hidden] { display: none !important; }
+html body .hb-app #reasoning-observations > article[data-cat="explain"] { --tone: #c98a00; }
+html body .hb-app #reasoning-observations > article[data-cat="linked"] { --tone: var(--hb-primary, #6750a4); }
+html body .hb-app #reasoning-observations > article[data-cat="separate"] { --tone: #3f6f9a; }
+/* group heading on the first record of each group */
+html body .hb-app #reasoning-observations > article[data-first="true"] { margin-top: 14px !important; border-top: 0; }
+html body .hb-app #reasoning-observations > article[data-first="true"]::before {
+  content: attr(data-group-label) " · " attr(data-count);
+  grid-column: 1 / -1; margin: -2px 0 6px -16px; padding: 0 0 6px 16px;
+  font-size: 0.8125rem; font-weight: 700; color: var(--tone);
+  border-bottom: 1px solid color-mix(in srgb, var(--tone) 30%, transparent);
+}
+/* record title: the source fact, left-aligned, never centred */
+html body .hb-app #reasoning-observations > article > button.MuiButton-root {
+  grid-column: 1; justify-self: start; justify-content: flex-start; text-align: left !important;
+  padding: 0 !important; min-height: 0 !important; margin: 0 !important;
+  font-size: 0.875rem !important; font-weight: 550 !important; line-height: 1.45 !important; text-transform: none;
+  color: var(--hb-on-surface, #1d1b20) !important; background: none !important; white-space: normal;
+}
+html body .hb-app #reasoning-observations > article > button.MuiButton-root:hover { color: var(--hb-primary, #6750a4) !important; text-decoration: underline; text-underline-offset: 0.2em; }
+/* category label is carried by the group heading */
+html body .hb-app #reasoning-observations > article > p:nth-of-type(1) { display: none; }
+html body .hb-app #reasoning-observations > article > p:nth-of-type(2) {
+  grid-column: 1; margin: 0 !important; font-size: 0.8125rem; line-height: 1.5; color: var(--hb-on-surface-variant, #4a4550); text-align: left;
+}
+/* MedLens: a quiet external link in the right column */
+html body .hb-app #reasoning-observations > article > a.hbo-ext {
+  grid-column: 2; grid-row: 1; align-self: start; white-space: nowrap;
+  font-size: 0.75rem; font-weight: 600; color: var(--hb-primary, #6750a4); text-decoration: none; padding: 2px 0;
+}
+html body .hb-app #reasoning-observations > article > a.hbo-ext { font-size: 0 !important; }
+html body .hb-app #reasoning-observations > article > a.hbo-ext::after { content: "MedLens ↗"; font-size: 0.75rem; }
+html body .hb-app #reasoning-observations > article > a.hbo-ext:hover { text-decoration: underline; }
+@media (max-width: 760px) {
+  html body .hb-app #reasoning-observations > article { grid-template-columns: minmax(0, 1fr); }
+  html body .hb-app #reasoning-observations > article > a.hbo-ext { grid-column: 1; grid-row: auto; }
+  html body .hb-app #reasoning-observations .hbo-bar .hbj-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  html body .hb-app #reasoning-observations .hbo-bar .hbj-chip { flex: none; white-space: nowrap; }
+}
+/* open <details> wraps children in ::details-content; the flex order must live there */
+html body .hb-app #reasoning-observations::details-content { display: flex; flex-direction: column; }
+html body .hb-app #reasoning-observations > article[data-first="true"] > a.hbo-ext { grid-row: 2; }
+.hbo-search { height: 38px; box-sizing: border-box; }
+
+/* 60-graph.css */
+/* 20. Graph: explanation panel stays in view while scrolling the graph */
+@media (min-width: 1100px) {
+  html body .hb-app .hb-evidence-graph__inspector {
+    position: sticky !important; top: calc(var(--hb-appbar-height, 72px) + 52px) !important; align-self: start !important;
+    max-height: calc(100vh - var(--hb-appbar-height, 72px) - 68px) !important; overflow: auto !important;
+  }
+}
+
+
+/* 24. Graph reads hypothesis → evidence: hypotheses on the left, clinical data on the right.
+       The board (nodes, ports, SVG links, column headers) is mirrored; text stays upright. */
+html body .hb-app .hb-evidence-graph__desktop { transform: scaleX(-1); }
+html body .hb-app .hb-evidence-graph__desktop :is(
+  .hb-evidence-graph__fact-label, .hb-evidence-graph__fact-meta, .hb-evidence-graph__fact-relations,
+  .hb-graph-premium__node-info, .hb-evidence-graph__hypothesis-label, .hb-graph-premium__column) { transform: scaleX(-1); }
+
+.hb-en-notice{margin:6px 0 0;font-size:.78rem;line-height:1.35;color:var(--hb-on-surface-variant,#5f5a66)}

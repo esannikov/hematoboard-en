@@ -1,0 +1,99 @@
+/* The case switcher is the primary action in the shared dashboard header. */
+.hb-app .hb-appbar .hb-case-selector:has([role="combobox"]) {
+  flex: 0 0 auto;
+  width: 190px;
+  min-width: 0;
+  max-width: 52vw;
+  margin-inline-start: 0;
+}
+/* The version and case selector stay together when the loading status appears. */
+.hb-app .hb-appbar [role="status"] { order: 1; }
+.hb-app .hb-case-selector:has([role="combobox"]) .MuiInputBase-root {
+  height: 48px;
+  border-radius: 13px;
+  color: #fff;
+  background: #594376;
+}
+.hb-app .hb-case-selector:has([role="combobox"]) .MuiInputBase-root:hover { background: #493561; }
+.hb-app .hb-case-selector:has([role="combobox"]) .MuiInputLabel-root {
+  z-index: 1;
+  color: #f3e9ff;
+  transform: translate(14px, 5px);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.hb-app .hb-case-selector [role="combobox"].MuiSelect-select {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  min-height: 0;
+  padding: 19px 44px 4px 14px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  font-variant-numeric: tabular-nums;
+}
+.hb-app .hb-case-selector:has([role="combobox"]) .MuiOutlinedInput-notchedOutline { border: 0; }
+.hb-app .hb-case-selector:has([role="combobox"]) .MuiSelect-icon {
+  right: 10px;
+  top: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  color: white;
+  background: #ffffff25;
+}
+.hb-app .hb-case-selector:has([role="combobox"]:focus-visible) {
+  border-radius: 13px;
+  outline: 3px solid #735494;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .hb-app .hb-appbar .hb-brand-lockup { flex: none; flex-direction: row; align-items: baseline; gap: 5px; }
+  .hb-app .hb-appbar .hb-brand { flex: none; }
+  .hb-app .hb-appbar .hb-case-selector:has([role="combobox"]) { width: 152px; flex-shrink: 1; }
+}
+@media (max-width: 360px) {
+  .hb-app .hb-case-selector [role="combobox"].MuiSelect-select { padding-inline: 10px 33px; }
+  .hb-app .hb-case-selector:has([role="combobox"]) .MuiSelect-icon { right: 5px; }
+}
+@media (forced-colors: active) {
+  .hb-app .hb-case-selector:has([role="combobox"]) .MuiOutlinedInput-notchedOutline { border: 1px solid ButtonText; }
+}
+
+.hb-app [data-hypothesis-numbering="unnumbered"] .hb-overview-differential button.hb-v1-diff__row:is([aria-pressed]) {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+.hb-hypothesis-coexistence {
+  margin: .5rem 0;
+  color: var(--hb-text-secondary, #46545b);
+}
+[data-hypothesis-numbering="unnumbered"] .hb-comparison-mobile-label {
+  width: auto;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.hb-app .hb-source-card {
+  --hb-source-title-size: 16px;
+  --hb-source-copy-size: 14px;
+  --hb-source-meta-size: 12px;
+}
+.hb-app .hb-plan-workspace .hb-source-inline-title { font-size: 13px; }
+.hb-app .hb-source-card .hb-source-action.MuiButton-root {
+  font-size: var(--hb-source-meta-size);
+}
+
+/* One visual anchor for the selected diagnosis across overview cards. */
+#hypothesis-panel #hypothesis-detail-title {
+  border-inline-start: 4px solid #7855a2;
+  padding-inline-start: .65em;
+  color: #382549;
+  font-size: clamp(1.5rem, 1.15rem + 1vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}

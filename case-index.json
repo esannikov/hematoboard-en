@@ -1,23 +1,26 @@
 {
-  "schema_version": "hematoboard.public-case-index/2.0.0",
-  "cases": [
-    {
-      "key": "case001",
-      "case_id": "CASE001",
-      "source_case_id": "CASE001",
-      "data_path": "case001/public-dashboard.v1.json"
-    },
-    {
-      "key": "case002",
-      "case_id": "CASE002",
-      "source_case_id": "CASE002",
-      "data_path": "case002/public-dashboard.v1.json"
-    },
-    {
-      "key": "case003",
-      "case_id": "CASE003",
-      "source_case_id": "CASE003",
-      "data_path": "case003/public-dashboard.v1.json"
-    }
-  ]
+ "schema_version": "hematoboard.public-case-index/2.0.0",
+ "cases": [
+  {
+   "key": "case029",
+   "case_id": "CASE029",
+   "source_case_id": "CASE029",
+   "data_path": "case029/public-dashboard.v1.json",
+   "protocol_replay_of_case_id": null
+  },
+  {
+   "key": "case027",
+   "case_id": "CASE027",
+   "source_case_id": "CASE027",
+   "data_path": "case027/public-dashboard.v1.json",
+   "protocol_replay_of_case_id": null
+  },
+  {
+   "key": "case001",
+   "case_id": "CASE001",
+   "source_case_id": "CASE001",
+   "data_path": "case001/public-dashboard.v1.json",
+   "protocol_replay_of_case_id": null
+  }
+ ]
 }
